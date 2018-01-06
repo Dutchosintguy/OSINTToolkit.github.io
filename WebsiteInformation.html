@@ -36,8 +36,9 @@
 <h1>Website Information:</h1>
 </header>
 
-<p>
-In order to use some of the tools, you must know the IP address, email address, domain name and or MAC address of the website, user or equipment you wish to research. </p>
+<p>In order to use some of the tools, you must know the IP address, email address, domain name and or MAC address of the website, user or equipment you wish to research. </p>
+ 
+<p>N.B. Most IP geolocators can determine the country of an Internet user with 95 to 99% accuracy, the city of a user with 80 to 99 % accuracy and the street a user is on with 50 to 80% accuracy.</p> 
 
 <table id="myTable"><table width="100%">
 <col style="width:30%">  
@@ -46,10 +47,300 @@ In order to use some of the tools, you must know the IP address, email address, 
 <th>Overview:</th>
 <th>Tool:</th>
 </tr>
- 
-<tr><td>Investigative Dashboard Search</td><td>
 
+<tr><td>Ping</td><td>
 
+<script type="text/javascript">
+function doX1(X1) {
+window.open('http://network-tools.com/default.asp?prog=ping&host=' + X1, '_blank');
+}
+</script>
+<form onsubmit="doX1(this.X1.value); return false;">
+<input type="text" name="X1" size="15" placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Website Whois</td><td>
+
+<script type="text/javascript">
+function doW1(W1) {
+window.open('http://network-tools.com/default.asp?prog=whois&host=' + W1, '_blank');
+}
+</script>
+<form onsubmit="doW1(this.W1.value); return false;">
+<input name="W1" size="15" placeholder="Website" type="text">
+<input value="Search" type="submit"></form></td></tr>
+
+<tr><td>IP Address Whois</td><td>
+
+<script type="text/javascript">
+function doIP2(IP2) {
+window.open('http://' + IP2 + '.ipaddress.com/', '_blank');
+}
+</script>
+<form onsubmit="doIP2(this.IP2.value); return false;">
+<input name="IP2" size="15" placeholder="IP address" type="text">
+<input value="Search" type="submit"></form></td></tr>
+
+<tr><td>Website Reverse Whois</td><td>
+
+<script type="text/javascript">
+function doRW1(RW1) {
+window.open('http://domainbigdata.com/' + RW1, '_blank');
+}
+</script>
+<form onsubmit="doRW1(this.RW1.value); return false;">
+<input type="text" name="RW1" size="15" placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>IP Reverse Whois</td><td>
+	
+<script type="text/javascript">
+function doRW2(RW2) {
+window.open('http://domainbigdata.com/' + RW2, '_blank');
+}
+</script>
+<form onsubmit="doRW2(this.RW2.value); return false;">
+<input type="text" name="RW2" size="15" placeholder="IP address" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Email Reverse Whois</td><td>
+	
+<script type="text/javascript">
+function doRW3(RW3) {
+window.open('http://domainbigdata.com/email/' + RW3, '_blank');
+}
+</script>
+<form onsubmit="doRW3(this.RW3.value); return false;">
+<input type="text" name="RW3" size="15" placeholder="Email" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Network lookup</td><td>
+	
+<script type="text/javascript">
+function doW2(W2) {
+window.open('http://network-tools.com/default.asp?prog=network&host=' + W2, '_blank');
+}
+</script>
+<form onsubmit="doW2(this.W2.value); return false;">
+<input type="text" name="W2" size="15" placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>TLD lookup</td><td>
+
+<script type="text/javascript">
+function doTLD1(TLD1) {
+window.open('https://www.iana.org/domains/root/db/' + TLD1 + '.html', '_blank');
+}
+</script>
+<form onsubmit="doTLD1(this.TLD1.value); return false;">
+<input name="TLD1" size="15" placeholder="TLD" type="text">
+<input value="Search" type="submit"></form></td></tr>
+
+<tr><td>IP History</td><td>
+
+<script type="text/javascript">
+function doIPH1(IPH1) {
+window.open('http://viewdns.info/iphistory/?domain=' + IPH1, '_blank');
+}
+</script>
+<form onsubmit="doIPH1(this.IPH1.value); return false;">
+<input type="text" name="IPH1" size="15" placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>IP Geolocator</td><td>
+
+<script type="text/javascript">
+function doIP1(IP1) {
+window.open('http://dawhois.com/?query=' + IP1 + '&map=1#map_geo_location', '_blank');
+}
+</script>
+<form onsubmit="doIP1(this.IP1.value); return false;">
+<input type="text" name="IP1" size="15" placeholder="IP address" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Alternative IP Geolocator</td><td>
+	
+<script type="text/javascript">
+function doIP2(IP2) {
+window.open('http://whatismyipaddress.com/ip/' + IP2, '_blank');
+}
+</script>
+<form onsubmit="doIP2(this.IP2.value); return false;">
+<input type="text" name="IP2" size="15" placeholder="IP address" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>MAC lookup</td><td>
+
+<script type="text/javascript">
+function doMAC1(MAC1) {
+window.open('http://hwaddress.com/?q=' + MAC1, '_blank');
+}
+</script>
+<form onsubmit="doMAC1(this.MAC1.value); return false;">
+<input type="text" name="MAC1" size="15" placeholder="MAC Address" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>MAC vendor lookup</td><td>
+
+<script type="text/javascript">
+function doMAC3(MAC3) {
+window.open('http://hwaddress.com/?q=' + MAC3, '_blank');
+}
+</script>
+<form onsubmit="doMAC3(this.MAC3.value); return false;">
+<input type="text" name="MAC3" size="15" placeholder="Address Vendor" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Website Express Data Search</td><td>
+
+<script type="text/javascript">
+function doEDS1(EDS1) {
+window.open('http://network-tools.com/default.asp?prog=express&host=' + EDS1, '_blank');
+}
+</script>
+<form onsubmit="doEDS1(this.EDS1.value); return false;">
+<input type="text" name="EDS1" size="15" placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>IP Express Data Search</td><td>
+
+<script type="text/javascript">
+function doEDS2(EDS2) {
+window.open('http://network-tools.com/default.asp?prog=express&host=' + EDS2, '_blank');
+}
+</script>
+<form onsubmit="doEDS2(this.EDS2.value); return false;">
+<input type="text" name="EDS2" size="15" placeholder="IP address" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Detailed DNS report</td><td>
+
+<script type="text/javascript">
+function doDNS1(DNS1) {
+window.open('http://viewdns.info/dnsreport/?domain=' + DNS1, '_blank');
+}
+</script>
+<form onsubmit="doDNS1(this.DNS1.value); return false;">
+<input type="text" name="DNS1" size="15" placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Robtex shared search</td><td>
+
+<script type="text/javascript">
+function doRob1(Rob1) {
+window.open('https://www.robtex.com/?dns=' + Rob1 + '&shared=1', '_blank');
+}
+</script>
+<form onsubmit="doRob1(this.Rob1.value); return false;">
+<input type="text" name="Rob1" size="15" placeholder="Domain" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Robtex graph search</td><td>
+
+<script type="text/javascript">
+function doRob2(Rob2) {
+window.open('https://www.robtex.com/?dns=' + Rob2 + '&graph=1', '_blank');
+}
+</script>
+<form onsubmit="doRob2(this.Rob2.value); return false;">
+<input type="text" name="Rob2" size="15" placeholder="Domain" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Robtex IP search</td><td>
+
+<script type="text/javascript">
+function doRob5(Rob5) {
+window.open('https://www.robtex.com/?route=' + Rob5 + '/24', '_blank');
+}
+</script>
+<form onsubmit="doRob5(this.Rob5.value); return false;">
+<input type="text" name="Rob5" size="15" placeholder="IP Address" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>Robtex Express Data Search</td><td>
+
+<script type="text/javascript">
+function doRob3(Rob3) {
+window.open('https://www.robtex.com/dns-lookup/' + Rob3, '_blank');
+}
+</script>
+<form onsubmit="doRob3(this.Rob3.value); return false;">
+<input type="text" name="Rob3" size="15" placeholder="Domain" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Header lookup</td><td>
+
+<script type="text/javascript">
+function doWI1(WI1) {
+window.open('http://viewdns.info/httpheaders/?domain=' + WI1, '_blank');
+}
+</script>
+<form onsubmit="doWI1(this.WI1.value); return false;">
+<input type="text" name="WI1" size="15" placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>Source code search</td><td>
+
+<script type="text/javascript">
+function doX12(X12) {
+window.open('https://nerdydata.com/search?query=' + X12, '_blank');
+}
+</script>
+<form onsubmit="doX12(this.X12.value); return false;">
+<input type="text" name="X12" size="15" placeholder="Source Code" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Linked site search</td><td>
+
+<script type="text/javascript">
+function doX13(X13) {
+window.open('http://www.spyonweb.com/' + X13, '_blank');
+}
+</script>
+<form onsubmit="doX13(this.X13.value); return false;">
+<input type="text" name="X13" size="15" placeholder="Website or IP" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Technology profile search</td><td>
+<script type="text/javascript">
+function doWP1(WP1) {
+window.open('https://builtwith.com/' + WP1, '_blank');
+}
+</script>
+<form onsubmit="doWP1(this.WP1.value); return false;">
+<input type="text" name="WP1" size="15" placeholder="Website URL" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Wolfram Alpha search</td><td>
+<script type="text/javascript">
+function doWP2(WP2) {
+window.open('https://www.wolframalpha.com/input/?i=' + WP2, '_blank');
+}
+</script>
+<form onsubmit="doWP2(this.WP2.value); return false;">
+<input type="text" name="WP2" size="15" placeholder="URL" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Website overview</td><td>
+
+<script type="text/javascript">
+function doWP4(WP4) {
+window.open('http://dawhois.com/siteinfo/?query=' + WP4, '_blank');
+}
+</script>
+<form onsubmit="doWP4(this.WP4.value); return false;">
+<input type="text" name="WP4" size="15" placeholder="URL" />
+<input type="submit" value="Search" /></form></td></tr>
+
+</table>
+
+<br /><h4>Misc Network Tools:</h4>
+
+<ul><li><a href="https://www.iana.org/domains/root/db" target="_blank">Root Database of TLDs</a></li>
+<li><a href="http://www.ipligence.com/iplocation#results" target="_blank">Bulk IP Geolocator</a></li>
+<li><a href="http://centralops.net/co/" target="_blank">Central Ops</a></li>
+<li><a href="http://www.domainiq.com/tools" target="_blank">Misc Network Tools</a></li>	
+<li><a href="https://map.lookingglasscyber.com/" target="_blank">Real Time Cybercrime Threat Map</a></li></ul>
 
 <p><a href="#top">Back To Top</a></p>
 
