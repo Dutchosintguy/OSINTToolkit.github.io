@@ -1,0 +1,739 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<body onload="if (document.referrer == '') self.location='https://OSINTToolkit.github.io';">
+<noscript><meta http-equiv="refresh" content="0; url=OSINTToolkit.github.io" /></noscript>
+<title>OSINT Toolkit V2.1</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets1/css/main.css" />
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>OSINT</strong><span>Toolkit</span></a>
+<nav>
+<a href="#menu">Menu</a>
+</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<ul class="links">
+<li><a href="https://osinttoolkit.github.io/artemisa.html">Dashboard</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+<div class="inner">
+<header class="major">
+
+<h1>Social Media Module:</h1>
+</header>
+<p>To manually search the Social Media Module, please scroll down the page. To conduct an automatic search of the OSINT Toolkit, please use the systems internal search engine located <a href="https://osinttoolkit.github.io/Internal%20SearchA.html" style="text-decoration: None">here</a>.</p>
+
+<h3>Facebook:</h3><a name="Facebook"></a>
+				
+<p>You must be logged into a Facebook account to use the Facebook tools and, with some of the tools, you must know the Account ID of the subject(s) you wish to research.</p>
+
+<p>In order to use some of the tools, you must know the Account ID of the subject(s) you wish to research. </p>
+
+<p>To identify an Account ID you must load the Facebook Profile of your subject and right click the page before selecting View Page Source from the options list. While on the Source Page, press CTRL+F and search for the phrase "Profile_ID", the subjects Account ID will be the number after this phrase.</p>
+
+
+<table><table width="100%">
+<col style="width:25%">
+<col style="width:75%">  
+<tr>
+<th>Tool Name</th>
+<th>Description</th>
+<th>Tool</th>  
+</tr>
+<tr><td>Searching posts based on topic</td>
+<td>This tool will search for any post(s) containing the topic specified.</td>
+<td>
+<script type="text/javascript">
+function dofbposts(topic) {
+window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword', '_blank');
+}
+</script>                   
+<form onSubmit="dofbposts(this.topic.value); return false;">
+<input type="text" name="topic" size="24" placeholder="Topic"/>
+<input type="submit" value="Search"/></form><br />
+</td></tr>
+</table>
+
+<h4 id="Facebook1">Searching Posts based on topic:</h4>
+	
+<p>This tool will search for any post(s) containing the topic specified.</p>
+
+<script type="text/javascript">
+function dofbposts(topic) {
+window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword', '_blank');
+}
+</script>
+                      
+<form onSubmit="dofbposts(this.topic.value); return false;">
+<input type="text" name="topic" size="24" placeholder="Topic"/>
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook2">Searching Posts based on keywords:</h4>
+	
+<p>This tool will search for any post(s) containing the keyword(s) specified.</p>
+
+<script type="text/javascript">
+function dotopic1(topic1) {
+window.open('https://www.facebook.com/search/str/' + topic1 + '/keywords_posts/intersect/', '_blank');
+}
+</script>
+    
+<form onSubmit="dotopic1(this.topic1.value); return false;">
+<input type="text" name="topic1" size="24" placeholder="Keyword(s)"/>
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook5">Finding a Facebook Profile by Name:</h4>
+	
+<p>This tool will search for any profile(s) matching the name specified.</p>
+
+<script type="text/javascript">
+function dofb1(number) {
+window.open('https://www.facebook.com/search/str/' + number + '/users-named/intersect', '_blank');
+}
+</script>    
+     
+<form onSubmit="dofb1(this.number.value); return false;">
+<input type="text" name="number" size="24" placeholder="Name" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook6">Finding a Facebook Profile by Email: </h4>
+	
+<p>This tool will search for any profile(s) linked to the email specified.</p>	
+	
+<script type="text/javascript">
+function dofbemail(email) {
+window.open('https://www.facebook.com/search.php?q=' + email, '_blank');
+} 
+</script> 
+
+<form onSubmit="dofbemail(this.email.value); return false;">
+<input type="text" name="email" size="24" placeholder="Email Address" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="OSINT13">Finding a Facebook Profile by Account ID Number: </h4>
+	
+<p>This tool will search for any profile(s) matching the Account ID specified.</p>	
+
+<script type="text/javascript">
+function dofbID2(ID2) {
+window.open('https://www.facebook.com/' + ID2, '_blank');
+} 
+</script> 
+
+<form onSubmit="dofbID2(this.ID2.value); return false;">
+<input type="text" name="ID2" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search"/></form><br />
+	
+<h4 id="Facebook7">Finding a Profile by Name & Current Location:</h4>
+	
+<p>This tool will search for any profile(s) matching the name specified and currently living in the area specified.</p>	
+
+<script type="text/javascript">
+function dofb14a(number, number2) {
+window.open('https://www.facebook.com/search/str/' + number + '/users-named/intersect/str/' + number2 + '/pages-named/residents/present/intersect', 
+'_blank');
+}
+</script>
+
+<form onSubmit="dofb14a(this.number.value, this.number2.value); return false;">
+<input type="text" name="number" size="24" placeholder="Name" />
+<input type="text" name="number2" size="24" placeholder="Current Town/City" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook8">Finding a Profile by Name & Past Location:</h4>
+	
+<p>This tool will search for any profile(s) matching the name specified and who previously lived in the area specified.</p>		
+
+<script type="text/javascript">
+function dofb14aa(number, number2) {
+window.open('https://www.facebook.com/search/str/' + number + '/users-named/intersect/str/' + number2 + '/pages-named/residents/past/intersect', 
+'_blank');
+}
+</script>
+
+<form onSubmit="dofb14aa(this.number.value, this.number2.value); return false;">
+<input type="text" name="number" size="24" placeholder="Name" />
+<input type="text" name="number2" size="24" placeholder="Previous Town/City" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook9">Finding a Profile by Current Workplace:</h4>
+	
+<p>This tool will provide a list of every person who is currently working at the company specified.</p>	
+
+<script type="text/javascript">
+function donumber12(number12) {
+window.open('https://www.facebook.com/search/str/' + number12 + '/pages-named/employees/present/intersect', '_blank');
+}
+</script>
+            
+<form onSubmit="donumber12(this.number12.value); return false;">
+<input type="text" name="number12" size="24" placeholder="Workplace" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook10">Finding a Profile by Previous Workplace:</h4>
+	
+<p>This tool will provide a list of every person who previously worked at the company specified.</p>	
+
+<script type="text/javascript">
+function dofb3(number) {
+window.open('https://www.facebook.com/search/str/' + number + '/pages-named/employees/past/intersect', '_blank');
+}
+</script>
+             
+<form onSubmit="dofb3(this.number.value); return false;">
+<input type="text" name="number" size="24" placeholder="Past Workplace" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook11">Posts by User:</h4>
+	
+<p>This tool will provide a list of posts made by the account specified.</p>	
+
+<script type="text/javascript">
+function dofb23(fb23) {
+window.open('https://www.facebook.com/search/' + fb23 + '/stories-by', '_blank');
+}
+</script>
+
+<form onSubmit="dofb23(this.fb23.value); return false;">
+<input type="text" id="fb23" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook12">Posts by User featuring Keyword(s): </h4>
+	
+<p>This tool will provide a list of posts made by the account specified featuring the keyword(s) specified.</p>	
+
+<script type="text/javascript">
+function dofb022(fb022, fb023) {
+window.open('https://www.facebook.com/search/str/' + fb023 + '/stories-keyword/' + fb022 + '/stories-by/intersect', '_blank');
+} 
+</script> 
+
+<form onSubmit="dofb022(this.fb022.value,this.fb023.value); return false;">
+<input type="text" name="fb022" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb023" size="24" placeholder="Keyword(s)" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook13">Posts by User during specific year: </h4>
+	
+<p>This tool will provide a list of posts made by the account specified during the year specified.</p>	
+
+<script type="text/javascript">
+function dofb034(fb034, fb035) {
+window.open('https://www.facebook.com/search/' + fb034 + '/stories-by/' + fb035 + '/date/stories/intersect', '_blank');
+} 
+</script> 
+
+<form onSubmit="dofb034(this.fb034.value,this.fb035.value); return false;">
+<input type="text" name="fb034" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb035" size="24" placeholder="Year" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook14">Photo(s) Posted by User:</h4>
+	
+<p>This tool will provide a list of photos posted by the account specified.</p>		
+
+<script type="text/javascript">
+function doFB26(FB26) {
+window.open('https://www.facebook.com/search/' + FB26 + '/photos-by', '_blank');
+}
+</script>
+
+<form onsubmit="doFB26(this.FB26.value); return false;">
+<input type="text" name="FB26" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook15">Photo(s) of User:</h4>
+	
+<p>This tool will provide a list of photos, posted by other users, of the user specified.</p>	
+
+<script type="text/javascript">
+function doFB25(FB25) {
+window.open('https://www.facebook.com/search/' + FB25 + '/photos-of', '_blank');
+}
+</script>
+
+<form onsubmit="doFB25(this.FB25.value); return false;">
+<input type="text" name="FB25" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+	
+<h4 id="OSINT21">Photos featuring keyword(s):</h4>
+	
+<p>This tool will search for any photos featuring the word or phrase specified in its description.</p>	
+
+<script type="text/javascript">
+function doFB35(FB35) {
+window.open('https://www.facebook.com/search/str/' + FB35 + '/photos-keyword', '_blank');
+}
+</script>
+	
+<form onsubmit="doFB35(this.FB35.value); return false;">
+<input type="text" name="FB35" size="24" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form><br />	
+
+<h4 id="Facebook16">Place(s) Visited by User:</h4>
+	
+<p>This tool will provide a list of places that the specified user visited.</p>	
+
+<script type="text/javascript">
+function dofb2(fb2) {
+window.open('https://www.facebook.com/search/' + fb2 + '/places-visited', '_blank');
+}
+</script>
+
+<form onSubmit="dofb2(this.fb2.value); return false;">
+<input type="text" id="fb2" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook17">Places 'Checked-In' by User:</h4>
+	
+<p>This tool will provide a list of places that the specified user 'checked in' at.</p>	
+	
+<script type="text/javascript">
+function dofb4(fb4) {
+window.open('https://www.facebook.com/search/' + fb4 + '/places-checked-in', '_blank');
+}
+</script>
+
+<form onSubmit="dofb4(this.fb4.value); return false;">
+<input type="text" id="fb4" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook18">Group(s) user is member of:</h4>
+	
+<p>This tool will provide a list of the groups that the specified user is a member of.</p>	
+
+<script type="text/javascript">
+function doFB27(FB27) {
+window.open('https://www.facebook.com/search/' + FB27 + '/groups', '_blank');
+}
+</script>
+
+<form onsubmit="doFB27(this.FB27.value); return false;">
+<input type="text" name="FB27" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook19">Video(s) posted by user:</h4>
+	
+<p>This tool will provide a list of videos posted by the account specified.</p>	
+
+<script type="text/javascript">
+function doFB28(FB28) {
+window.open('https://www.facebook.com/search/' + FB28 + '/videos', '_blank');
+}
+</script>
+
+<form onsubmit="doFB28(this.FB28.value); return false;">
+<input type="text" name="FB28" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook20">Video(s) of user:</h4>
+	
+<p>This tool will provide a list of videos of the user specified that were posted by other users.</p>		
+
+<script type="text/javascript">
+function doFB29(FB29) {
+window.open('https://www.facebook.com/search/' + FB29 + '/videos-of', '_blank');
+}
+</script>
+
+<form onsubmit="doFB29(this.FB29.value); return false;">
+<input type="text" name="FB29" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+	
+<h4 id="OSINT22">Videos featuring keyword(s):</h4>
+	
+<p>This tool will search for any videos featuring the word or phrase specified in its description.</p>	
+
+<script type="text/javascript">
+function doFB36(FB36) {
+window.open('https://www.facebook.com/search/str/' + FB36 + '/videos-keyword', '_blank');
+}
+</script>
+
+<form onsubmit="doFB36(this.FB36.value); return false;">
+<input type="text" name="FB36" size="24" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form><br />		
+
+<h4 id="Facebook21">Apps used by user:</h4>
+	
+<p>This tool will provide a list of apps used by the specified user.</p>	
+
+<script type="text/javascript">
+function doFB30(FB30) {
+window.open('https://www.facebook.com/search/' + FB30 + '/apps-used', '_blank');
+}
+</script>
+
+<form onsubmit="doFB30(this.FB30.value); return false;">
+<input type="text" name="FB30" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook22">Friends of User:</h4>
+	
+<p>This tool will provide a friends list for the account specified.</p>	
+
+<script type="text/javascript">
+function dofb24(fb24) {
+window.open('https://www.facebook.com/search/' + fb24 + '/friends', '_blank');
+}
+</script>
+
+<form onSubmit="dofb24(this.fb24.value); return false;">
+ <input type="text" id="fb24" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook23">Photo(s) liked by Friends:</h4>
+	
+<p>This tool will provide a list of all photos liked by friends of the account specified.</p>	
+
+<script type="text/javascript">
+function dofb024(fb024) {
+window.open('https://www.facebook.com/search/' + fb024 + '/friends/photos-liked', '_blank');
+}
+</script>
+
+<form onsubmit="dofb024(this.fb024.value); return false;">
+<input type="text" name="fb024" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook24">Photo(s) Commented on by Friends:</h4>
+	
+<p>This tool will provide a list of all photos that were commented on by friends of the account specified.</p>	
+
+<script type="text/javascript">
+function dofb025(fb025) {
+window.open('https://www.facebook.com/search/' + fb025 + '/friends/photos-commented/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb025(this.fb025.value); return false;">
+<input type="text" name="fb025" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook25">Photo(s) of Friends:</h4>
+	
+<p>This tool will provide a list of photos featuring friends of the account specified.</p>	
+
+<script type="text/javascript">
+function dofb026(fb026) {
+window.open('https://www.facebook.com/search/' + fb026 + '/friends/photos-of/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb026(this.fb026.value); return false;">
+<input type="text" name="fb026" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook26">Video(s) liked by Friends:</h4>
+	
+<p>This tool will provide a list of all videos liked by friends of the account specified.</p>	
+
+<script type="text/javascript">
+function dofb027(fb027) {
+window.open('https://www.facebook.com/search/' + fb027 + '/friends/videos-liked/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb027(this.fb027.value); return false;">
+<input type="text" name="fb027" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook27">Video(s) Commented on by Friends:</h4>
+	
+<p>This tool will provide a list of all videos that were commented on by friends of the account specified.</p>	
+
+<script type="text/javascript">
+function dofb028(fb028) {
+window.open('https://www.facebook.com/search/' + fb028 + '/friends/videos-commented/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb028(this.fb028.value); return false;">
+<input type="text" name="fb028" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook28">Post(s) by Friends:</h4>
+	
+<p>This tool will provide a list of posts made by friends of the account specified.</p>	
+
+<script type="text/javascript">
+function dofb030(fb030) {
+window.open('https://www.facebook.com/search/' + fb030 + '/friends/stories-by/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb030(this.fb030.value); return false;">
+<input type="text" name="fb030" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook29">Posts by Friends featuring Other Users:</h4>
+	
+<p>This tool will provide a list of posts made by friends of the account specified that feature other people.</p>		
+
+<script type="text/javascript">
+function dofb032(fb032) {
+window.open('https://www.facebook.com/search/' + fb032 + '/friends/stories-tagged/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb032(this.fb032.value); return false;">
+<input type="text" name="fb032" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook30">Post(s) Comments by Friends:</h4>
+	
+<p>This tool will provide a list of posts that friends of the account specified commented on.</p>	
+
+<script type="text/javascript">
+function dofb029(fb029) {
+window.open('https://www.facebook.com/search/' + fb029 + '/friends/stories-commented/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb029(this.fb029.value); return false;">
+<input type="text" name="fb029" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook31">Apps used by Friends:</h4>
+	
+<p>This tool will provide a list of apps used by friends of the specified user.</p>	
+
+<script type="text/javascript">
+function dofb031(fb031) {
+window.open('https://www.facebook.com/search/' + fb031 + '/friends/apps/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb031(this.fb031.value); return false;">
+<input type="text" name="fb031" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook32">Places 'Checked-In' by Friends:</h4>
+	
+<p>This tool will provide a list of places that friends of the specified user 'checked in' at.</p>	
+
+<script type="text/javascript">
+function dofb033(fb033) {
+window.open('https://www.facebook.com/search/' + fb033 + '/friends/places-checked-in/', '_blank');
+}
+</script>
+
+<form onsubmit="dofb033(this.fb033.value); return false;">
+<input type="text" name="fb033" size="24" placeholder="Account ID of subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4>Express Data Search:</h4>
+
+<p>This tool will return information about the places visited by, friends of, places checked in by, photos of, photos by, photos liked by, apps used by, photos commented on, videos by, videos of, events, co-workers, stories posted by or groups that the specified Account ID is associated with.</p>
+
+<script type="text/javascript">
+function dofball(fball) {
+window.open('https://www.facebook.com/search/' + fball + '/places-visited','fb100window');
+window.open('https://www.facebook.com/search/' + fball + '/places-checked-in/','fb101window');
+window.open('https://www.facebook.com/search/' + fball + '/recent-places-visited/','fb102window');
+window.open('https://www.facebook.com/search/' + fball + '/photos-by','fb103window');
+window.open('https://www.facebook.com/search/' + fball + '/photos-liked','fb104window');
+window.open('https://www.facebook.com/search/' + fball + '/photos-of','fb105window');
+window.open('https://www.facebook.com/search/' + fball + '/apps-used','fb106window');
+window.open('https://www.facebook.com/search/' + fball + '/photos-commented','fb107window');
+window.open('https://www.facebook.com/search/' + fball + '/videos','fb108window');
+window.open('https://www.facebook.com/search/' + fball + '/videos-of','fb109window');
+window.open('https://www.facebook.com/search/' + fball + '/events','fb110window');
+window.open('https://www.facebook.com/search/' + fball + '/friends','fb111window');
+window.open('https://www.facebook.com/search/' + fball + '/employees','fb112window');
+window.open('https://www.facebook.com/search/' + fball + '/stories-by','fb113window');
+window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window');
+}
+</script>
+
+<form onsubmit="dofball(this.fball.value); return false;">
+<input type="text" name="Account ID of subject" id="fball" size="24" placeholder="Account ID of subject" value="" />
+<input type="submit" value="Search"/></form><br />
+
+<h4 id="Facebook33">Comparison of Users - When did they become friends:</h4>
+	
+<p>This tool will outline when two specified users became friends.</p>	
+
+<script type="text/javascript">function dofbfriend2(number1, number2) {window.open('https://www.facebook.com/' + number1 + '?and=' + number2, '_blank');}
+</script>
+
+<form onSubmit="dofbfriend2(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook34">Comparison of Users - Mutual friends:</h4>
+	
+<p>This tool will outline what friends two specified accounts have in common.</p>	
+
+<script type="text/javascript">function dofbfriend1(number1, number2) {window.open('https://www.facebook.com/search/str/' + number1 + '/friends/' + number2 + '/friends/intersect/','_blank');}
+</script>
+
+<form onSubmit="dofbfriend1(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook35">Comparison of Users - Places visited:</h4>
+	
+<p>This tool will outline what places two specified accounts have both visited - although not necessarily at the same time.</p>	
+
+<script type="text/javascript">function dofb000(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/places-visited/' + number2 + '/places-visited/intersect', '_blank');}
+</script>
+
+<form onSubmit="dofb000(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook36">Comparison of Users - Photo(s) featuring both users:</h4>
+	
+<p>This tool will provide a list of photos that the two specified users feature in.</p>	
+
+<script type="text/javascript">function dofb001(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/photos-of/' + number2 + '/photos-of/intersect', '_blank');}
+</script>
+
+<form onSubmit="dofb001(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook37">Comparison of Users - Common event(s):</h4>
+	
+<p>This tool will provide a list of events that the two specified users have or are attending.</p>	
+
+<script type="text/javascript">function dofb002(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/events/' + number2 + '/events/intersect', '_blank');}
+</script>
+
+<form onSubmit="dofb002(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook38">Comparison of Users - Common group(s):</h4>
+	
+<p>This tool will provide a list of groups that the two specified users are both members of.</p>	
+
+<script type="text/javascript">function dofb003(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/groups/' + number2 + '/groups/intersect', '_blank');}
+</script>
+
+<form onSubmit="dofb003(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook39">Users who liked a post:</h4>
+	
+<p>This tool will provide a list of every user who liked a specific post.</p>	
+
+<p>In order to use this tool you will need the ID number for the post of interest. To get the information you will either (if a text based post) need to click the date / time of the post to load it in a separate page or (if an image based post) click the image. Once the separate page or image loads, you need to right click the page and select View Page Source from the list of options. While on the Source Page, press CTRL+F and search for the phrase “post_id.”, the ID number for the post will be displayed after this phrase and should be copied and pasted in the box below. </p>
+
+<script type="text/javascript">
+function doFB31(FB31) {
+window.open('https://www.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier=' + FB31 + '&av=', '_blank');
+}
+</script>
+
+<form onsubmit="doFB31(this.FB31.value); return false;">
+<input type="text" name="FB31" size="24" placeholder="Post ID Number" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook3">Facebook Analytics - Community (fan) page / group stats:</h4>
+	
+<p>This tool will provide basic stats on the community or fan page specified.</p>	
+
+<script type="text/javascript">
+function doFB20(FB20, FB21) {
+window.open('https://likeinspector.com/analytics.php?page=' + FB20 + '&id=' + FB21, '_blank');
+}
+</script>
+
+<form onsubmit="doFB20(this.FB20.value, this.FB21.value); return false;">
+<input type="text" name="FB20" size="24" placeholder="Page Name" />
+<input type="text" name="FB21" size="24" placeholder="Account of ID of Page" />
+<input type="submit" value="Search" /></form><br />
+
+<h4 id="Facebook4">Facebook Analytics - Community (fan) page / group likes:</h4>
+	
+<p>This tool will provide a list of every person who liked the community or fan page specified.</p>
+
+<script type="text/javascript">
+function doFB33(FB33) {
+window.open('https://www.facebook.com/search/str/' + FB33 + '/likers/intersect', '_blank');
+}
+</script>
+
+<form onsubmit="doFB33(this.FB33.value); return false;">
+<input type="text" name="FB33" size="24" placeholder="Account of ID of Page" />
+<input type="submit" value="Search" /></form><br />
+	
+<h4 id="OSINT14">Facebook Group Members:</h4>
+	
+<p>This tool will provide a list of all members of the group that is linked to the Account ID specified.</p>	
+
+<script type="text/javascript">
+function doFB34(FB34) {
+window.open('https://www.facebook.com/browse/group_members/?gid=' + FB34 + '&edge=groups%3Amembers', '_blank');
+}
+</script>
+
+<form onsubmit="doFB34(this.FB34.value); return false;">
+<input type="text" name="FB34" size="24" placeholder="Account of ID of Page" />
+<input type="submit" value="Search" /></form><br />		
+
+<h4>Misc Facebook Tools:</h4>
+
+<ul><li><a href="https://www.facebook.com/directory/people/" target="_blank">Facebook User Directory</a></li>
+<li><a href="https://www.facebook.com/login/identify?ctx=recover" target="_blank">Facebook Password Recovery</a></li>
+<li><a href="http://graph.tips/beta/" target="_blank">Facebook Graph Search Tool</a></li>
+<li><a href="https://searchisback.com/#people" target="_blank">Alternative Facebook Graph Search Tool</a></li>
+<li><a href="http://seotoolstation.com/bulk-facebook-id-finder" target="_blank">Bulk Facebook User ID Finder</a></li>	
+<li><a href="https://www.facebook.com/livemap" target="_blank">Facebook Live Map (Public videos streaming now)</a></li></ul>
+
+<p><a href="#top">Back To Top</a></p>
+
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2017. All rights reserved.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
+
+</body>
+</html>
