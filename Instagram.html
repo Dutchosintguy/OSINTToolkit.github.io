@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OSINT Toolkit V2.1</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets1/css/main.css" />
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>OSINT</strong><span>Toolkit</span></a>
+<nav>
+<a href="#menu">Menu</a>
+</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<ul class="links">
+<li><a href="https://osinttoolkit.github.io/artemisa.html">Dashboard</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+<div class="inner">
+<header class="major">
+
+<h1>Instagram:</h1>
+</header>
+				
+<p>In order to use some of the tools, you must know the Instagram Account Name of the subject(s) you wish to research. </p>
+
+<table id="myTable"><table width="100%">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+<tr><td>Profile by account name</td><td>
+
+<script type="text/javascript">
+function doI1(I1) {
+window.open('https://www.instagram.com/' + I1 + '/', '_blank');
+}
+</script>
+<form onsubmit="doI1(this.I1.value); return false;">
+<input type="text" name="I1" size="15" placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Keyword search</td><td>
+
+<script type="text/javascript">
+function doI2(I2) {
+window.open('https://www.instagram.com/explore/tags/' + I2 + '/', '_blank');
+}
+</script>
+<form onsubmit="doI2(this.I2.value); return false;">
+<input type="text" name="I2" size="15" placeholder="Word" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Historical information search via Google</td><td>
+
+<script type="text/javascript">
+function doI3(I3) {
+window.open('https://www.google.co.uk/search?q=site:instagram.com/' + I3 + '+inurl:max_id%3D&filter=0&gws_rd=cr&ei=LsxyV72SEcmSgAb79oLgBQ', '_blank');
+}
+</script>
+<form onsubmit="doI3(this.I3.value); return false;">
+<input type="text" name="I3" size="15" placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Linked to Twitter?</td><td>
+
+<script type="text/javascript">
+function doI4(I4) {
+window.open('https://www.google.co.uk/search?q=site:twitter.com+%22' + I4 + '%22+%22instagram.com/p%22&gws_rd=cr&ei=Fn6UV8vwPNKugAadyJ6gBA', '_blank');
+}
+</script>
+<form onsubmit="doI4(this.I4.value); return false;">
+<input type="text" name="I4" size="15" placeholder="Name or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Basic account analytics</td><td>
+
+<script type="text/javascript">
+function doI5(I5) {
+window.open('https://websta.me/n/' + I5, '_blank');
+}
+</script>
+<form onsubmit="doI5(this.I5.value); return false;">
+<input type="text" name="I5" size="15" placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Detailed account analytics</td><td>
+
+<script type="text/javascript">
+function doI6(I6) {
+window.open('https://socialblade.com/instagram/user/' + I6 + '/monthly', '_blank');
+}
+</script>
+<form onsubmit="doI6(this.I6.value); return false;">
+<input type="text" name="I6" size="15" placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Compare 2 users</td><td>
+
+<script type="text/javascript">
+function doI7(I7,I8) {
+window.open('https://socialblade.com/instagram/compare/' + I7 + '/' + I8, '_blank');
+}
+</script>
+<form onsubmit="doI7(this.I7.value, this.I8.value); return false;">
+<input type="text" name="I7" size="15" placeholder="1st Account" />
+<input type="text" name="I8" size="15" placeholder="2nd Account" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>Compare 3 users</td><td>
+
+<script type="text/javascript">
+function doI9(I9,I10,I11) {
+window.open('https://socialblade.com/instagram/compare/' + I9 + '/' + I10 + '/' + I11, '_blank');
+}
+</script>
+
+<form onsubmit="doI9(this.I9.value, this.I10.value, this.I11.value); return false;">
+<input type="text" name="I9" size="10" placeholder="1st Account" />
+<input type="text" name="I10" size="10" placeholder="2nd Account" />
+<input type="text" name="I11" size="10" placeholder="3rd Account" />	
+<input type="submit" value="Search" /></form></td></tr>		
+
+</table>
+
+<h4>Misc Instagram Tools:</h4>
+
+<ul><li><a href="http://worldc.am/" target="_blank">Searching Instagram by location</a></li>
+<li><a href="http://geosocialfootprint.com/#" target="_blank">Instagram Account Geolocation Tool</a></li>
+<li><a href="https://www.instagram.com/explore/tags/trending/" target="_blank">Information currently trending on Instagram</a></li></ul>
+
+<p><a href="#top">Back To Top</a></p>
+
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2017. All rights reserved.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
+	
+</body>
+</html>
