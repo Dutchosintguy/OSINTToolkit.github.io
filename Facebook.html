@@ -47,8 +47,8 @@
 <p>To identify an Account ID you must load the Facebook Profile of your subject and right click the page before selecting View Page Source from the options list. While on the Source Page, press CTRL+F and search for the phrase "Profile_ID", the subjects Account ID will be the number after this phrase.</p>
 
 <table><table width="100%">
-<col style="width:30%">  
-<col style="width:70%">  	
+<col style="width:25%">  
+<col style="width:75%">  	
 <tr>
 <th>Name:</th>
 <th>Tool:</th>
@@ -62,7 +62,7 @@ window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword',
 }
 </script>                   
 <form onSubmit="dofbposts(this.topic.value); return false;">
-<input type="text" name="topic" size="24" placeholder="Topic"/>
+<input type="text" name="topic" size="18" placeholder="Topic"/>
 <input type="submit" value="Search"/></form></td></tr>
 
 <tr><td>Posts based on keywords</td>
@@ -73,7 +73,7 @@ window.open('https://www.facebook.com/search/str/' + topic1 + '/keywords_posts/i
 }
 </script>
 <form onSubmit="dotopic1(this.topic1.value); return false;">
-<input type="text" name="topic1" size="24" placeholder="Keyword(s)"/>
+<input type="text" name="topic1" size="18" placeholder="Keyword(s)"/>
 <input type="submit" value="Search"/></form>	
 </td></tr>
 	
@@ -86,7 +86,7 @@ window.open('https://www.facebook.com/search/str/' + number + '/users-named/inte
 }
 </script>         
 <form onSubmit="dofb1(this.number.value); return false;">
-<input type="text" name="number" size="24" placeholder="Name" />
+<input type="text" name="number" size="18" placeholder="Name" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Profile by email</td>
@@ -97,7 +97,7 @@ window.open('https://www.facebook.com/search.php?q=' + email, '_blank');
 } 
 </script> 
 <form onSubmit="dofbemail(this.email.value); return false;">
-<input type="text" name="email" size="24" placeholder="Email Address" />
+<input type="text" name="email" size="18" placeholder="Email Address" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Profile by Account ID</td>
@@ -108,7 +108,7 @@ window.open('https://www.facebook.com/' + ID2, '_blank');
 } 
 </script> 
 <form onSubmit="dofbID2(this.ID2.value); return false;">
-<input type="text" name="ID2" size="24" placeholder="Account ID of subject" />
+<input type="text" name="ID2" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Profile by name & current location</td>
@@ -120,8 +120,8 @@ window.open('https://www.facebook.com/search/str/' + number + '/users-named/inte
 }
 </script>
 <form onSubmit="dofb14a(this.number.value, this.number2.value); return false;">
-<input type="text" name="number" size="24" placeholder="Name" />
-<input type="text" name="number2" size="24" placeholder="Current Town/City" />
+<input type="text" name="number" size="18" placeholder="Name" />
+<input type="text" name="number2" size="18" placeholder="Current Town/City" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Profile by name & past location</td>
@@ -133,8 +133,8 @@ window.open('https://www.facebook.com/search/str/' + number + '/users-named/inte
 }
 </script>
 <form onSubmit="dofb14aa(this.number.value, this.number2.value); return false;">
-<input type="text" name="number" size="24" placeholder="Name" />
-<input type="text" name="number2" size="24" placeholder="Previous Town/City" />
+<input type="text" name="number" size="18" placeholder="Name" />
+<input type="text" name="number2" size="18" placeholder="Previous Town/City" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Profile by current workplace</td>
@@ -145,7 +145,7 @@ window.open('https://www.facebook.com/search/str/' + number12 + '/pages-named/em
 }
 </script>
 <form onSubmit="donumber12(this.number12.value); return false;">
-<input type="text" name="number12" size="24" placeholder="Workplace" />
+<input type="text" name="number12" size="18" placeholder="Workplace" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Profile by past workplace</td>
@@ -156,7 +156,7 @@ window.open('https://www.facebook.com/search/str/' + number + '/pages-named/empl
 }
 </script>
 <form onSubmit="dofb3(this.number.value); return false;">
-<input type="text" name="number" size="24" placeholder="Past Workplace" />
+<input type="text" name="number" size="18" placeholder="Past Workplace" />
 <input type="submit" value="Search"/></form></td></tr>
 
 </table>	
@@ -172,7 +172,7 @@ window.open('https://www.facebook.com/search/' + fb23 + '/stories-by', '_blank')
 </script>
 
 <form onSubmit="dofb23(this.fb23.value); return false;">
-<input type="text" id="fb23" size="24" placeholder="Account ID of subject" />
+<input type="text" id="fb23" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search"/></form><br />
 
 <h4 id="Facebook12">Posts by User featuring Keyword(s): </h4>
@@ -186,8 +186,8 @@ window.open('https://www.facebook.com/search/str/' + fb023 + '/stories-keyword/'
 </script> 
 
 <form onSubmit="dofb022(this.fb022.value,this.fb023.value); return false;">
-<input type="text" name="fb022" size="24" placeholder="Account ID of subject" />
-<input type="text" name="fb023" size="24" placeholder="Keyword(s)" />
+<input type="text" name="fb022" size="18" placeholder="Account ID of subject" />
+<input type="text" name="fb023" size="18" placeholder="Keyword(s)" />
 <input type="submit" value="Search"/></form><br />
 
 <h4 id="Facebook13">Posts by User during specific year: </h4>
@@ -201,8 +201,8 @@ window.open('https://www.facebook.com/search/' + fb034 + '/stories-by/' + fb035 
 </script> 
 
 <form onSubmit="dofb034(this.fb034.value,this.fb035.value); return false;">
-<input type="text" name="fb034" size="24" placeholder="Account ID of subject" />
-<input type="text" name="fb035" size="24" placeholder="Year" />
+<input type="text" name="fb034" size="18" placeholder="Account ID of subject" />
+<input type="text" name="fb035" size="18" placeholder="Year" />
 <input type="submit" value="Search"/></form><br />
 
 <h4 id="Facebook14">Photo(s) Posted by User:</h4>
@@ -216,7 +216,7 @@ window.open('https://www.facebook.com/search/' + FB26 + '/photos-by', '_blank');
 </script>
 
 <form onsubmit="doFB26(this.FB26.value); return false;">
-<input type="text" name="FB26" size="24" placeholder="Account ID of subject" />
+<input type="text" name="FB26" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook15">Photo(s) of User:</h4>
@@ -230,7 +230,7 @@ window.open('https://www.facebook.com/search/' + FB25 + '/photos-of', '_blank');
 </script>
 
 <form onsubmit="doFB25(this.FB25.value); return false;">
-<input type="text" name="FB25" size="24" placeholder="Account ID of subject" />
+<input type="text" name="FB25" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 	
 <h4 id="OSINT21">Photos featuring keyword(s):</h4>
@@ -244,7 +244,7 @@ window.open('https://www.facebook.com/search/str/' + FB35 + '/photos-keyword', '
 </script>
 	
 <form onsubmit="doFB35(this.FB35.value); return false;">
-<input type="text" name="FB35" size="24" placeholder="Word or Phrase" />
+<input type="text" name="FB35" size="18" placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form><br />	
 
 <h4 id="Facebook16">Place(s) Visited by User:</h4>
@@ -258,7 +258,7 @@ window.open('https://www.facebook.com/search/' + fb2 + '/places-visited', '_blan
 </script>
 
 <form onSubmit="dofb2(this.fb2.value); return false;">
-<input type="text" id="fb2" size="24" placeholder="Account ID of subject" />
+<input type="text" id="fb2" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search"/></form><br />
 
 <h4 id="Facebook17">Places 'Checked-In' by User:</h4>
@@ -272,7 +272,7 @@ window.open('https://www.facebook.com/search/' + fb4 + '/places-checked-in', '_b
 </script>
 
 <form onSubmit="dofb4(this.fb4.value); return false;">
-<input type="text" id="fb4" size="24" placeholder="Account ID of subject" />
+<input type="text" id="fb4" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search"/></form><br />
 
 <h4 id="Facebook18">Group(s) user is member of:</h4>
@@ -286,7 +286,7 @@ window.open('https://www.facebook.com/search/' + FB27 + '/groups', '_blank');
 </script>
 
 <form onsubmit="doFB27(this.FB27.value); return false;">
-<input type="text" name="FB27" size="24" placeholder="Account ID of subject" />
+<input type="text" name="FB27" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook19">Video(s) posted by user:</h4>
@@ -300,7 +300,7 @@ window.open('https://www.facebook.com/search/' + FB28 + '/videos', '_blank');
 </script>
 
 <form onsubmit="doFB28(this.FB28.value); return false;">
-<input type="text" name="FB28" size="24" placeholder="Account ID of subject" />
+<input type="text" name="FB28" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook20">Video(s) of user:</h4>
@@ -314,7 +314,7 @@ window.open('https://www.facebook.com/search/' + FB29 + '/videos-of', '_blank');
 </script>
 
 <form onsubmit="doFB29(this.FB29.value); return false;">
-<input type="text" name="FB29" size="24" placeholder="Account ID of subject" />
+<input type="text" name="FB29" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 	
 <h4 id="OSINT22">Videos featuring keyword(s):</h4>
@@ -328,7 +328,7 @@ window.open('https://www.facebook.com/search/str/' + FB36 + '/videos-keyword', '
 </script>
 
 <form onsubmit="doFB36(this.FB36.value); return false;">
-<input type="text" name="FB36" size="24" placeholder="Word or Phrase" />
+<input type="text" name="FB36" size="18" placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form><br />		
 
 <h4 id="Facebook21">Apps used by user:</h4>
@@ -342,7 +342,7 @@ window.open('https://www.facebook.com/search/' + FB30 + '/apps-used', '_blank');
 </script>
 
 <form onsubmit="doFB30(this.FB30.value); return false;">
-<input type="text" name="FB30" size="24" placeholder="Account ID of subject" />
+<input type="text" name="FB30" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook22">Friends of User:</h4>
@@ -356,7 +356,7 @@ window.open('https://www.facebook.com/search/' + fb24 + '/friends', '_blank');
 </script>
 
 <form onSubmit="dofb24(this.fb24.value); return false;">
- <input type="text" id="fb24" size="24" placeholder="Account ID of subject" />
+ <input type="text" id="fb24" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search"/></form><br />
 
 <h4 id="Facebook23">Photo(s) liked by Friends:</h4>
@@ -370,7 +370,7 @@ window.open('https://www.facebook.com/search/' + fb024 + '/friends/photos-liked'
 </script>
 
 <form onsubmit="dofb024(this.fb024.value); return false;">
-<input type="text" name="fb024" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb024" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook24">Photo(s) Commented on by Friends:</h4>
@@ -384,7 +384,7 @@ window.open('https://www.facebook.com/search/' + fb025 + '/friends/photos-commen
 </script>
 
 <form onsubmit="dofb025(this.fb025.value); return false;">
-<input type="text" name="fb025" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb025" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook25">Photo(s) of Friends:</h4>
@@ -398,7 +398,7 @@ window.open('https://www.facebook.com/search/' + fb026 + '/friends/photos-of/', 
 </script>
 
 <form onsubmit="dofb026(this.fb026.value); return false;">
-<input type="text" name="fb026" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb026" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook26">Video(s) liked by Friends:</h4>
@@ -412,7 +412,7 @@ window.open('https://www.facebook.com/search/' + fb027 + '/friends/videos-liked/
 </script>
 
 <form onsubmit="dofb027(this.fb027.value); return false;">
-<input type="text" name="fb027" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb027" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook27">Video(s) Commented on by Friends:</h4>
@@ -426,7 +426,7 @@ window.open('https://www.facebook.com/search/' + fb028 + '/friends/videos-commen
 </script>
 
 <form onsubmit="dofb028(this.fb028.value); return false;">
-<input type="text" name="fb028" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb028" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook28">Post(s) by Friends:</h4>
@@ -440,7 +440,7 @@ window.open('https://www.facebook.com/search/' + fb030 + '/friends/stories-by/',
 </script>
 
 <form onsubmit="dofb030(this.fb030.value); return false;">
-<input type="text" name="fb030" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb030" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook29">Posts by Friends featuring Other Users:</h4>
@@ -454,7 +454,7 @@ window.open('https://www.facebook.com/search/' + fb032 + '/friends/stories-tagge
 </script>
 
 <form onsubmit="dofb032(this.fb032.value); return false;">
-<input type="text" name="fb032" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb032" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook30">Post(s) Comments by Friends:</h4>
@@ -468,7 +468,7 @@ window.open('https://www.facebook.com/search/' + fb029 + '/friends/stories-comme
 </script>
 
 <form onsubmit="dofb029(this.fb029.value); return false;">
-<input type="text" name="fb029" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb029" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook31">Apps used by Friends:</h4>
@@ -482,7 +482,7 @@ window.open('https://www.facebook.com/search/' + fb031 + '/friends/apps/', '_bla
 </script>
 
 <form onsubmit="dofb031(this.fb031.value); return false;">
-<input type="text" name="fb031" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb031" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook32">Places 'Checked-In' by Friends:</h4>
@@ -496,7 +496,7 @@ window.open('https://www.facebook.com/search/' + fb033 + '/friends/places-checke
 </script>
 
 <form onsubmit="dofb033(this.fb033.value); return false;">
-<input type="text" name="fb033" size="24" placeholder="Account ID of subject" />
+<input type="text" name="fb033" size="18" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4>Express Data Search:</h4>
@@ -524,7 +524,7 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 </script>
 
 <form onsubmit="dofball(this.fball.value); return false;">
-<input type="text" name="Account ID of subject" id="fball" size="24" placeholder="Account ID of subject" value="" />
+<input type="text" name="Account ID of subject" id="fball" size="18" placeholder="Account ID of subject" value="" />
 <input type="submit" value="Search"/></form><br />
 
 <h4 id="Facebook33">Comparison of Users - When did they become friends:</h4>
@@ -535,8 +535,8 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 </script>
 
 <form onSubmit="dofbfriend2(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
-<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="text" name="number1" size="18" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="18" placeholder="Account ID of 2nd subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook34">Comparison of Users - Mutual friends:</h4>
@@ -547,8 +547,8 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 </script>
 
 <form onSubmit="dofbfriend1(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
-<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="text" name="number1" size="18" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="18" placeholder="Account ID of 2nd subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook35">Comparison of Users - Places visited:</h4>
@@ -559,8 +559,8 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 </script>
 
 <form onSubmit="dofb000(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
-<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="text" name="number1" size="18" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="18" placeholder="Account ID of 2nd subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook36">Comparison of Users - Photo(s) featuring both users:</h4>
@@ -571,8 +571,8 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 </script>
 
 <form onSubmit="dofb001(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
-<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="text" name="number1" size="18" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="18" placeholder="Account ID of 2nd subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook37">Comparison of Users - Common event(s):</h4>
@@ -583,8 +583,8 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 </script>
 
 <form onSubmit="dofb002(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
-<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="text" name="number1" size="18" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="18" placeholder="Account ID of 2nd subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook38">Comparison of Users - Common group(s):</h4>
@@ -595,8 +595,8 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 </script>
 
 <form onSubmit="dofb003(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="24" placeholder="Account ID of 1st subject" />
-<input type="text" name="number2" size="24" placeholder="Account ID of 2nd subject" />
+<input type="text" name="number1" size="18" placeholder="Account ID of 1st subject" />
+<input type="text" name="number2" size="18" placeholder="Account ID of 2nd subject" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook39">Users who liked a post:</h4>
@@ -612,7 +612,7 @@ window.open('https://www.facebook.com/ufi/reaction/profile/browser/?ft_ent_ident
 </script>
 
 <form onsubmit="doFB31(this.FB31.value); return false;">
-<input type="text" name="FB31" size="24" placeholder="Post ID Number" />
+<input type="text" name="FB31" size="18" placeholder="Post ID Number" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook3">Facebook Analytics - Community (fan) page / group stats:</h4>
@@ -626,8 +626,8 @@ window.open('https://likeinspector.com/analytics.php?page=' + FB20 + '&id=' + FB
 </script>
 
 <form onsubmit="doFB20(this.FB20.value, this.FB21.value); return false;">
-<input type="text" name="FB20" size="24" placeholder="Page Name" />
-<input type="text" name="FB21" size="24" placeholder="Account of ID of Page" />
+<input type="text" name="FB20" size="18" placeholder="Page Name" />
+<input type="text" name="FB21" size="18" placeholder="Account of ID of Page" />
 <input type="submit" value="Search" /></form><br />
 
 <h4 id="Facebook4">Facebook Analytics - Community (fan) page / group likes:</h4>
@@ -641,7 +641,7 @@ window.open('https://www.facebook.com/search/str/' + FB33 + '/likers/intersect',
 </script>
 
 <form onsubmit="doFB33(this.FB33.value); return false;">
-<input type="text" name="FB33" size="24" placeholder="Account of ID of Page" />
+<input type="text" name="FB33" size="18" placeholder="Account of ID of Page" />
 <input type="submit" value="Search" /></form><br />
 	
 <h4 id="OSINT14">Facebook Group Members:</h4>
@@ -655,7 +655,7 @@ window.open('https://www.facebook.com/browse/group_members/?gid=' + FB34 + '&edg
 </script>
 
 <form onsubmit="doFB34(this.FB34.value); return false;">
-<input type="text" name="FB34" size="24" placeholder="Account of ID of Page" />
+<input type="text" name="FB34" size="18" placeholder="Account of ID of Page" />
 <input type="submit" value="Search" /></form><br />		
 
 <h4>Misc Facebook Tools:</h4>
