@@ -111,66 +111,56 @@ window.open('https://www.facebook.com/' + ID2, '_blank');
 <input type="text" name="ID2" size="24" placeholder="Account ID of subject" />
 <input type="submit" value="Search"/></form></td></tr>
 	
-<h4 id="Facebook7">Finding a Profile by Name & Current Location:</h4>
-	
-<p>This tool will search for any profile(s) matching the name specified and currently living in the area specified.</p>	
-
+<tr><td>Profile by name & current location</td>
+<td>	
 <script type="text/javascript">
 function dofb14a(number, number2) {
 window.open('https://www.facebook.com/search/str/' + number + '/users-named/intersect/str/' + number2 + '/pages-named/residents/present/intersect', 
 '_blank');
 }
 </script>
-
 <form onSubmit="dofb14a(this.number.value, this.number2.value); return false;">
 <input type="text" name="number" size="24" placeholder="Name" />
 <input type="text" name="number2" size="24" placeholder="Current Town/City" />
-<input type="submit" value="Search"/></form><br />
-
-<h4 id="Facebook8">Finding a Profile by Name & Past Location:</h4>
+<input type="submit" value="Search"/></form></td></tr>
 	
-<p>This tool will search for any profile(s) matching the name specified and who previously lived in the area specified.</p>		
-
+<tr><td>Profile by name & past location</td>
+<td>		
 <script type="text/javascript">
 function dofb14aa(number, number2) {
 window.open('https://www.facebook.com/search/str/' + number + '/users-named/intersect/str/' + number2 + '/pages-named/residents/past/intersect', 
 '_blank');
 }
 </script>
-
 <form onSubmit="dofb14aa(this.number.value, this.number2.value); return false;">
 <input type="text" name="number" size="24" placeholder="Name" />
 <input type="text" name="number2" size="24" placeholder="Previous Town/City" />
-<input type="submit" value="Search"/></form><br />
-
-<h4 id="Facebook9">Finding a Profile by Current Workplace:</h4>
+<input type="submit" value="Search"/></form></td></tr>
 	
-<p>This tool will provide a list of every person who is currently working at the company specified.</p>	
-
+<tr><td>Profile by current workplace</td>
+<td>		
 <script type="text/javascript">
 function donumber12(number12) {
 window.open('https://www.facebook.com/search/str/' + number12 + '/pages-named/employees/present/intersect', '_blank');
 }
 </script>
-            
 <form onSubmit="donumber12(this.number12.value); return false;">
 <input type="text" name="number12" size="24" placeholder="Workplace" />
-<input type="submit" value="Search"/></form><br />
-
-<h4 id="Facebook10">Finding a Profile by Previous Workplace:</h4>
+<input type="submit" value="Search"/></form></td></tr>
 	
-<p>This tool will provide a list of every person who previously worked at the company specified.</p>	
-
+<tr><td>Profile by past workplace</td>
+<td>			
 <script type="text/javascript">
 function dofb3(number) {
 window.open('https://www.facebook.com/search/str/' + number + '/pages-named/employees/past/intersect', '_blank');
 }
 </script>
-             
 <form onSubmit="dofb3(this.number.value); return false;">
 <input type="text" name="number" size="24" placeholder="Past Workplace" />
-<input type="submit" value="Search"/></form><br />
+<input type="submit" value="Search"/></form></td></tr>
 
+</table>	
+	
 <h4 id="Facebook11">Posts by User:</h4>
 	
 <p>This tool will provide a list of posts made by the account specified.</p>	
