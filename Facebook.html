@@ -108,7 +108,7 @@ window.open('https://www.facebook.com/' + ID2, '_blank');
 } 
 </script> 
 <form onSubmit="dofbID2(this.ID2.value); return false;">
-<input type="text" name="ID2" size="15" placeholder="Account ID of subject" />
+<input type="text" name="ID2" size="15" placeholder="Account ID" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Profile by name & current location</td>
@@ -159,36 +159,28 @@ window.open('https://www.facebook.com/search/str/' + number + '/pages-named/empl
 <input type="text" name="number" size="15" placeholder="Past Workplace" />
 <input type="submit" value="Search"/></form></td></tr>
 
-</table>	
-	
-<h4 id="Facebook11">Posts by User:</h4>
-	
-<p>This tool will provide a list of posts made by the account specified.</p>	
-
+<tr><td>Posts by user</td>
+<td>	
 <script type="text/javascript">
 function dofb23(fb23) {
 window.open('https://www.facebook.com/search/' + fb23 + '/stories-by', '_blank');
 }
 </script>
-
 <form onSubmit="dofb23(this.fb23.value); return false;">
-<input type="text" id="fb23" size="15" placeholder="Account ID of subject" />
-<input type="submit" value="Search"/></form><br />
-
-<h4 id="Facebook12">Posts by User featuring Keyword(s): </h4>
+<input type="text" id="fb23" size="15" placeholder="Account ID" />
+<input type="submit" value="Search"/></form></td></tr>
 	
-<p>This tool will provide a list of posts made by the account specified featuring the keyword(s) specified.</p>	
-
+<tr><td>Posts by user featuring keywords</td>
+<td>		
 <script type="text/javascript">
 function dofb022(fb022, fb023) {
 window.open('https://www.facebook.com/search/str/' + fb023 + '/stories-keyword/' + fb022 + '/stories-by/intersect', '_blank');
 } 
 </script> 
-
 <form onSubmit="dofb022(this.fb022.value,this.fb023.value); return false;">
-<input type="text" name="fb022" size="15" placeholder="Account ID of subject" />
+<input type="text" name="fb022" size="15" placeholder="Account ID" />
 <input type="text" name="fb023" size="15" placeholder="Keyword(s)" />
-<input type="submit" value="Search"/></form><br />
+<input type="submit" value="Search"/></form></td></tr>
 
 <h4 id="Facebook13">Posts by User during specific year: </h4>
 	
