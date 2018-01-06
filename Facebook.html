@@ -53,6 +53,7 @@
 <th>Name:</th>
 <th>Tool:</th>
 </tr>
+
 <tr><td>Posts based on topic</td>
 <td>
 <script type="text/javascript">
@@ -62,77 +63,53 @@ window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword',
 </script>                   
 <form onSubmit="dofbposts(this.topic.value); return false;">
 <input type="text" name="topic" size="24" placeholder="Topic"/>
-<input type="submit" value="Search"/></form></td></tr></table>
+<input type="submit" value="Search"/></form></td></tr>
 
-<h4 id="Facebook1">Searching Posts based on topic:</h4>
-	
-<p>This tool will search for any post(s) containing the topic specified.</p>
-
-<script type="text/javascript">
-function dofbposts(topic) {
-window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword', '_blank');
-}
-</script>
-                      
-<form onSubmit="dofbposts(this.topic.value); return false;">
-<input type="text" name="topic" size="24" placeholder="Topic"/>
-<input type="submit" value="Search"/></form><br />
-
-<h4 id="Facebook2">Searching Posts based on keywords:</h4>
-	
-<p>This tool will search for any post(s) containing the keyword(s) specified.</p>
-
+<tr><td>Posts based on keywords</td>
+<td>
 <script type="text/javascript">
 function dotopic1(topic1) {
 window.open('https://www.facebook.com/search/str/' + topic1 + '/keywords_posts/intersect/', '_blank');
 }
 </script>
-    
 <form onSubmit="dotopic1(this.topic1.value); return false;">
 <input type="text" name="topic1" size="24" placeholder="Keyword(s)"/>
-<input type="submit" value="Search"/></form><br />
-
-<h4 id="Facebook5">Finding a Facebook Profile by Name:</h4>
+<input type="submit" value="Search"/></form>	
+</td></tr>
 	
-<p>This tool will search for any profile(s) matching the name specified.</p>
+<tr><td>Profile by name</td>
+<td>
 
 <script type="text/javascript">
 function dofb1(number) {
 window.open('https://www.facebook.com/search/str/' + number + '/users-named/intersect', '_blank');
 }
-</script>    
-     
+</script>         
 <form onSubmit="dofb1(this.number.value); return false;">
 <input type="text" name="number" size="24" placeholder="Name" />
-<input type="submit" value="Search"/></form><br />
-
-<h4 id="Facebook6">Finding a Facebook Profile by Email: </h4>
+<input type="submit" value="Search"/></form></td></tr>
 	
-<p>This tool will search for any profile(s) linked to the email specified.</p>	
-	
+<tr><td>Profile by email</td>
+<td>
 <script type="text/javascript">
 function dofbemail(email) {
 window.open('https://www.facebook.com/search.php?q=' + email, '_blank');
 } 
 </script> 
-
 <form onSubmit="dofbemail(this.email.value); return false;">
 <input type="text" name="email" size="24" placeholder="Email Address" />
-<input type="submit" value="Search"/></form><br />
-
-<h4 id="OSINT13">Finding a Facebook Profile by Account ID Number: </h4>
+<input type="submit" value="Search"/></form></td></tr>
 	
-<p>This tool will search for any profile(s) matching the Account ID specified.</p>	
-
+<tr><td>Profile by Account ID</td>
+<td>
 <script type="text/javascript">
 function dofbID2(ID2) {
 window.open('https://www.facebook.com/' + ID2, '_blank');
 } 
 </script> 
-
 <form onSubmit="dofbID2(this.ID2.value); return false;">
 <input type="text" name="ID2" size="24" placeholder="Account ID of subject" />
-<input type="submit" value="Search"/></form><br />
+<input type="submit" value="Search"/></form></td></tr>
 	
 <h4 id="Facebook7">Finding a Profile by Name & Current Location:</h4>
 	
