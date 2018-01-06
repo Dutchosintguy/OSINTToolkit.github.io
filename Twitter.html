@@ -68,8 +68,8 @@ window.open('https://twitter.com/search?q=geocode%3A' + lat + '%2C' + long + '%2
 </script>
 
 <form onsubmit="dotwgps(this.lat.value, this.long.value, this.distance.value); return false;">
-<input type="text" name="lat" size="10" placeholder="Lat" />
-<input type="text" name="long" size="10" placeholder="Long" />
+<input type="text" name="lat" size="7" placeholder="Lat" />
+<input type="text" name="long" size="7" placeholder="Long" />
 <input type="text" name="distance" size="10" placeholder="KM (Minimum 1)" />
 <input type="submit" value="Search" /></form></td></tr>
 
@@ -155,7 +155,7 @@ window.open('https://twitter.com/search?q=from%3A' + ta5 + '%20since%3A' + ta6 +
 }
 </script>
 <form onsubmit="dota5(this.ta5.value, this.ta6.value, this.ta7.value); return false;">
-<input type="text" id="ta5" name="ta5" size="10" placeholder="Account Name" />
+<input type="text" id="ta5" name="ta5" size="7" placeholder="Name" />
 <input type="text" id="ta6" name="ta6" size="10" placeholder="Start (YYYY-MM-DD)" />
 <input type="text" id="ta7" name="ta7" size="10" placeholder="End (YYYY-MM-DD)" />
 <input type="submit" value="Search" /></form></td></tr>
@@ -255,9 +255,9 @@ window.open('http://followerwonk.com/compare/' + A + '/' + B + '/' + C, '_blank'
 }
 </script>
 <form onsubmit="dotw10(this.A.value, this.B.value, this.C.value); return false;">
-<input name="A" size="10" placeholder="1st Account" type="text" />
-<input name="B" size="10" placeholder="2nd Account" type="text" />
-<input name="C" size="10" placeholder="3rd Account" type="text" />
+<input name="A" size="7" placeholder="1st Account" type="text" />
+<input name="B" size="7" placeholder="2nd Account" type="text" />
+<input name="C" size="7" placeholder="3rd Account" type="text" />
 <input type="submit" value="Search" /></form></td></tr>
 
 </table>
