@@ -49,7 +49,7 @@
 <tr><td>Investigative Dashboard Search</td><td>
 <script type="text/javascript">
 function dods1(ds1) {
-window.open('https://data.occrp.org/entities?q=' + ds1, 'theFrame1');
+window.open('https://data.occrp.org/entities?q=' + ds1, '_blank');
 }
 </script>   
 <form onsubmit="dods1(this.ds1.value); return false;">
@@ -59,7 +59,7 @@ window.open('https://data.occrp.org/entities?q=' + ds1, 'theFrame1');
 <tr><td>Companies House person search</td><td>
 <script type="text/javascript">
 function doCH1(CH1, CH2) {
-window.open('https://beta.companieshouse.gov.uk/search/officers?q=' + CH1 + ' ' + CH2, 'theFrame1');
+window.open('https://beta.companieshouse.gov.uk/search/officers?q=' + CH1 + ' ' + CH2, '_blank');
 }
 </script>
 <form onsubmit="doCH1(this.CH1.value, this.CH2.value); return false;">
@@ -71,7 +71,7 @@ window.open('https://beta.companieshouse.gov.uk/search/officers?q=' + CH1 + ' ' 
 
 <script type="text/javascript">
 function doCH3(CH3) {
-window.open('https://beta.companieshouse.gov.uk/search/companies?q=' + CH3, 'theFrame1');
+window.open('https://beta.companieshouse.gov.uk/search/companies?q=' + CH3, '_blank');
 }
 </script>
 <form onsubmit="doCH3(this.CH3.value); return false;">
@@ -81,7 +81,7 @@ window.open('https://beta.companieshouse.gov.uk/search/companies?q=' + CH3, 'the
 <tr><td>Financial Conduct Authority search</td><td>
 <script type="text/javascript">
 function doFCA1(FCA1, FCA2) {
-window.open('https://register.fca.org.uk/shpo_searchresultspage?search=' + FCA1 + '+' + FCA2, 'theFrame1');
+window.open('https://register.fca.org.uk/shpo_searchresultspage?search=' + FCA1 + '+' + FCA2, '_blank');
 }
 </script>
 <form onsubmit="doFCA1(this.FCA1.value, this.FCA2.value); return false;">
@@ -93,7 +93,7 @@ window.open('https://register.fca.org.uk/shpo_searchresultspage?search=' + FCA1 
 
 <script type="text/javascript">
 function doSEC2(SEC2) {
-window.open('https://www.sec.gov/cgi-bin/browse-edgar?company=' + SEC2 + '&owner=exclude&action=getcompany', 'theFrame1');
+window.open('https://www.sec.gov/cgi-bin/browse-edgar?company=' + SEC2 + '&owner=exclude&action=getcompany', '_blank');
 }
 </script>
 <form onsubmit="doSEC2(this.SEC2.value); return false;">
@@ -104,7 +104,7 @@ window.open('https://www.sec.gov/cgi-bin/browse-edgar?company=' + SEC2 + '&owner
 
 <script type="text/javascript">
 function doPB1(PB1) {
-window.open('http://pastebin.com/search?q=%22' + PB1 + '%22', 'theFrame1');
+window.open('http://pastebin.com/search?q=%22' + PB1 + '%22', '_blank');
 }
 </script>
 <form onsubmit="doPB1(this.PB1.value); return false;">
@@ -114,7 +114,7 @@ window.open('http://pastebin.com/search?q=%22' + PB1 + '%22', 'theFrame1');
 <tr><td>Exact phrase Pastebin search</td><td>
 <script type="text/javascript">
 function doPB8(PB8) {
-window.open('https://cse.google.com/cse?cx=010881655957307385441:lfqfg6iddk0&q=a&oq=a&gs_l=partner.3...705.1113.0.1430.2.2.0.0.0.0.147.266.0j2.2.0.gsnos%2Cn%3D13...0.392j153664j2..1ac.1.25.partner..2.0.0.1CAJMIfcy5k#gsc.tab=0&gsc.q=%22' + PB8 + '%22&gsc.sort=', 'theFrame1');
+window.open('https://cse.google.com/cse?cx=010881655957307385441:lfqfg6iddk0&q=a&oq=a&gs_l=partner.3...705.1113.0.1430.2.2.0.0.0.0.147.266.0j2.2.0.gsnos%2Cn%3D13...0.392j153664j2..1ac.1.25.partner..2.0.0.1CAJMIfcy5k#gsc.tab=0&gsc.q=%22' + PB8 + '%22&gsc.sort=', '_blank');
 }
 </script>
 <form onsubmit="doPB8(this.PB8.value); return false;">
@@ -147,7 +147,7 @@ window.open('https://cse.google.com/cse?cx=001580308195336108602:hx9tv6r_od4&q=a
 
 <script type="text/javascript">
 function doER1(ER1, ER2, ER3) {
-window.open('https://www.searchelectoralroll.co.uk/Electoral_Roll_Index.asp?fn=' + ER1 + '%2C%2C' + ER2 + '&fa=' + ER3, 'theFrame1');
+window.open('https://www.searchelectoralroll.co.uk/Electoral_Roll_Index.asp?fn=' + ER1 + '%2C%2C' + ER2 + '&fa=' + ER3, '_blank');
 }
 </script>
 <form onsubmit="doER1(this.ER1.value, this.ER2.value, this.ER3.value); return false;">
@@ -158,11 +158,17 @@ window.open('https://www.searchelectoralroll.co.uk/Electoral_Roll_Index.asp?fn='
 
 </table>
 
-<br /><h4>Search Output:</h4>
-	
-<p>Please see the output from your search below.</p>
+<br /><h4>Misc Document Search Tools:</h4>
 
-<iframe name='theFrame1' width="900" height="1500"></iframe>
+</ul><li><a href="http://pastebin.com/trends" target="_blank">Information currently trending on Pastebin.com</a></li>
+<li><a href="http://pastebin.com/trends/all" target="_blank">Most popular Pastebin.com posts</a></li>
+<li><a href="http://download.companieshouse.gov.uk/en_output.html" target="_blank">Companies House Database</a></li>
+<li><a href="https://register.fca.org.uk/ShPo_Homepage" target="_blank">FCA Company Search</a></li>
+<li><a href="http://www.legislation.gov.uk/" target="_blank">Directory of UK Legislation</a></li>
+<li><a href="http://www.bailii.org/" target="_blank">UK Case Law Database</a></li></ul>
+<li><a href="https://opencorporates.com/" target="_blank">Worldwide Company Data</a></li>
+<li><a href="http://www.infoplease.com/countries.html" target="_blank">Country Profiles</a></li>
+<li><a href="https://www.gov.uk/government/collections/country-information-and-guidance" target="_blank">Country Information & Guidance</a></li></ul>	
 
 <br /><br /><p><a href="#top">Back To Top</a></p>
 
