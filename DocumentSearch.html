@@ -1,8 +1,106 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+<head>
+<title>OSINT Toolkit V2.1</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets1/css/main.css" />
+</head>
 <body>
 
-<img src="images/1.jpg">
+<!-- Wrapper -->
+<div id="wrapper">
 
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>OSINT</strong><span>Toolkit</span></a>
+<nav>
+<a href="#menu">Menu</a>
+</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<ul class="links">
+<li><a href="https://apollocms.github.io/1">Dashboard</a></li>i>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+<div class="inner">
+<header class="major">
+<h1>Document Search:</h1>
+</header>
+
+<p>To use this tool please either type in a name or company into the relevant box below. After a short delay, the Search Output box, below, will display any results generated. </p>
+
+<table id="myTable"><table width="100%">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+<tr><td>Keyword(s) or # search</td>
+<td>
+<script type="text/javascript">
+function docm1(cm1) {
+window.open('https://socialbearing.com/search/general/' + cm1, 'theFrame1');
+}
+</script>   
+<form onsubmit="docm1(this.cm1.value); return false;">
+<input type="text" id="cm1" name="cm1" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Account search</td>
+<td>
+<script type="text/javascript">
+function docm2(cm2) {
+window.open('https://socialbearing.com/search/user/' + cm2, 'theFrame1');
+}
+</script>   
+<form onsubmit="docm2(this.cm2.value); return false;">
+<input type="text" id="cm2" name="cm2" size="15" placeholder="Twitter Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+</table>
+
+<br /><h4>Search Output:</h4>
+	
+<p>Please see the output from your search below.</p>
+
+<iframe name='theFrame1' width="900" height="1500"></iframe>
+
+<br /><br /><p><a href="#top">Back To Top</a></p>
+
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2018. All rights reserved.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
 </body>
 </html>
