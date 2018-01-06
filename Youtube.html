@@ -36,4 +36,171 @@
 
 <h1>Youtube:</h1>
 </header>
+  
+<p>In order to use some of the tools, you must know the channel name of the subject(s) you wish to research. To identify a Youtube channel name you must load the Youtube Profile of your subject and right click the page before selecting View Page Source from the options list. While on the Source Page, press CTRL+F and search for the phrase: "channelId" content=", the subjects channel name will be after this phrase.</p></p> 
 
+
+<tr><td>General search</td><td>
+
+<script type="text/javascript">
+function doYT3(YT3) {
+window.open('https://www.youtube.com/results?search_query=' + YT3, '_blank');
+}
+</script>
+<form onsubmit="doYT3(this.YT3.value); return false;">
+<input type="text" name="YT3" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Title search</td><td>
+
+
+<script type="text/javascript">
+function doYT1(YT1) {
+window.open('https://www.youtube.com/results?search_query=intitle%3A' + YT1, '_blank');
+}
+</script>
+<form onsubmit="doYT1(this.YT1.value); return false;">
+<input type="text" name="YT1" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Exact phrase search</td><td>
+
+<script type="text/javascript">
+function doYT2(YT2) {
+window.open('https://www.youtube.com/results?search_query=%22' + YT2 + '%22', '_blank');
+}
+</script>
+<form onsubmit="doYT2(this.YT2.value); return false;">
+<input type="text" name="YT2" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Channel search</td><td>
+
+<script type="text/javascript">
+function doYT4(YT4) {
+window.open('https://www.youtube.com/results?search_query=' + YT4 + '%2C+channel', '_blank');
+}
+</script>
+<form onsubmit="doYT4(this.YT4.value); return false;">
+<input type="text" name="YT4" size="15" placeholder="Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Playlist search</td><td>
+
+<script type="text/javascript">
+function doYT(YT) {
+window.open('https://www.youtube.com/results?q=' + YT + '&sp=EgIQAw%253D%253D', '_blank');
+}
+</script>
+<form onsubmit="doYT(this.YT.value); return false;">
+<input type="text" name="YT" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Search by upload date</td><td>
+
+<script type="text/javascript">
+function doYT6(YT6) {
+window.open('https://www.youtube.com/results?q=' + YT6 + '&sp=CAI%253D', '_blank');
+}
+</script>
+<form onsubmit="doYT6(this.YT6.value); return false;">
+<input type="text" name="YT6" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Live videos</td><td>
+
+<script type="text/javascript">
+function doYT7(YT7) {
+window.open('https://www.youtube.com/results?q=' + YT7 + '&sp=EgJAAQ%253D%253D', '_blank');
+}
+</script>
+<form onsubmit="doYT7(this.YT7.value); return false;">
+<input type="text" name="YT7" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Basic channel analytics</td><td>
+
+<script type="text/javascript">
+function doYT8(YT8) {
+window.open('http://socialblade.com/youtube/channel/' + YT8, '_blank');
+}
+</script>
+<form onsubmit="doYT8(this.YT8.value); return false;">
+<input type="text" name="YT8" size="15" placeholder="Channel Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Detailed analytics</td><td>
+
+
+<script type="text/javascript">
+function doYT9(YT9) {
+window.open('http://socialblade.com/youtube/channel/' + YT9 + '/monthly', '_blank');
+}
+</script>
+<form onsubmit="doYT9(this.YT9.value); return false;">
+<input type="text" name="YT9" size="15" placeholder="Channel Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Comparison of 2 channels</td><td>
+<script type="text/javascript">
+function doYT10(YT10, YT11) {
+window.open('http://socialblade.com/youtube/compare/' + YT10 + '/' + YT11, '_blank');
+}
+</script>
+
+<form onsubmit="doYT10(this.YT10.value, this.YT11.value); return false;">
+<input type="text" name="YT10" size="15" placeholder="1st Channel" />
+<input type="text" name="YT11" size="15" placeholder="2nd Channel" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Comparison of 3 channels</td><td>
+
+<script type="text/javascript">
+function doYT12(YT12, YT13, YT14) {
+window.open('http://socialblade.com/youtube/compare/' + YT12 + '/' + YT13 + '/' + YT14, '_blank');
+}
+</script>
+
+<form onsubmit="doYT12(this.YT12.value, this.YT13.value, this.YT14.value); return false;">
+<input type="text" name="YT12" size="9" placeholder="1st Name" />
+<input type="text" name="YT13" size="9" placeholder="2nd Name" />
+<input type="text" name="YT14" size="9" placeholder="3rd Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+</table>
+
+<br /><h4>Misc Youtube Search Tools:</h4>
+
+<ul><li><a href="https://youtube.github.io/geo-search-tool/search.html" target="_blank">Youtube videos by location</a></li>
+<li><a href="https://www.youtube.com/feed/trending" target="_blank">Information currently trending on Youtube</a></li></ul>
+    
+<p><a href="#top">Back To Top</a></p>
+
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2017. All rights reserved.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
+	
+</body>
+</html>
