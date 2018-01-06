@@ -46,27 +46,93 @@
 <th>Tool:</th>
 </tr>
 
-<tr><td>Keyword(s) or # search</td>
-<td>
+<tr><td>Investigative Dashboard Search</td><td>
 <script type="text/javascript">
-function docm1(cm1) {
-window.open('https://socialbearing.com/search/general/' + cm1, 'theFrame1');
+function dods1(ds1) {
+window.open('https://data.occrp.org/entities?q=' + ds1, 'theFrame1');
 }
 </script>   
-<form onsubmit="docm1(this.cm1.value); return false;">
-<input type="text" id="cm1" name="cm1" size="15" placeholder="Word or Phrase" />
+<form onsubmit="dods1(this.ds1.value); return false;">
+<input type="text" id="ds1" name="ds1" size="15" placeholder="Name or Company" />
 <input type="submit" value="Search" /></form></td></tr>
-	
-<tr><td>Account search</td>
-<td>
+
+<tr><td>Companies House person search</td><td>
 <script type="text/javascript">
-function docm2(cm2) {
-window.open('https://socialbearing.com/search/user/' + cm2, 'theFrame1');
+function doCH1(CH1, CH2) {
+window.open('https://beta.companieshouse.gov.uk/search/officers?q=' + CH1 + ' ' + CH2, 'theFrame1');
 }
-</script>   
-<form onsubmit="docm2(this.cm2.value); return false;">
-<input type="text" id="cm2" name="cm2" size="15" placeholder="Twitter Account Name" />
+</script>
+<form onsubmit="doCH1(this.CH1.value, this.CH2.value); return false;">
+<input type="text" name="CH1" size="15" placeholder="First Name" />
+<input type="text" name="CH2" size="15" placeholder="Last Name" />
 <input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Companies House company search (N.B. input should have no space in company name)</td><td>
+
+<script type="text/javascript">
+function doCH3(CH3) {
+window.open('https://beta.companieshouse.gov.uk/search/companies?q=' + CH3, 'theFrame1');
+}
+</script>
+<form onsubmit="doCH3(this.CH3.value); return false;">
+<input type="text" name="CH3" size="15" placeholder="Company Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Financial Conduct Authority search</td><td>
+<script type="text/javascript">
+function doFCA1(FCA1, FCA2) {
+window.open('https://register.fca.org.uk/shpo_searchresultspage?search=' + FCA1 + '+' + FCA2, 'theFrame1');
+}
+</script>
+<form onsubmit="doFCA1(this.FCA1.value, this.FCA2.value); return false;">
+<input type="text" name="FCA1" size="15" placeholder="First Name" />
+<input type="text" name="FCA2" size="15" placeholder="Last Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>SEC's EDGAR search</td><td>
+
+<script type="text/javascript">
+function doSEC2(SEC2) {
+window.open('https://www.sec.gov/cgi-bin/browse-edgar?company=' + SEC2 + '&owner=exclude&action=getcompany', 'theFrame1');
+}
+</script>
+<form onsubmit="doSEC2(this.SEC2.value); return false;">
+<input type="text" name="SEC2" size="15" placeholder="Company Name" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>General Pastebin search</td><td>
+
+<script type="text/javascript">
+function doPB1(PB1) {
+window.open('http://pastebin.com/search?q=%22' + PB1 + '%22', 'theFrame1');
+}
+</script>
+<form onsubmit="doPB1(this.PB1.value); return false;">
+<input type="text" name="PB1" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Exact phrase Pastebin search</td><td>
+<script type="text/javascript">
+function doPB8(PB8) {
+window.open('https://cse.google.com/cse?cx=010881655957307385441:lfqfg6iddk0&q=a&oq=a&gs_l=partner.3...705.1113.0.1430.2.2.0.0.0.0.147.266.0j2.2.0.gsnos%2Cn%3D13...0.392j153664j2..1ac.1.25.partner..2.0.0.1CAJMIfcy5k#gsc.tab=0&gsc.q=%22' + PB8 + '%22&gsc.sort=', 'theFrame1');
+}
+</script>
+<form onsubmit="doPB8(this.PB8.value); return false;">
+<input type="text" name="PB8" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Partial Electoral Roll search</td><td>
+
+<script type="text/javascript">
+function doER1(ER1, ER2, ER3) {
+window.open('https://www.searchelectoralroll.co.uk/Electoral_Roll_Index.asp?fn=' + ER1 + '%2C%2C' + ER2 + '&fa=' + ER3, 'theFrame1');
+}
+</script>
+<form onsubmit="doER1(this.ER1.value, this.ER2.value, this.ER3.value); return false;">
+<input type="text" name="ER1" size="15" placeholder="First Name" />
+<input type="text" name="ER2" size="15" placeholder="Last Name" />
+<input type="text" name="ER3" size="15" placeholder="Postcode" />	
+<input type="submit" value="Search" /></form></td></tr>	
 
 </table>
 
