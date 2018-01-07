@@ -40,7 +40,25 @@
  
 <p>N.B. Most IP geolocators can determine the country of an Internet user with 95 to 99% accuracy, the city of a user with 80 to 99 % accuracy and the street a user is on with 50 to 80% accuracy.</p> 
 
-<table id="myTable"><table width="100%">
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+</style>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..."><br /><br />	
+<table id="myTable">
 <col style="width:30%">  
 <col style="width:70%">  	
 <tr>
@@ -343,6 +361,28 @@ window.open('http://dawhois.com/siteinfo/?query=' + WP4, '_blank');
 <li><a href="https://map.lookingglasscyber.com/" target="_blank">Real Time Cybercrime Threat Map</a></li></ul>
 
 <p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 
 </div>
 </section>
