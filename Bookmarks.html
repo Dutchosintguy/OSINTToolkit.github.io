@@ -45,8 +45,25 @@
 <p>The following tools (bookmarklets) allow you to conduct a range of searches / tasks, directly from your web browser, without needing to log into the OSINT Toolkit. To use any of the bookmarklets, below, simply drag the link(s) into your 'Bookmarks Toolbar'.</p>
   
 <p>Note, some of the bookmarklets only work on certain websites or during certain tasks so please read the description(s) carefully before dragging the link(s) into your 'Bookmarks Toolbar'. If you want to access and use all of the bookmarklets below, except for the Youtube Downloader and View Selection, just drag the Toolkit B.D. bookmarklet into your ‘Bookmarks Toolbar’. </p>
- 
-<table><table width="100%">
+
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..."><br /><br />  
+<table>
 <col style="width:25%">
 <col style="width:75%">  
 <tr>
@@ -152,6 +169,28 @@
 </table><br />
 
 <p><a href="#top">Back To Top</a></p>  
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>	
 
 </div>
 </section>
