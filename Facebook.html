@@ -217,8 +217,7 @@ window.open('https://www.facebook.com/search/' + FB26 + '/photos-by', '_blank');
 <input type="text" name="FB26" size="15" placeholder="Account ID" />
 <input type="submit" value="Search" /></form></td></tr>
 	
-<tr><td>Photo(s) of user</td>
-<td>			
+<tr><td>Photo(s) of user</td><td>			
 
 <script type="text/javascript">
 function doFB25(FB25) {
@@ -229,8 +228,29 @@ window.open('https://www.facebook.com/search/' + FB25 + '/photos-of', '_blank');
 <input type="text" name="FB25" size="15" placeholder="Account ID" />
 <input type="submit" value="Search" /></form></td></tr>
 	
-<tr><td>Photo(s) featuring keywords/td>
-<td>		
+<tr><td>Photo(s) user interested in</td><td>			
+
+<script type="text/javascript">
+function doFN1(FN1) {
+window.open('https://www.facebook.com/search/' + FN1 + '/photos-interested', '_blank');
+}
+</script>
+<form onsubmit="doFN1(this.FN1.value); return false;">
+<input type="text" name="FN1" size="15" placeholder="Account ID" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Photo(s) user interacted with</td><td>			
+
+<script type="text/javascript">
+function doFN2(FN2) {
+window.open('https://www.facebook.com/search/' + FN2 + '/photos-interacted', '_blank');
+}
+</script>
+<form onsubmit="doFN2(this.FN2.value); return false;">
+<input type="text" name="FN2" size="15" placeholder="Account ID" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>Photo(s) featuring keywords/td><td>		
 <script type="text/javascript">
 function doFB35(FB35) {
 window.open('https://www.facebook.com/search/str/' + FB35 + '/photos-keyword', '_blank');
@@ -295,8 +315,7 @@ window.open('https://www.facebook.com/search/' + FB29 + '/videos-of', '_blank');
 <input type="text" name="FB29" size="15" placeholder="Account ID of subject" />
 <input type="submit" value="Search" /></form></td></tr>
 	
-<tr><td>Videos featuring keywords</td>
-<td>		
+<tr><td>Videos featuring keywords</td><td>		
 <script type="text/javascript">
 function doFB36(FB36) {
 window.open('https://www.facebook.com/search/str/' + FB36 + '/videos-keyword', '_blank');
