@@ -43,7 +43,40 @@
 
 <p>To identify an Account ID you must load the Google+ Profile of your subject and right click the page. From there a list of options will appear, select View Page Source from the list. While on the Source Page, press CTRL+F and search for the phrase data-oid=, the subjects Account ID will be the number after this phrase.</p>
 
-<table id="myTable"><table width="100%">
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+#myInput1 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable1 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable1 th, #myTable td {
+    text-align: left; 
+}
+	
+
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">	
+<table id="myTable">
 <col style="width:30%">  
 <col style="width:70%">  	
 <tr>
@@ -118,8 +151,8 @@ window.open('https://plus.google.com/s/' + tw16 + '/top', '_blank');
 
 <p>You must be logged into a LinkedIn account to use the LinkedIn tools</p>
 	
+<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search...">	
 <table id="myTable1">
-<table width="100%">
 <col style="width:30%">  
 <col style="width:70%">  	
 <tr>
@@ -180,6 +213,49 @@ window.open('https://www.linkedin.com/jobs/search?keywords=' + LI1 + '&location=
 <ul><li><a href="https://www.linkedin.com/directory/people-a/?trk=hb_ft_peopledir" target="_blank">LinkedIn people directory</a></li></ul>
 
 <p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>	
+<script>
+function myFunction1() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable1");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>		
 
 </div>
 </section>
