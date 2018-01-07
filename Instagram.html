@@ -87,7 +87,7 @@ window.open('https://www.instagram.com/explore/tags/' + I2 + '/', '_blank');
 <input type="text" name="I2" size="15" placeholder="Word" />
 <input type="submit" value="Search" /></form></td></tr>
 	
-<tr><td>Information search via Google</td><td>
+<tr><td>Historical data search via Google</td><td>
 
 <script type="text/javascript">
 function doI3(I3) {
@@ -97,6 +97,17 @@ window.open('https://www.google.co.uk/search?q=site:instagram.com/' + I3 + '+inu
 <form onsubmit="doI3(this.I3.value); return false;">
 <input type="text" name="I3" size="15" placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Account mentions search via Google</td><td>
+
+<script type="text/javascript">
+function doFN3(FN3) {
+window.open('https://www.google.co.uk/search?q=site:instagram.com+%22%40' + FN3 + '%22+-site:instagram.com/' + FN3 + '&gws_rd=cr&dcr=0&ei=0H5SWtSnFaTHgAbx54zYCw', '_blank');
+}
+</script>
+<form onsubmit="doFN3(this.FN3.value); return false;">
+<input type="text" name="FN3" size="15" placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>Linked to Twitter?</td><td>
 
