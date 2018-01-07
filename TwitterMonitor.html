@@ -38,7 +38,25 @@
 
 <p>To use this tool please either type in a Twitter account name or search phrase into the relevant box below, excluding any @ or # symbols. After a short delay, the Search Output box, below, will display any results generated. </p>
 
-<table id="myTable"><table width="100%">
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..."><br /><br />
+<table id="myTable">
 <col style="width:30%">  
 <col style="width:70%">  	
 <tr>
@@ -77,6 +95,28 @@ window.open('https://socialbearing.com/search/user/' + cm2, 'theFrame');
 <iframe name='theFrame' width="900" height="1500"></iframe>
 
 <br /><br /><p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>		
 
 </div>
 </section>
