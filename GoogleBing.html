@@ -40,8 +40,41 @@
 <h4>Google</h4>	
 	
 <p>Google has a large library of search operators that can help with internet-based research, below is just a selection of them.</p>
+
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
 	
-<table id="myTable"><table width="100%">
+#myInput1 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable1 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable1 th, #myTable td {
+    text-align: left; 
+}
+	
+
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..."><br /><br />	
+<table id="myTable">
 <col style="width:30%">  
 <col style="width:70%">  	
 <tr>
@@ -203,8 +236,8 @@ window.open('https://www.google.co.uk/trends/explore?q=' + GT7 + ',' + GT8 + ','
 
 <p>Bing has many of the same search operators offered by Google, but it has a few tricks not found anywhere else.</p>	
 	
+<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search..."><br /><br />	
 <table id="myTable1">
-<table width="100%">
 <col style="width:30%">  
 <col style="width:70%">  	
 <tr>
@@ -263,6 +296,49 @@ window.open('https://www.bing.com/search?q=feed%3A' + SEB8 + '&go=Submit+Query&q
 <ul><li><a href="http://help.bing.microsoft.com/#apex/18/en-US/n1999/-1/en-US" target="_blank">Bing Help Page</a></li></ul>
 
 <p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>	
+<script>
+function myFunction1() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable1");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>		
 
 </div>
 </section>
