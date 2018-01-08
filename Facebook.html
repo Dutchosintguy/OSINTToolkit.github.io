@@ -83,8 +83,8 @@ function dofbposts(topic) {
 window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword', '_blank');
 }
 </script>                   
-<form onSubmit="dofbposts(this.topic.value); return false;">
-<input type="text" name="topic" size="15" oninput="word1(this.form)" placeholder="Keyword/Phrase"/>
+<form name="topic" form onSubmit="dofbposts(this.topic.value); return false;">
+<input type="text" name="topic" size="15" oninput="document.topic1.topic1.value = this.value;" placeholder="Keyword/Phrase"/>
 <input type="submit" value="Search"/></form></td></tr>
 
 <tr><td>Posts based on keywords</td>
@@ -93,9 +93,9 @@ window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword',
 function dotopic1(topic1) {
 window.open('https://www.facebook.com/search/str/' + topic1 + '/keywords_posts/intersect/', '_blank');
 }
-</script>
-<form onSubmit="dotopic1(this.topic1.value); return false;">
-<input type="text" name="topic1" size="15" oninput="word2(this.form)" placeholder="Keyword/Phrase"/>
+</script>	
+<form name="topic1" form onSubmit="dotopic1(this.topic1.value); return false;">
+<input type="text" name="topic1" size="15" oninput="document.topic.topic.value = this.value;" placeholder="Keyword/Phrase"/>
 <input type="submit" value="Search"/></form>	
 </td></tr>
 	
@@ -615,43 +615,6 @@ function myFunction() {
 }
 </script>
 
-<script>
-function word1(x) {
-x.topic1.value = x.topic.value;
-x.fb023.value = x.topic.value;
-x.FB35.value = x.topic.value;
-x.FB36.value = x.topic.value;
-}
-
-function word2(x) {
-x.topic.value = x.topic1.value;
-x.fb023.value = x.topic1.value;
-x.FB35.value = x.topic1.value;
-x.FB36.value = x.topic1.value;
-}
-
-function word3(x) {
-x.topic1.value = x.fb023.value;
-x.topic.value = x.fb023.value;
-x.FB35.value = x.fb023.value;
-x.FB36.value = x.fb023.value;
-}
-
-function word4(x) {
-x.topic1.value = x.FB35.value;
-x.fb023.value = x.FB35.value;
-x.topic.value = x.FB35.value;
-x.FB36.value = x.FB35.value;
-}
-
-function word5(x) {
-x.topic1.value = x.FB36.value;
-x.fb023.value = x.FB36.value;
-x.FB35.value = x.FB36.value;
-x.topic.value = x.FB36.value;
-}
-</script>	
-	
 </div>
 </section>
 </div>
