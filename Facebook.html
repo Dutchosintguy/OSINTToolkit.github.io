@@ -168,7 +168,10 @@ window.open('https://www.facebook.com/search/str/' + name2 + '/users-named/inter
 }
 </script>
 <form name="name2" form onSubmit="dofb14a(this.name2.value, this.number2.value); return false;">
-<input type="text" name="name2" size="15" oniput="document.name1.name1.value = this.value;document.name3.name3.value = this.value;" placeholder="Name" />
+<input type="text" name="name2" size="15" oninput="
+document.name1.name1.value = this.value;
+document.name3.name3.value = this.value;"
+placeholder="Name" />
 <input type="text" name="number2" size="15" placeholder="Current Town/City" />
 <input type="submit" value="Search"/></form></td></tr>
 	
@@ -1185,7 +1188,7 @@ placeholder="2nd Account ID" />
 <script type="text/javascript">function dofb003(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/groups/' + number2 + '/groups/intersect', '_blank');}
 </script>
 <form name="F6" form onSubmit="dofb003(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="15" oninput="document.F1.Number1.value = this.value;
+<input type="text" name="number1" size="15" oninput="
 document.F1.number1.value = this.value;
 document.F2.number1.value = this.value;
 document.F3.number1.value = this.value;
