@@ -84,7 +84,7 @@ window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword',
 }
 </script>                   
 <form onSubmit="dofbposts(this.topic.value); return false;">
-<input type="text" name="topic" size="15" placeholder="Keyword/Phrase"/>
+<input type="text" name="topic" size="15" oninput="word1(this.form)" placeholder="Keyword/Phrase"/>
 <input type="submit" value="Search"/></form></td></tr>
 
 <tr><td>Posts based on keywords</td>
@@ -95,7 +95,7 @@ window.open('https://www.facebook.com/search/str/' + topic1 + '/keywords_posts/i
 }
 </script>
 <form onSubmit="dotopic1(this.topic1.value); return false;">
-<input type="text" name="topic1" size="15" placeholder="Keyword/Phrase"/>
+<input type="text" name="topic1" size="15" oninput="word2(this.form)" placeholder="Keyword/Phrase"/>
 <input type="submit" value="Search"/></form>	
 </td></tr>
 	
@@ -103,12 +103,12 @@ window.open('https://www.facebook.com/search/str/' + topic1 + '/keywords_posts/i
 <td>
 
 <script type="text/javascript">
-function dofb1(number) {
-window.open('https://www.facebook.com/search/str/' + number + '/users-named/intersect', '_blank');
+function dofb1(name) {
+window.open('https://www.facebook.com/search/str/' + name + '/users-named/intersect', '_blank');
 }
 </script>         
-<form onSubmit="dofb1(this.number.value); return false;">
-<input type="text" name="number" size="15" placeholder="Name" />
+<form onSubmit="dofb1(this.name.value); return false;">
+<input type="text" name="name" size="15" placeholder="Name" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Profile by email</td>
@@ -201,7 +201,7 @@ window.open('https://www.facebook.com/search/str/' + fb023 + '/stories-keyword/'
 </script> 
 <form onSubmit="dofb022(this.fb022.value,this.fb023.value); return false;">
 <input type="text" name="fb022" size="15" placeholder="Account ID" />
-<input type="text" name="fb023" size="15" placeholder="Keyword/Phrase" />
+<input type="text" name="fb023" size="15" oninput="word3(this.form)" placeholder="Keyword/Phrase" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>User posts during specific year</td>
@@ -267,7 +267,7 @@ window.open('https://www.facebook.com/search/str/' + FB35 + '/photos-keyword', '
 }
 </script>
 <form onsubmit="doFB35(this.FB35.value); return false;">
-<input type="text" name="FB35" size="15" placeholder="Keyword/Phrase" />
+<input type="text" name="FB35" size="15" oninput="word4(this.form)" placeholder="Keyword/Phrase" />
 <input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>Places visited by user</td>
@@ -332,7 +332,7 @@ window.open('https://www.facebook.com/search/str/' + FB36 + '/videos-keyword', '
 }
 </script>
 <form onsubmit="doFB36(this.FB36.value); return false;">
-<input type="text" name="FB36" size="15" placeholder="Keyword/Phrase" />
+<input type="text" name="FB36" size="15" oninput="word5(this.form)" placeholder="Keyword/Phrase" />
 <input type="submit" value="Search" /></form></td></tr>		
 
 <tr><td>Apps used by user</td>
@@ -577,7 +577,7 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 }
 </script>
 <form onsubmit="dofball(this.fball.value); return false;">
-<input type="text" name="Account ID of subject" id="fball" size="15" placeholder="Account ID" value="" />
+<input type="text" name="Account ID" id="fball" size="15" placeholder="Account ID" value="" />
 	<input type="submit" value="Search"/></form></td></tr>
 	
 	</table>
@@ -613,7 +613,44 @@ function myFunction() {
     }
   }
 }
-</script>		
+</script>
+
+<script>
+function word1(x) {
+x.topic1.value = x.topic.value;
+x.fb023.value = x.topic.value;
+x.FB35.value = x.topic.value;
+x.FB36.value = x.topic.value;
+}
+
+function word2(x) {
+x.topic.value = x.topic1.value;
+x.fb023.value = x.topic1.value;
+x.FB35.value = x.topic1.value;
+x.FB36.value = x.topic1.value;
+}
+
+function word3(x) {
+x.topic1.value = x.fb023.value;
+x.topic.value = x.fb023.value;
+x.FB35.value = x.fb023.value;
+x.FB36.value = x.fb023.value;
+}
+
+function word4(x) {
+x.topic1.value = x.FB35.value;
+x.fb023.value = x.FB35.value;
+x.topic.value = x.FB35.value;
+x.FB36.value = x.FB35.value;
+}
+
+function word5(x) {
+x.topic1.value = x.FB36.value;
+x.fb023.value = x.FB36.value;
+x.FB35.value = x.FB36.value;
+x.topic.value = x.FB36.value;
+}
+</script>	
 	
 </div>
 </section>
