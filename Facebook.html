@@ -130,7 +130,9 @@ window.open('https://www.facebook.com/' + ID2, '_blank');
 } 
 </script> 
 <form name="ID2" form onSubmit="dofbID2(this.ID2.value); return false;">
-<input type="text" name="ID2" size="15" oninput="document.fb23.fb23.value = this.value;
+<input type="text" name="ID2" size="15" oninput="
+document.ID2.ID2.value = this.value;
+document.fb23.fb23.value = this.value;
 document.fb023.fb022.value = this.value;
 document.fb034.fb034.value = this.value;
 document.FB26.FB26.value = this.value;
@@ -141,6 +143,7 @@ document.fb2.fb2.value = this.value;
 document.fb4.fb4.value = this.value;
 document.FB27.FB27.value = this.value;
 document.FB28.FB28.value = this.value;
+document.FB30.FB29.value = this.value;
 document.FB30.FB30.value = this.value;
 document.fb24.fb24.value = this.value;
 document.fb024.fb024.value = this.value;
@@ -153,7 +156,7 @@ document.fb032.fb032.value = this.value;
 document.fb029.fb029.value = this.value;
 document.fb031.fb031.value = this.value;
 document.fb033.fb033.value = this.value;
-document.EDS.AccountID.value = this.value;"       
+document.EDS.fball.value = this.value;"       
 placeholder="Account ID" />
 <input type="submit" value="Search"/></form></td></tr>
 	
@@ -302,7 +305,7 @@ window.open('https://www.facebook.com/search/' + fb2 + '/places-visited', '_blan
 }
 </script>
 <form name="fb2" form onSubmit="dofb2(this.fb2.value); return false;">
-<input type="text" id="fb2" size="15" oninput="" placeholder="Account ID" />
+<input type="text" id="fb2" name="fb2" size="15" oninput="" placeholder="Account ID" />
 <input type="submit" value="Search"/></form></td></tr>
 
 <tr><td>Places checked-in by user</td>
@@ -313,7 +316,7 @@ window.open('https://www.facebook.com/search/' + fb4 + '/places-checked-in', '_b
 }
 </script>
 <form name="fb4" form onSubmit="dofb4(this.fb4.value); return false;">
-<input type="text" id="fb4" size="15" oninput="" placeholder="Account ID" />
+<input type="text" id="fb4" name="fb4" size="15" oninput="" placeholder="Account ID" />
 <input type="submit" value="Search"/></form></td></tr>
 
 <tr><td>Groups user is member of</td>
@@ -377,8 +380,8 @@ function dofb24(fb24) {
 window.open('https://www.facebook.com/search/' + fb24 + '/friends', '_blank');
 }
 </script>
-<form name="FBfb24" form onSubmit="dofb24(this.fb24.value); return false;">
-<input type="text" id="fb24" size="15" oninput="" placeholder="Account ID" />
+<form name="fb24" form onSubmit="dofb24(this.fb24.value); return false;">
+<input type="text" id="fb24" name="fb24" size="15" oninput="" placeholder="Account ID" />
 <input type="submit" value="Search"/></form></td></tr>
 
 <tr><td>Photo(s) liked by friends</td>
@@ -601,7 +604,7 @@ window.open('https://www.facebook.com/search/' + fball + '/groups','fb114window'
 }
 </script>
 <form name="EDS" form onsubmit="dofball(this.fball.value); return false;">
-<input type="text" name="AccountID" id="fball" size="15" oninput="" placeholder="Account ID" value="" />
+<input type="text" name="fball" id="fball" size="15" oninput="" placeholder="Account ID" value="" />
 	<input type="submit" value="Search"/></form></td></tr>
 	
 	</table>
