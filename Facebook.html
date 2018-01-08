@@ -1079,8 +1079,14 @@ document.EDS.fball.value = this.value;" placeholder="Account ID" />
 <script type="text/javascript">function dofbfriend2(number1, number2) {window.open('https://www.facebook.com/' + number1 + '?and=' + number2, '_blank');}
 </script>
 
-<form onSubmit="dofbfriend2(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="15" placeholder="1st Account ID" />
+<form name="1" form onSubmit="dofbfriend2(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="15" oninput="
+document.2.Number1.value = this.value;
+document.3.Number1.value = this.value;
+document.4.Number1.value = this.value;
+document.5.Number1.value = this.value;
+document.6.Number1.value = this.value;" 
+       placeholder="1st Account ID" />
 <input type="text" name="number2" size="15" placeholder="2nd Account ID" />
 	<input type="submit" value="Search" /></form></td></tr>
 
@@ -1088,8 +1094,14 @@ document.EDS.fball.value = this.value;" placeholder="Account ID" />
 <td>
 <script type="text/javascript">function dofbfriend1(number1, number2) {window.open('https://www.facebook.com/search/str/' + number1 + '/friends/' + number2 + '/friends/intersect/','_blank');}
 </script>
-<form onSubmit="dofbfriend1(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="15" placeholder="1st Account ID" />
+<form name="2" form onSubmit="dofbfriend1(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="15" oninput="
+document.1.Number1.value = this.value;
+document.3.Number1.value = this.value;
+document.4.Number1.value = this.value;
+document.5.Number1.value = this.value;
+document.6.Number1.value = this.value;" 
+placeholder="1st Account ID" />
 <input type="text" name="number2" size="15" placeholder="2nd Account ID" />
 	<input type="submit" value="Search" /></form></td></tr>
 
@@ -1097,8 +1109,14 @@ document.EDS.fball.value = this.value;" placeholder="Account ID" />
 <td>
 <script type="text/javascript">function dofb000(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/places-visited/' + number2 + '/places-visited/intersect', '_blank');}
 </script>
-<form onSubmit="dofb000(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="15" placeholder="1st Account ID" />
+<form name="3" form onSubmit="dofb000(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="15" oninput="
+document.1.Number1.value = this.value;
+document.2.Number1.value = this.value;
+document.4.Number1.value = this.value;
+document.5.Number1.value = this.value;
+document.6.Number1.value = this.value;" 
+placeholder="1st Account ID" />
 <input type="text" name="number2" size="15" placeholder="2nd Account ID" />
 	<input type="submit" value="Search" /></form></td></tr>
 
@@ -1106,8 +1124,14 @@ document.EDS.fball.value = this.value;" placeholder="Account ID" />
 <td>
 <script type="text/javascript">function dofb001(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/photos-of/' + number2 + '/photos-of/intersect', '_blank');}
 </script>
-<form onSubmit="dofb001(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="15" placeholder="1st Account ID" />
+<form name="4" form onSubmit="dofb001(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="15" oninput="
+document.1.Number1.value = this.value;
+document.2.Number1.value = this.value;
+document.3.Number1.value = this.value;
+document.5.Number1.value = this.value;
+document.6.Number1.value = this.value;" 
+placeholder="1st Account ID" />
 <input type="text" name="number2" size="15" placeholder="2nd Account ID" />
 <input type="submit" value="Search" /></form></td></tr>
 
@@ -1115,8 +1139,14 @@ document.EDS.fball.value = this.value;" placeholder="Account ID" />
 <td>
 <script type="text/javascript">function dofb002(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/events/' + number2 + '/events/intersect', '_blank');}
 </script>
-<form onSubmit="dofb002(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="15" placeholder="1st Account ID" />
+<form name="5" form onSubmit="dofb002(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="15" oninput="
+document.1.Number1.value = this.value;
+document.2.Number1.value = this.value;
+document.3.Number1.value = this.value;
+document.4.Number1.value = this.value;
+document.6.Number1.value = this.value;" 
+placeholder="1st Account ID" />
 <input type="text" name="number2" size="15" placeholder="2nd Account ID" />
 	<input type="submit" value="Search" /></form></td></tr>
 
@@ -1124,8 +1154,13 @@ document.EDS.fball.value = this.value;" placeholder="Account ID" />
 <td>	
 <script type="text/javascript">function dofb003(number1, number2) {window.open('https://www.facebook.com/search/' + number1 + '/groups/' + number2 + '/groups/intersect', '_blank');}
 </script>
-<form onSubmit="dofb003(this.number1.value, this.number2.value); return false;">
-<input type="text" name="number1" size="15" placeholder="1st Account ID" />
+<form name="6" form onSubmit="dofb003(this.number1.value, this.number2.value); return false;">
+<input type="text" name="number1" size="15" oninput="document.1.Number1.value = this.value;
+document.2.Number1.value = this.value;
+document.3.Number1.value = this.value;
+document.4.Number1.value = this.value;
+document.5.Number1.value = this.value;" 
+placeholder="1st Account ID" />
 <input type="text" name="number2" size="15" placeholder="2nd Account ID" />
 	<input type="submit" value="Search" /></form></td></tr>
 
