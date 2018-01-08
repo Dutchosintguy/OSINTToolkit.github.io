@@ -1147,8 +1147,8 @@ function doFB33(FB33) {
 window.open('https://www.facebook.com/search/str/' + FB33 + '/likers/intersect', '_blank');
 }
 </script>
-<form onsubmit="doFB33(this.FB33.value); return false;">
-<input type="text" name="FB33" size="15" placeholder="ID of Page" />
+<form name="FB33" form onsubmit="doFB33(this.FB33.value); return false;">
+<input type="text" name="FB33" size="15" oninput="document.FB34.FB34.value = this.value;" placeholder="ID of Page" />
 	<input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>Group Members</td>
@@ -1158,8 +1158,8 @@ function doFB34(FB34) {
 window.open('https://www.facebook.com/browse/group_members/?gid=' + FB34 + '&edge=groups%3Amembers', '_blank');
 }
 </script>
-<form onsubmit="doFB34(this.FB34.value); return false;">
-<input type="text" name="FB34" size="15" placeholder="ID of page" />
+<form name="FB34" form onsubmit="doFB34(this.FB34.value); return false;">
+<input type="text" name="FB34" size="15" oninput="document.FB33.FB33.value = this.value;" placeholder="ID of page" />
 	<input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Express Data Search</td>
