@@ -1081,14 +1081,20 @@ document.EDS.fball.value = this.value;" placeholder="Account ID" />
 
 <form name="F1" form onSubmit="dofbfriend2(this.number1.value, this.number2.value); return false;">
 <input type="text" name="number1" size="15" oninput="
-document.F2.Number1.value = this.value;
-document.F3.Number1.value = this.value;
-document.F4.Number1.value = this.value;
-document.F5.Number1.value = this.value;
-document.F6.Number1.value = this.value;" 
+document.F2.number1.value = this.value;
+document.F3.number1.value = this.value;
+document.F4.number1.value = this.value;
+document.F5.number1.value = this.value;
+document.F6.number1.value = this.value;" 
        placeholder="1st Account ID" />
-<input type="text" name="number2" size="15" placeholder="2nd Account ID" />
-	<input type="submit" value="Search" /></form></td></tr>
+<input type="text" name="number2" size="15"  oninput="
+document.F2.number2.value = this.value;
+document.F3.number2.value = this.value;
+document.F4.number2.value = this.value;
+document.F5.number2.value = this.value;
+document.F6.number2.value = this.value;" 
+       placeholder="2nd Account ID" />
+<input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Mutual Friends</td>
 <td>
@@ -1096,14 +1102,20 @@ document.F6.Number1.value = this.value;"
 </script>
 <form name="F2" form onSubmit="dofbfriend1(this.number1.value, this.number2.value); return false;">
 <input type="text" name="number1" size="15" oninput="
-document.F1.Number1.value = this.value;
-document.F3.Number1.value = this.value;
-document.F4.Number1.value = this.value;
-document.F5.Number1.value = this.value;
-document.F6.Number1.value = this.value;" 
+document.F1.number1.value = this.value;
+document.F3.number1.value = this.value;
+document.F4.number1.value = this.value;
+document.F5.number1.value = this.value;
+document.F6.number1.value = this.value;" 
 placeholder="1st Account ID" />
-<input type="text" name="number2" size="15" placeholder="2nd Account ID" />
-	<input type="submit" value="Search" /></form></td></tr>
+<input type="text" name="number2" size="15" oninput="
+document.F1.number2.value = this.value;
+document.F3.number2.value = this.value;
+document.F4.number2.value = this.value;
+document.F5.number2.value = this.value;
+document.F6.number2.value = this.value;" 
+placeholder="2nd Account ID" />
+<input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Comparison of places visited</td>
 <td>
@@ -1111,13 +1123,19 @@ placeholder="1st Account ID" />
 </script>
 <form name="F3" form onSubmit="dofb000(this.number1.value, this.number2.value); return false;">
 <input type="text" name="number1" size="15" oninput="
-document.F1.Number1.value = this.value;
-document.F2.Number1.value = this.value;
-document.F4.Number1.value = this.value;
-document.F5.Number1.value = this.value;
-document.F6.Number1.value = this.value;" 
+document.F1.number1.value = this.value;
+document.F2.number1.value = this.value;
+document.F4.number1.value = this.value;
+document.F5.number1.value = this.value;
+document.F6.number1.value = this.value;" 
 placeholder="1st Account ID" />
-<input type="text" name="number2" size="15" placeholder="2nd Account ID" />
+<input type="text" name="number2" size="15"  oninput="
+document.F1.number2.value = this.value;
+document.F2.number2.value = this.value;
+document.F4.number2.value = this.value;
+document.F5.number2.value = this.value;
+document.F6.number2.value = this.value;" 
+placeholder="2nd Account ID" />
 	<input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Photos featuring both users</td>
@@ -1126,13 +1144,19 @@ placeholder="1st Account ID" />
 </script>
 <form name="F4" form onSubmit="dofb001(this.number1.value, this.number2.value); return false;">
 <input type="text" name="number1" size="15" oninput="
-document.F1.Number1.value = this.value;
-document.F2.Number1.value = this.value;
-document.F3.Number1.value = this.value;
-document.F5.Number1.value = this.value;
-document.F6.Number1.value = this.value;" 
+document.F1.number1.value = this.value;
+document.F2.number1.value = this.value;
+document.F3.number1.value = this.value;
+document.F5.number1.value = this.value;
+document.F6.number1.value = this.value;" 
 placeholder="1st Account ID" />
-<input type="text" name="number2" size="15" placeholder="2nd Account ID" />
+<input type="text" name="number2" size="15" oninput="
+document.F1.number2.value = this.value;
+document.F2.number2.value = this.value;
+document.F3.number2.value = this.value;
+document.F5.number2.value = this.value;
+document.F6.number2.value = this.value;" 
+placeholder="2nd Account ID" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Common event(s)</td>
@@ -1141,13 +1165,19 @@ placeholder="1st Account ID" />
 </script>
 <form name="F5" form onSubmit="dofb002(this.number1.value, this.number2.value); return false;">
 <input type="text" name="number1" size="15" oninput="
-document.F1.Number1.value = this.value;
-document.F2.Number1.value = this.value;
-document.F3.Number1.value = this.value;
-document.F4.Number1.value = this.value;
-document.F6.Number1.value = this.value;" 
+document.F1.number1.value = this.value;
+document.F2.number1.value = this.value;
+document.F3.number1.value = this.value;
+document.F4.number1.value = this.value;
+document.F6.number1.value = this.value;" 
 placeholder="1st Account ID" />
-<input type="text" name="number2" size="15" placeholder="2nd Account ID" />
+<input type="text" name="number2" size="15"  oninput="
+document.F1.number2.value = this.value;
+document.F2.number2.value = this.value;
+document.F3.number2.value = this.value;
+document.F4.number2.value = this.value;
+document.F6.number2.value = this.value;" 
+placeholder="2nd Account ID" />
 	<input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Common groups</td>
@@ -1156,12 +1186,19 @@ placeholder="1st Account ID" />
 </script>
 <form name="F6" form onSubmit="dofb003(this.number1.value, this.number2.value); return false;">
 <input type="text" name="number1" size="15" oninput="document.F1.Number1.value = this.value;
-document.F2.Number1.value = this.value;
-document.F3.Number1.value = this.value;
-document.F4.Number1.value = this.value;
-document.F5.Number1.value = this.value;" 
+document.F1.number1.value = this.value;
+document.F2.number1.value = this.value;
+document.F3.number1.value = this.value;
+document.F4.number1.value = this.value;
+document.F5.number1.value = this.value;" 
 placeholder="1st Account ID" />
-<input type="text" name="number2" size="15" placeholder="2nd Account ID" />
+<input type="text" name="number2" size="15"  oninput="
+document.F1.number2.value = this.value;
+document.F2.number2.value = this.value;
+document.F3.number2.value = this.value;
+document.F4.number2.value = this.value;
+document.F5.number2.value = this.value;" 
+placeholder="2nd Account ID" />
 	<input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Post likes</td>
