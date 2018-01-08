@@ -84,7 +84,7 @@ window.open('https://www.facebook.com/search/str/' + topic + '/stories-keyword',
 }
 </script>                   
 <form name="topic" form onSubmit="dofbposts(this.topic.value); return false;">
-<input type="text" name="topic" size="15" oninput="document.topic1.topic1.value = this.value;" placeholder="Keyword/Phrase"/>
+<input type="text" name="topic" size="15" oninput="document.topic1.topic1.value = this.value;document.fb023.fb023.value = this.value;document.FB35.FB35.value = this.value;document.FB36.FB36.value = this.value;" placeholder="Keyword/Phrase"/>
 <input type="submit" value="Search"/></form></td></tr>
 
 <tr><td>Posts based on keywords</td>
@@ -95,7 +95,7 @@ window.open('https://www.facebook.com/search/str/' + topic1 + '/keywords_posts/i
 }
 </script>	
 <form name="topic1" form onSubmit="dotopic1(this.topic1.value); return false;">
-<input type="text" name="topic1" size="15" oninput="document.topic.topic.value = this.value;" placeholder="Keyword/Phrase"/>
+<input type="text" name="topic1" size="15" oninput="document.topic.topic.value = this.value;document.fb023.fb023.value = this.value;document.FB35.FB35.value = this.value;document.FB36.FB36.value = this.value;" placeholder="Keyword/Phrase"/>
 <input type="submit" value="Search"/></form>	
 </td></tr>
 	
@@ -199,9 +199,9 @@ function dofb022(fb022, fb023) {
 window.open('https://www.facebook.com/search/str/' + fb023 + '/stories-keyword/' + fb022 + '/stories-by/intersect', '_blank');
 } 
 </script> 
-<form onSubmit="dofb022(this.fb022.value,this.fb023.value); return false;">
+<form name="fb023" form onSubmit="dofb022(this.fb022.value,this.fb023.value); return false;">
 <input type="text" name="fb022" size="15" placeholder="Account ID" />
-<input type="text" name="fb023" size="15" oninput="word3(this.form)" placeholder="Keyword/Phrase" />
+<input type="text" name="fb023" size="15" oninput="document.topic1.topic1.value = this.value;document.topic.topic.value = this.value;document.FB35.FB35.value = this.value;document.FB36.FB36.value = this.value;" placeholder="Keyword/Phrase" />
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>User posts during specific year</td>
@@ -266,8 +266,8 @@ function doFB35(FB35) {
 window.open('https://www.facebook.com/search/str/' + FB35 + '/photos-keyword', '_blank');
 }
 </script>
-<form onsubmit="doFB35(this.FB35.value); return false;">
-<input type="text" name="FB35" size="15" oninput="word4(this.form)" placeholder="Keyword/Phrase" />
+<form name="FB35" form onsubmit="doFB35(this.FB35.value); return false;">
+<input type="text" name="FB35" size="15" oninput="document.topic1.topic1.value = this.value;document.fb023.fb023.value = this.value;document.topic.topic.value = this.value;document.FB36.FB36.value = this.value;" placeholder="Keyword/Phrase" />
 <input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>Places visited by user</td>
@@ -331,8 +331,8 @@ function doFB36(FB36) {
 window.open('https://www.facebook.com/search/str/' + FB36 + '/videos-keyword', '_blank');
 }
 </script>
-<form onsubmit="doFB36(this.FB36.value); return false;">
-<input type="text" name="FB36" size="15" oninput="word5(this.form)" placeholder="Keyword/Phrase" />
+<form name="FB36" form onsubmit="doFB36(this.FB36.value); return false;">
+<input type="text" name="FB36" size="15" oninput="document.topic1.topic1.value = this.value;document.fb023.fb023.value = this.value;document.FB35.FB35.value = this.value;document.topic.topic.value = this.value;" placeholder="Keyword/Phrase" />
 <input type="submit" value="Search" /></form></td></tr>		
 
 <tr><td>Apps used by user</td>
