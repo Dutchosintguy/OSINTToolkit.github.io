@@ -83,10 +83,10 @@ window.open('https://www.youtube.com/results?search_query=' + YT3, '_blank');
 }
 </script>
 <form name="YT3" form onsubmit="doYT3(this.YT3.value); return false;">
-<input type="text" name="YT3" size="15" oninput="
+<input type="text" name="YT" size="15" oninput="
+document.YT20.YT20.value = this.value;
 document.YT1.YT1.value = this.value;
 document.YT2.YT2.value = this.value;
-document.YT20.YT20.value = this.value;
 document.YT6.YT6.value = this.value;
 document.YT7.YT7.value = this.value;
 "
@@ -101,10 +101,10 @@ window.open('https://www.youtube.com/results?search_query=intitle%3A' + YT1, '_b
 }
 </script>
 <form name="YT1" form onsubmit="doYT1(this.YT1.value); return false;">
-<input type="text" name="YT1" size="15" oninput="
+<input type="text" name="YT" size="15" oninput="
 document.YT3.YT3.value = this.value;
-document.YT2.YT2.value = this.value;
 document.YT20.YT20.value = this.value;
+document.YT2.YT2.value = this.value;
 document.YT6.YT6.value = this.value;
 document.YT7.YT7.value = this.value;
 "
@@ -119,7 +119,7 @@ window.open('https://www.youtube.com/results?search_query=%22' + YT2 + '%22', '_
 }
 </script>
 <form name="YT2" form onsubmit="doYT2(this.YT2.value); return false;">
-<input type="text" name="YT2" size="15" oninput="
+<input type="text" name="YT" size="15" oninput="
 document.YT3.YT3.value = this.value;
 document.YT1.YT1.value = this.value;
 document.YT20.YT20.value = this.value;
@@ -166,7 +166,7 @@ window.open('https://www.youtube.com/results?q=' + YT6 + '&sp=CAI%253D', '_blank
 }
 </script>
 <form name="YT6" form onsubmit="doYT6(this.YT6.value); return false;">
-<input type="text" name="YT6" size="15" oninput="
+<input type="text" name="YT" size="15" oninput="
 document.YT3.YT3.value = this.value;
 document.YT1.YT1.value = this.value;
 document.YT2.YT2.value = this.value;
@@ -184,12 +184,12 @@ window.open('https://www.youtube.com/results?q=' + YT7 + '&sp=EgJAAQ%253D%253D',
 }
 </script>
 <form name="YT7" form onsubmit="doYT7(this.YT7.value); return false;">
-<input type="text" name="YT7" size="15" oninput="
+<input type="text" name="YT" size="15" oninput="
 document.YT3.YT3.value = this.value;
 document.YT1.YT1.value = this.value;
 document.YT2.YT2.value = this.value;
-document.YT20.YT20.value = this.value;
 document.YT6.YT6.value = this.value;
+document.YT20.YT20.value = this.value;
 "
 placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
