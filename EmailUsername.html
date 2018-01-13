@@ -399,7 +399,9 @@ window.open('https://pipl.com/search/?q=' + email1, '_blank');
 <form name="email1" form onSubmit="doemail1(this.email1.value); return false;">
 <input type="text" name="email1" size="15" oninput="
 document.email2.email2.value = this.value;
-document.email3.email3.value = this.value;						    
+document.email3.email3.value = this.value;
+document.email4.email4.value = this.value;
+document.email5.email5.value = this.value;
 " placeholder="Email"/>
 <input type="submit" value="Search"/></form></td></tr>
 
@@ -413,9 +415,43 @@ window.open('http://search.carrot2.org/stable/search?source=web&view=circles&ski
 <form name="email2" form onSubmit="doemail2(this.email2.value); return false;">
 <input type="text" name="email2" size="15" oninput="
 document.email1.email1.value = this.value;
-document.email3.email3.value = this.value;						    
+document.email3.email3.value = this.value;
+document.email4.email4.value = this.value;
+document.email5.email5.value = this.value;
 " placeholder="Email/Keyword"/>
 <input type="submit" value="Search"/></form></td></tr>
+	
+<tr><td>Facebook, Instagram, Twitter & Youtube search</td>
+<td>
+<script type="text/javascript">
+function doemail4(email4) {
+window.open('https://www.google.co.uk/search?source=hp&ei=AhdaWrCKIomagAas3IugBw&q=+site%3Ainstagram.com+OR+site%3Afacebook.com+OR+site%3Atwitter.com+OR+site%3Ayoutube.com+%22' + email4 + '%22&oq=+site%3Ainstagram.com+OR+site%3Afacebook.com+OR+site%3Atwitter.com+OR+site%3Ayoutube.com+%22' + email4 + '%22&gs_l=psy-ab.3...767.767.0.1513.1.1.0.0.0.0.85.85.1.1.0....0...1c.2.64.psy-ab..0.0.0....0.K9HaglWQMt4', '_blank');
+}
+</script>                   
+<form name="email4" form onSubmit="doemail4(this.email4.value); return false;">
+<input type="text" name="email4" size="15" oninput="
+document.email1.email1.value = this.value;
+document.email2.email2.value = this.value;
+document.email3.email3.value = this.value;
+document.email5.email5.value = this.value;
+" placeholder="Email"/>
+<input type="submit" value="Search"/></form></td></tr>
+	
+<tr><td>Document Storage search</td><td>
+
+<script type="text/javascript">
+function doemail5(email5) {
+window.open('https://cse.google.com/cse?cx=001580308195336108602:hx9tv6r_od4&q=a&oq=a&gs_l=partner.12...0.0.3.1616.0.0.0.0.0.0.0.0..0.0.gsnos%2Cn%3D13...0.0jj1..1ac..25.partner..4.2.214.EosWW8s2U88#gsc.tab=0&gsc.q=' + email5 + '&gsc.sort=', '_blank');
+}
+</script>
+<form name="email5" form onSubmit="doemail5(this.email5.value); return false;">
+<input type="text" name="email5" size="15" oninput="
+document.email1.email1.value = this.value;
+document.email2.email2.value = this.value;
+document.email3.email3.value = this.value;
+document.email4.email4.value = this.value;						 
+" placeholder="Email"/>
+<input value="Search" type="submit"></form></td></tr>
 	
 <tr><td>Hacked email search</td>
 <td>
@@ -427,7 +463,9 @@ window.open('https://hacked-emails.com/api?q=' + email3, '_blank');
 <form name="email3" form onSubmit="doemail3(this.email3.value); return false;">
 <input type="text" name="email3" size="15" oninput="
 document.email1.email1.value = this.value;
-document.email2.email2.value = this.value;						    
+document.email2.email2.value = this.value;
+document.email4.email4.value = this.value;
+document.email5.email5.value = this.value;
 " placeholder="Email"/>
 <input type="submit" value="Search"/></form></td></tr>
 
