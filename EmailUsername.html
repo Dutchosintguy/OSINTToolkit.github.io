@@ -84,8 +84,8 @@
 	
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">	
 <table id="myTable">
-<col style="width:40%">  
-<col style="width:60%">  	
+<col style="width:35%">  
+<col style="width:75%">  	
 <tr>
 <th>Overview:</th>
 <th>Tool:</th>
@@ -226,7 +226,7 @@ document.user9.user9.value = this.value;
 document.user10.user10.value = this.value;
 document.user11.user11.value = this.value;
 document.user12.user12.value = this.value;
-" placeholder="Username"/>
+" placeholder="Username/Keyword"/>
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Facebook, Instagram, Twitter & Youtube search</td>
@@ -272,7 +272,7 @@ document.user9.user9.value = this.value;
 document.user10.user10.value = this.value;
 document.user11.user11.value = this.value;
 document.user12.user12.value = this.value;
-" placeholder="Username"/>
+" placeholder="Username/Keyword"/>
 <input type="submit" value="Search"/></form></td></tr>
 
 <tr><td>Match, POF, Meetup, OK Cupid, AYI, AshleyMadison, EHarmony & Spark search</td>
@@ -295,7 +295,7 @@ document.user8.user8.value = this.value;
 document.user10.user10.value = this.value;
 document.user11.user11.value = this.value;
 document.user12.user12.value = this.value;
-" placeholder="Username"/>
+" placeholder="Username/Keyword"/>
 <input type="submit" value="Search"/></form></td></tr>
 	
 <tr><td>Skype, Kik, WhatsApp, Viber, Snapchat & Jabber search</td>
@@ -382,19 +382,62 @@ document.user11.user11.value = this.value;
 	
 <input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search...">
 <table id="myTable1">
-<col style="width:30%">  
-<col style="width:70%">  	
+<col style="width:35%">  
+<col style="width:75%">  	
 <tr>
 <th>Overview:</th>
 <th>Tool:</th>
 </tr>
 
+<tr><td>General search via Pipl</td>
+<td>
+<script type="text/javascript">
+function doemail1(email1) {
+window.open('https://pipl.com/search/?q=' + email1, '_blank');
+}
+</script>                   
+<form name="email1" form onSubmit="doemail1(this.email1.value); return false;">
+<input type="text" name="email1" size="15" oninput="
+document.email2.email2.value = this.value;
+document.email3.email3.value = this.value;						    
+" placeholder="Email"/>
+<input type="submit" value="Search"/></form></td></tr>
+
+<tr><td>General search via Carrot2</td>
+<td>
+<script type="text/javascript">
+function doemail2(email2) {
+window.open('http://search.carrot2.org/stable/search?source=web&view=circles&skin=fancy-compact&query=' + email2 + '&results=200&algorithm=lingo&EToolsDocumentSource.country=ALL&EToolsDocumentSource.language=ALL&EToolsDocumentSource.customerId=&EToolsDocumentSource.safeSearch=false', '_blank');
+}
+</script>                   
+<form name="email2" form onSubmit="doemail2(this.email2.value); return false;">
+<input type="text" name="email2" size="15" oninput="
+document.email1.email1.value = this.value;
+document.email3.email3.value = this.value;						    
+" placeholder="Email/Keyword"/>
+<input type="submit" value="Search"/></form></td></tr>
+	
+<tr><td>Hacked email search</td>
+<td>
+<script type="text/javascript">
+function doemail3(email3) {
+window.open('https://hacked-emails.com/api?q=' + email3, '_blank');
+}
+</script>                   
+<form name="email3" form onSubmit="doemail3(this.email3.value); return false;">
+<input type="text" name="email3" size="15" oninput="
+document.email1.email1.value = this.value;
+document.email2.email2.value = this.value;						    
+" placeholder="Email"/>
+<input type="submit" value="Search"/></form></td></tr>
 
 </table>
 
 <br /><h4>Misc Email Search Tools:</h4>
 
-<ul><li><a href="https://www.manycontacts.com/en/mail-check" target="_blank">Many Contacts Email Search</a></li></ul>
+<ul><li><a href="https://www.manycontacts.com/en/mail-check" target="_blank">Many Contacts Email Search</a></li>
+<li><a href="https://www.iptrackeronline.com/email-header-analysis.php" target="_blank">Email  Header Analyzer</a></li>
+<li><a href="https://www.iptrackeronline.com/email-header-analysis.php" target="_blank">Email  Extractor</a></li></ul>
 
 <p><a href="#top">Back To Top</a></p>
 
