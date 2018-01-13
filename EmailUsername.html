@@ -1,8 +1,197 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+<head>
+<title>OSINT Toolkit V2.1</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets1/css/main.css" />
+</head>
 <body>
 
-<img src="images/1.jpg">
+<!-- Wrapper -->
+<div id="wrapper">
 
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>OSINT</strong><span>Toolkit</span></a>
+<nav>
+<a href="#menu">Menu</a>
+</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<ul class="links">
+<li><a href="https://osinttoolkit.github.io/Facebook">Facebook</a></li>
+<li><a href="https://osinttoolkit.github.io/Twitter">Twitter</a></li>
+<li><a href="https://osinttoolkit.github.io/TwitterMonitor">Twitter Monitoring</a></li>
+<li><a href="https://osinttoolkit.github.io/Instagram">Instagram</a></li>
+<li><a href="https://osinttoolkit.github.io/GoogleBing">Google & Bing</a></li>
+<li><a href="https://osinttoolkit.github.io/Youtube">Youtube</a></li>
+<li><a href="https://osinttoolkit.github.io/G+Link">Google+ & LinkedIn</a></li>
+<li><a href="https://osinttoolkit.github.io/Misc">Misc</a></li>
+<li><a href="https://osinttoolkit.github.io/DocumentSearch">Document Search</a></li>
+<li><a href="https://osinttoolkit.github.io/EmailUsername">Email & Username Search</a></li>
+<li><a href="https://osinttoolkit.github.io/Bookmarks">Bookmarks</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+<div class="inner">
+<header class="major">
+
+<h1>Email & Username:</h1>
+</header>
+
+<h4>Username</h4>	
+	
+<p>In order to use these tools, please enter the username into the relevant box below, excluding any prefixed @ or # symbols.</p>
+
+<p>N.B. any results for usernames are an approximation, as such, any negative results, especially in the case of searches relating to messaging apps (Kik, Snapchat, Whatsapp, etc), does not necessarily mean the username is not in use.</p>
+
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+#myInput1 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+}
+#myTable1 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable1 th, #myTable td {
+    text-align: left; 
+}
+	
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">	
+<table id="myTable">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+
+	
+</table>
+
+<br /><h4>Misc Username Tools:</h4>
+	
+<ul>
+<li><a href="https://www.namecheckr.com/" target="_blank">Namecheckr</a></li>
+<li><a href="https://pipl.com/api/demo" target="_blank">Pipl API search</a></li>
+<li><a href="https://accounts.snapchat.com/accounts/password_reset_request" target="_blank">Snapchat Password Recovery</a></li> 
+
+<h4>Email:</h4>
+
+<p>N.B. any results for emails are an approximation, as such, any negative results does not necessarily mean the email is not active and or in use.</p>	
+	
+<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search...">
+<table id="myTable1">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+
+</table>
+
+<br /><h4>Misc Email Search Tools:</h4>
+
+<ul><li><a href="https://www.manycontacts.com/en/mail-check" target="_blank">Many Contacts Email Search</a></li></ul>
+
+<p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>	
+<script>
+function myFunction1() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable1");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>		
+
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2018. All rights reserved.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
+	
 </body>
 </html>
