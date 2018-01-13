@@ -82,8 +82,13 @@ function doI1(I1) {
 window.open('https://www.instagram.com/' + I1 + '/', '_blank');
 }
 </script>
-<form onsubmit="doI1(this.I1.value); return false;">
-<input type="text" name="I1" size="15" placeholder="Account Name" />
+<form name="I1" form onsubmit="doI1(this.I1.value); return false;">
+<input type="text" name="I1" size="15" oninput="
+document.I3.I3.value = this.value;
+document.FN3.FN3.value = this.value;
+document.I5.I5.value = this.value;
+document.I6.I6.value = this.value;
+" placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Keyword search</td><td>
@@ -93,8 +98,8 @@ function doI2(I2) {
 window.open('https://www.instagram.com/explore/tags/' + I2 + '/', '_blank');
 }
 </script>
-<form onsubmit="doI2(this.I2.value); return false;">
-<input type="text" name="I2" size="15" placeholder="Word" />
+<form name="I2" form onsubmit="doI2(this.I2.value); return false;">
+<input type="text" name="I2" size="15" placeholder="Keyword/Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>Historical data search via Google</td><td>
@@ -104,8 +109,13 @@ function doI3(I3) {
 window.open('https://www.google.co.uk/search?q=site:instagram.com/' + I3 + '+inurl:max_id%3D&filter=0&gws_rd=cr&ei=LsxyV72SEcmSgAb79oLgBQ', '_blank');
 }
 </script>
-<form onsubmit="doI3(this.I3.value); return false;">
-<input type="text" name="I3" size="15" placeholder="Account Name" />
+<form name="I3" form onsubmit="doI3(this.I3.value); return false;">
+<input type="text" name="I3" size="15" oninput="
+document.I1.I1.value = this.value;
+document.FN3.FN3.value = this.value;
+document.I5.I5.value = this.value;
+document.I6.I6.value = this.value;
+" placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>Account mentions search via Google</td><td>
@@ -115,8 +125,13 @@ function doFN3(FN3) {
 window.open('https://www.google.co.uk/search?q=site:instagram.com+%22%40' + FN3 + '%22+-site:instagram.com/' + FN3 + '&gws_rd=cr&dcr=0&ei=0H5SWtSnFaTHgAbx54zYCw', '_blank');
 }
 </script>
-<form onsubmit="doFN3(this.FN3.value); return false;">
-<input type="text" name="FN3" size="15" placeholder="Account Name" />
+<form name="FN3" form onsubmit="doFN3(this.FN3.value); return false;">
+<input type="text" name="FN3" size="15" oninput="
+document.I3.I3.value = this.value;
+document.I1.I1.value = this.value;
+document.I5.I5.value = this.value;
+document.I6.I6.value = this.value;
+"  placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>Linked to Twitter?</td><td>
@@ -137,8 +152,13 @@ function doI5(I5) {
 window.open('https://websta.me/n/' + I5, '_blank');
 }
 </script>
-<form onsubmit="doI5(this.I5.value); return false;">
-<input type="text" name="I5" size="15" placeholder="Account Name" />
+<form name="I5" form onsubmit="doI5(this.I5.value); return false;">
+<input type="text" name="I5" size="15" oninput="
+document.I3.I3.value = this.value;
+document.FN3.FN3.value = this.value;
+document.I1.I1.value = this.value;
+document.I6.I6.value = this.value;
+"  placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>Detailed account analytics</td><td>
@@ -148,8 +168,13 @@ function doI6(I6) {
 window.open('https://socialblade.com/instagram/user/' + I6 + '/monthly', '_blank');
 }
 </script>
-<form onsubmit="doI6(this.I6.value); return false;">
-<input type="text" name="I6" size="15" placeholder="Account Name" />
+<form name="I6" form onsubmit="doI6(this.I6.value); return false;">
+<input type="text" name="I6" size="15" oninput="
+document.I3.I3.value = this.value;
+document.FN3.FN3.value = this.value;
+document.I5.I5.value = this.value;
+document.I1.I1.value = this.value;
+"  placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Compare 2 users</td><td>
@@ -159,9 +184,13 @@ function doI7(I7,I8) {
 window.open('https://socialblade.com/instagram/compare/' + I7 + '/' + I8, '_blank');
 }
 </script>
-<form onsubmit="doI7(this.I7.value, this.I8.value); return false;">
-<input type="text" name="I7" size="15" placeholder="1st Account" />
-<input type="text" name="I8" size="15" placeholder="2nd Account" />
+<form name="I7" form onsubmit="doI7(this.I7.value, this.I8.value); return false;">
+<input type="text" name="I7" size="15" oninput="
+document.I8.I9.value = this.value;
+" placeholder="1st Account" />
+<input type="text" name="I8" size="15" oninput="
+document.I8.10.value = this.value;
+" placeholder="2nd Account" />
 <input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>Compare 3 users</td><td>
@@ -172,9 +201,13 @@ window.open('https://socialblade.com/instagram/compare/' + I9 + '/' + I10 + '/' 
 }
 </script>
 
-<form onsubmit="doI9(this.I9.value, this.I10.value, this.I11.value); return false;">
-<input type="text" name="I9" size="9" placeholder="1st Account" />
-<input type="text" name="I10" size="9" placeholder="2nd Account" />
+<form name="I8" form onsubmit="doI9(this.I9.value, this.I10.value, this.I11.value); return false;">
+<input type="text" name="I9" size="9" oninput="
+document.I7.I7.value = this.value;
+" placeholder="1st Account" />
+<input type="text" name="I10" size="9" oninput="
+document.I7.I8.value = this.value;
+" placeholder="2nd Account" />
 <input type="text" name="I11" size="9" placeholder="3rd Account" />	
 <input type="submit" value="Search" /></form></td></tr>		
 
