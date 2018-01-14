@@ -82,8 +82,12 @@ function dotwor(man) {
 window.open('https://twitter.com/search?q="' + man + '"%20', '_blank');
 }
 </script>
-<form onsubmit="dotwor(this.man.value); return false;">
-<input type="text" name="man" size="15" placeholder="Word or Phrase" />
+<form name="twor" form onsubmit="dotwor(this.man.value); return false;">
+<input type="text" name="man" size="15" oninput="
+document.tps1.tps1.value = this.value;
+document.ta1.ta1.value = this.value;
+"
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 
@@ -221,8 +225,12 @@ function dotps1(tps1) {
 window.open('http://twicsy.com/?search=' + tps1, '_blank');
 }
 </script>
-<form onsubmit="dotps1(this.tps1.value); return false;">
-<input type="text" name="tps1" size="15" placeholder="Word or Phrase" />
+<form name="tps1" form onsubmit="dotps1(this.tps1.value); return false;">
+<input type="text" name="tps1" size="15" oninput="
+document.twor.man.value = this.value;
+document.ta1.ta1.value = this.value;
+"
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>Keyword analytics</td>
@@ -232,8 +240,12 @@ function dota1(ta1) {
 window.open('https://socialbearing.com/search/general/' + ta1, '_blank');
 }
 </script>
-<form onsubmit="dota1(this.ta1.value); return false;">
-<input type="text" id="ta1" name="ta1" size="15" placeholder="Word or Phrase" />
+<form name="ta1" form onsubmit="dota1(this.ta1.value); return false;">
+<input type="text" id="ta1" name="ta1" size="15" oninput="
+document.twor.man.value = this.value;
+document.tps1.tps1.value = this.value;
+"
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Account analytics</td>
@@ -244,10 +256,10 @@ window.open('https://socialbearing.com/search/user/' + ta2, '_blank');
 }
 </script>
 <form onsubmit="dota2(this.ta2.value); return false;">
-<input type="text" id="ta2" name="ta2" size="15" placeholder="Account Name" />
+<input type="text" name="ta2" size="15" placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
-<tr><td>Mutual follows</td>
+<tr><td>Mutual follows - 2 accounts</td>
 <td>
 <script type="text/javascript">
 function dotw9a(one, two) {
@@ -255,12 +267,12 @@ window.open('http://followerwonk.com/compare/' + one + '/' + two, '_blank');
 }
 </script>
 
-<form onsubmit="dotw9a(this.one.value, this.two.value); return false;">
-<input name="one" size="15" placeholder="1st Account" type="text" />
-<input name="two" size="15" placeholder="2nd Account" type="text" />
+<form name="tw9" form onsubmit="dotw9a(this.one.value, this.two.value); return false;">
+<input type="text" name="one" size="15" oninput="document.tw10.A.value = this.value;" placeholder="1st Account" />
+<input type="text" name="two" size="15" oninput="document.tw10.B.value = this.value;" placeholder="2nd Account" />
 <input type="submit" value="Search" /></form></td></tr>
 
-<tr><td>Mutual follows</td>
+<tr><td>Mutual follows - 3 accounts</td>
 <td>
 <script type="text/javascript">
 function dotw10(A, B, C) {
@@ -268,9 +280,9 @@ window.open('http://followerwonk.com/compare/' + A + '/' + B + '/' + C, '_blank'
 }
 </script>
 <form onsubmit="dotw10(this.A.value, this.B.value, this.C.value); return false;">
-<input name="A" size="9" placeholder="1st Account" type="text" />
-<input name="B" size="9" placeholder="2nd Account" type="text" />
-<input name="C" size="9" placeholder="3rd Account" type="text" />
+<input type="text" name="A" size="9" oninput="document.tw9.one.value = this.value;"placeholder="1st Account" />
+<input type="text" name="B" size="9" oninput="document.tw9.two.value = this.value;" placeholder="2nd Account" />
+<input type="text" name="C" size="9" placeholder="3rd Account" />
 <input type="submit" value="Search" /></form></td></tr>
 
 </table>
