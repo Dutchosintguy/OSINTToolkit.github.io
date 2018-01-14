@@ -86,6 +86,7 @@ window.open('http://network-tools.com/default.asp?prog=ping&host=' + X1, '_blank
 <form name="X1" form onsubmit="doX1(this.X1.value); return false;">
 <input type="text" name="X1" size="15" oninput="
 document.W1.W1.value = this.value;
+document.RW1.RW1.value = this.value;
 document.W2.W2.value = this.value;
 document.IPH1.IPH1.value = this.value;
 document.EDS1.EDS1.value = this.value;
@@ -111,6 +112,7 @@ window.open('http://network-tools.com/default.asp?prog=whois&host=' + W1, '_blan
 <form name="W1" form onsubmit="doW1(this.W1.value); return false;">
 <input type="text" name="W1" size="15" oninput="
 document.X1.X1.value = this.value;
+document.RW1.RW1.value = this.value;
 document.W2.W2.value = this.value;
 document.IPH1.IPH1.value = this.value;
 document.EDS1.EDS1.value = this.value;
