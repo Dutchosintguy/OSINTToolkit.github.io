@@ -99,7 +99,7 @@ window.open('https://www.google.co.uk/#q=' + BES1, '_blank');
 }
 </script>
 <form name="BES1" form onsubmit="doBES1(this.BES1.value); return false;">
-<input name="BES1" size="15" oninput="
+<input type="text" name="BES1" size="15"  oninput="
 document.SE1.SE1.value = this.value;
 document.SE4.SE4.value = this.value;
 document.SE10.SE11.value = this.value;
@@ -241,7 +241,7 @@ window.open('https://www.google.co.uk/search?q=cache%3A' + BES2, '_blank');
 }
 </script>
 <form name="BES2" form onsubmit="doBES2(this.BES2.value); return false;">
-<input name="BES2" size="15" oninput="
+<input type="text" name="BES2" size="15"  oninput="
 document.SE10.SE10.value = this.value;
 document.SE15.SE15.value = this.value;
 document.SE17.SE17.value = this.value;
@@ -257,7 +257,7 @@ window.open('https://www.google.co.uk/trends/explore?q=' + GT1, '_blank');
 }
 </script>
 <form name="GT1" form onsubmit="doGT1(this.GT1.value); return false;">
-<input name="GT1" size="15" oninput="
+<input type="text" name="GT1" size="15" oninput="
 document.BES1.BES1.value = this.value;
 document.SE1.SE1.value = this.value;
 document.SE4.SE4.value = this.value;
@@ -278,7 +278,7 @@ window.open('https://www.google.co.uk/trends/explore?date=' + GT3 + '%20' + GT4 
 }
 </script>
 <form name="GT2" form onsubmit="doGT2(this.GT2.value, this.GT3.value, this.GT4.value); return false;">
-<input name="GT2" size="8" oninput="
+<input type="text" name="GT8" size="8" oninput="
 document.BES1.BES1.value = this.value;
 document.SE1.SE1.value = this.value;
 document.SE4.SE4.value = this.value;
@@ -301,12 +301,12 @@ window.open('https://www.google.co.uk/trends/explore?q=' + GT5 + ',' + GT6, '_bl
 }
 </script>
 <form name="GT5" form onsubmit="doGT5(this.GT5.value, this.GT6.value); return false;">
-<input name="GT5" size="15" oninput="
+<input type="text" name="GT5" size="15" oninput="
 document.SE2.SE2.value = this.value;
 document.GT7.GT7.value = this.value;
 " 
 placeholder="1st Term" type="text">
-<input name="GT6" size="15" oninput="
+<input type="text" name="GT6" size="15" oninput="
 document.SE2.SE3.value = this.value;
 document.GT7.GT8.value = this.value;
 " 
@@ -322,12 +322,12 @@ window.open('https://www.google.co.uk/trends/explore?q=' + GT7 + ',' + GT8 + ','
 </script>
 
 <form name="GT7" form onsubmit="doGT7(this.GT7.value, this.GT8.value, this.GT9.value); return false;">
-<input name="GT7" size="9" oninput="
+<input type="text" name="GT7" size="9" oninput="
 document.SE2.SE2.value = this.value;
 document.GT5.GT5.value = this.value;
 " 
 placeholder="1st Term" type="text">
-<input name="GT8" size="9" oninput="
+<input type="text" name="GT8" size="9" oninput="
 document.SE2.SE3.value = this.value;
 document.GT5.GT6.value = this.value;
 " 
@@ -366,7 +366,7 @@ window.open('https://www.bing.com/search?q=' + BES0 + '&go=Submit+Query&qs=bs&fo
 }
 </script>
 <form name="BES0" form onsubmit="doBES0(this.BES0.value); return false;">
-<input name="BES0" size="15" oninput="
+<input type="text" name="BES0" size="15" oninput="
 document.BES1.BES1.value = this.value;
 document.SE1.SE1.value = this.value;
 document.SE4.SE4.value = this.value;
