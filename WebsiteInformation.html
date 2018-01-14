@@ -83,8 +83,22 @@ function doX1(X1) {
 window.open('http://network-tools.com/default.asp?prog=ping&host=' + X1, '_blank');
 }
 </script>
-<form onsubmit="doX1(this.X1.value); return false;">
-<input type="text" name="X1" size="15" placeholder="Website" />
+<form name="X1" form onsubmit="doX1(this.X1.value); return false;">
+<input type="text" name="X1" size="15" oninput="
+Document.W1.W1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>Website Whois</td><td>
@@ -94,19 +108,40 @@ function doW1(W1) {
 window.open('http://network-tools.com/default.asp?prog=whois&host=' + W1, '_blank');
 }
 </script>
-<form onsubmit="doW1(this.W1.value); return false;">
-<input name="W1" size="15" placeholder="Website" type="text">
+<form name="W1" form onsubmit="doW1(this.W1.value); return false;">
+<input type="text" name="W1" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input value="Search" type="submit"></form></td></tr>
 
 <tr><td>IP Address Whois</td><td>
 
 <script type="text/javascript">
-function doIP2(IP2) {
-window.open('http://' + IP2 + '.ipaddress.com/', '_blank');
+function doIPE2(IPE2) {
+window.open('http://' + IPE2 + '.ipaddress.com/', '_blank');
 }
 </script>
-<form onsubmit="doIP2(this.IP2.value); return false;">
-<input name="IP2" size="15" placeholder="IP address" type="text">
+<form name="IPE2" form onsubmit="doIPE2(this.IPE2.value); return false;">
+<input type="text" name="IPE2" size="15" oninput="
+Document.RW2.RW2.value = this.value;
+Document.IP1.IP1.value = this.value;
+Document.IP2.IP2.value = this.value;
+Document.EDS2.EDS2.value = this.value;
+Document.Rob5.Rob5.value = this.value;
+"
+placeholder="IP Address" />
 <input value="Search" type="submit"></form></td></tr>
 
 <tr><td>Website Reverse Whois</td><td>
@@ -116,8 +151,23 @@ function doRW1(RW1) {
 window.open('http://domainbigdata.com/' + RW1, '_blank');
 }
 </script>
-<form onsubmit="doRW1(this.RW1.value); return false;">
-<input type="text" name="RW1" size="15" placeholder="Website" />
+<form name="RW1" form onsubmit="doRW1(this.RW1.value); return false;">
+<input type="text" name="RW1" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>IP Reverse Whois</td><td>
@@ -127,8 +177,15 @@ function doRW2(RW2) {
 window.open('http://domainbigdata.com/' + RW2, '_blank');
 }
 </script>
-<form onsubmit="doRW2(this.RW2.value); return false;">
-<input type="text" name="RW2" size="15" placeholder="IP address" />
+<form name="RW2" form onsubmit="doRW2(this.RW2.value); return false;">
+<input type="text" name="RW2" size="15" oninput="
+Document.IPE2.IPE2.value = this.value;
+Document.IP1.IP1.value = this.value;
+Document.IP2.IP2.value = this.value;
+Document.EDS2.EDS2.value = this.value;
+Document.Rob5.Rob5.value = this.value;
+"
+placeholder="IP Address" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Email Reverse Whois</td><td>
@@ -149,8 +206,23 @@ function doW2(W2) {
 window.open('http://network-tools.com/default.asp?prog=network&host=' + W2, '_blank');
 }
 </script>
-<form onsubmit="doW2(this.W2.value); return false;">
-<input type="text" name="W2" size="15" placeholder="Website" />
+<form name="W2" form onsubmit="doW2(this.W2.value); return false;">
+<input type="text" name="W2" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>TLD lookup</td><td>
@@ -171,8 +243,23 @@ function doIPH1(IPH1) {
 window.open('http://viewdns.info/iphistory/?domain=' + IPH1, '_blank');
 }
 </script>
-<form onsubmit="doIPH1(this.IPH1.value); return false;">
-<input type="text" name="IPH1" size="15" placeholder="Website" />
+<form name="IPH1" form onsubmit="doIPH1(this.IPH1.value); return false;">
+<input type="text" name="IPH1" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>IP Geolocator</td><td>
@@ -182,8 +269,15 @@ function doIP1(IP1) {
 window.open('http://dawhois.com/?query=' + IP1 + '&map=1#map_geo_location', '_blank');
 }
 </script>
-<form onsubmit="doIP1(this.IP1.value); return false;">
-<input type="text" name="IP1" size="15" placeholder="IP address" />
+<form name="IP1" form onsubmit="doIP1(this.IP1.value); return false;">
+<input type="text" name="IP1" size="15" oninput="
+Document.IPE2.IPE2.value = this.value;
+Document.RW2.RW2.value = this.value;
+Document.IP2.IP2.value = this.value;
+Document.EDS2.EDS2.value = this.value;
+Document.Rob5.Rob5.value = this.value;
+"
+placeholder="IP Address" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Alternative IP Geolocator</td><td>
@@ -193,8 +287,15 @@ function doIP2(IP2) {
 window.open('http://whatismyipaddress.com/ip/' + IP2, '_blank');
 }
 </script>
-<form onsubmit="doIP2(this.IP2.value); return false;">
-<input type="text" name="IP2" size="15" placeholder="IP address" />
+<form name="IP2" form onsubmit="doIP2(this.IP2.value); return false;">
+<input type="text" name="IP2" size="15" oninput="
+Document.IPE2.IPE2.value = this.value;
+Document.RW2.RW2.value = this.value;
+Document.IP1.IP1.value = this.value;
+Document.EDS2.EDS2.value = this.value;
+Document.Rob5.Rob5.value = this.value;
+"
+placeholder="IP Address" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>MAC lookup</td><td>
@@ -226,8 +327,23 @@ function doEDS1(EDS1) {
 window.open('http://network-tools.com/default.asp?prog=express&host=' + EDS1, '_blank');
 }
 </script>
-<form onsubmit="doEDS1(this.EDS1.value); return false;">
-<input type="text" name="EDS1" size="15" placeholder="Website" />
+<form name="EDS1" form onsubmit="doEDS1(this.EDS1.value); return false;">
+<input type="text" name="EDS1" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>IP Express Data Search</td><td>
@@ -237,8 +353,15 @@ function doEDS2(EDS2) {
 window.open('http://network-tools.com/default.asp?prog=express&host=' + EDS2, '_blank');
 }
 </script>
-<form onsubmit="doEDS2(this.EDS2.value); return false;">
-<input type="text" name="EDS2" size="15" placeholder="IP address" />
+<form name="EDS2" form onsubmit="doEDS2(this.EDS2.value); return false;">
+<input type="text" name="EDS2" size="15" oninput="
+Document.IPE2.IPE2.value = this.value;
+Document.RW2.RW2.value = this.value;
+Document.IP1.IP1.value = this.value;
+Document.IP2.IP2.value = this.value;
+Document.Rob5.Rob5.value = this.value;
+"
+placeholder="IP Address" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Detailed DNS report</td><td>
@@ -248,8 +371,23 @@ function doDNS1(DNS1) {
 window.open('http://viewdns.info/dnsreport/?domain=' + DNS1, '_blank');
 }
 </script>
-<form onsubmit="doDNS1(this.DNS1.value); return false;">
-<input type="text" name="DNS1" size="15" placeholder="Website" />
+<form name="DNS1" form onsubmit="doDNS1(this.DNS1.value); return false;">
+<input type="text" name="DNS1" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Robtex shared search</td><td>
@@ -259,8 +397,23 @@ function doRob1(Rob1) {
 window.open('https://www.robtex.com/?dns=' + Rob1 + '&shared=1', '_blank');
 }
 </script>
-<form onsubmit="doRob1(this.Rob1.value); return false;">
-<input type="text" name="Rob1" size="15" placeholder="Website" />
+<form name="Rob1" form onsubmit="doRob1(this.Rob1.value); return false;">
+<input type="text" name="Rob1" size="15"oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>Robtex graph search</td><td>
@@ -270,8 +423,23 @@ function doRob2(Rob2) {
 window.open('https://www.robtex.com/?dns=' + Rob2 + '&graph=1', '_blank');
 }
 </script>
-<form onsubmit="doRob2(this.Rob2.value); return false;">
-<input type="text" name="Rob2" size="15" placeholder="Website" />
+<form name="Rob2" form onsubmit="doRob2(this.Rob2.value); return false;">
+<input type="text" name="Rob2" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>Robtex IP search</td><td>
@@ -281,8 +449,15 @@ function doRob5(Rob5) {
 window.open('https://www.robtex.com/?route=' + Rob5 + '/24', '_blank');
 }
 </script>
-<form onsubmit="doRob5(this.Rob5.value); return false;">
-<input type="text" name="Rob5" size="15" placeholder="IP Address" />
+<form name="Rob5" form onsubmit="doRob5(this.Rob5.value); return false;">
+<input type="text" name="Rob5" size="15" oninput="
+Document.IPE2.IPE2.value = this.value;
+Document.RW2.RW2.value = this.value;
+Document.IP1.IP1.value = this.value;
+Document.IP2.IP2.value = this.value;
+Document.EDS2.EDS2.value = this.value;
+"
+placeholder="IP Address" />
 <input type="submit" value="Search" /></form></td></tr>	
 	
 <tr><td>Robtex Express Data Search</td><td>
@@ -292,8 +467,23 @@ function doRob3(Rob3) {
 window.open('https://www.robtex.com/dns-lookup/' + Rob3, '_blank');
 }
 </script>
-<form onsubmit="doRob3(this.Rob3.value); return false;">
-<input type="text" name="Rob3" size="15" placeholder="Website" />
+<form name="Rob3" form onsubmit="doRob3(this.Rob3.value); return false;">
+<input type="text" name="Rob3" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>Header lookup</td><td>
@@ -303,8 +493,23 @@ function doWI1(WI1) {
 window.open('http://viewdns.info/httpheaders/?domain=' + WI1, '_blank');
 }
 </script>
-<form onsubmit="doWI1(this.WI1.value); return false;">
-<input type="text" name="WI1" size="15" placeholder="Website" />
+<form name="WI1" form onsubmit="doWI1(this.WI1.value); return false;">
+<input type="text" name="WI1" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>Source code search</td><td>
@@ -335,8 +540,23 @@ function doWP1(WP1) {
 window.open('https://builtwith.com/' + WP1, '_blank');
 }
 </script>
-<form onsubmit="doWP1(this.WP1.value); return false;">
-<input type="text" name="WP1" size="15" placeholder="Website" />
+<form name="WP1" form onsubmit="doWP1(this.WP1.value); return false;">
+<input type="text" name="WP1" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP2.WP2.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Wolfram Alpha search</td><td>
@@ -345,8 +565,23 @@ function doWP2(WP2) {
 window.open('https://www.wolframalpha.com/input/?i=' + WP2, '_blank');
 }
 </script>
-<form onsubmit="doWP2(this.WP2.value); return false;">
-<input type="text" name="WP2" size="15" placeholder="Website" />
+<form name="WP2" form onsubmit="doWP2(this.WP2.value); return false;">
+<input type="text" name="WP2" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP4.WP4.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Website overview</td><td>
@@ -356,8 +591,23 @@ function doWP4(WP4) {
 window.open('http://dawhois.com/siteinfo/?query=' + WP4, '_blank');
 }
 </script>
-<form onsubmit="doWP4(this.WP4.value); return false;">
-<input type="text" name="WP4" size="15" placeholder="Website" />
+<form name="WP4" form onsubmit="doWP4(this.WP4.value); return false;">
+<input type="text" name="WP4" size="15" oninput="
+Document.X1.X1.value = this.value;
+Document.W1.W1.value = this.value;
+Document.RW1.RW1.value = this.value;
+Document.W2.W2.value = this.value;
+Document.IPH1.IPH1.value = this.value;
+Document.EDS1.EDS1.value = this.value;
+Document.DNS1.DNS1.value = this.value;
+Document.Rob1.Rob1.value = this.value;
+Document.Rob2.Rob2.value = this.value;
+Document.Rob3.Rob3.value = this.value;
+Document.WI1.WI1.value = this.value;
+Document.WP1.WP1.value = this.value;
+Document.WP2.WP2.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
 </table>
