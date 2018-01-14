@@ -158,8 +158,15 @@ function doPB1(PB1) {
 window.open('http://pastebin.com/search?q=%22' + PB1 + '%22', '_blank');
 }
 </script>
-<form onsubmit="doPB1(this.PB1.value); return false;">
-<input type="text" name="PB1" size="15" placeholder="Word or Phrase" />
+<form name ="PB1" form onsubmit="doPB1(this.PB1.value); return false;">
+<input type="text" name="PB1" size="15" oninput="
+document.PB8.PB8.value = this.value;
+document.ASE19.ASE19.value = this.value;
+document.ASE20.ASE20.value = this.value;
+document.HF1.HF1.value = this.value;
+document.HF4.HF4.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Exact phrase Pastebin search</td><td>
@@ -168,8 +175,15 @@ function doPB8(PB8) {
 window.open('https://cse.google.com/cse?cx=010881655957307385441:lfqfg6iddk0&q=a&oq=a&gs_l=partner.3...705.1113.0.1430.2.2.0.0.0.0.147.266.0j2.2.0.gsnos%2Cn%3D13...0.392j153664j2..1ac.1.25.partner..2.0.0.1CAJMIfcy5k#gsc.tab=0&gsc.q=%22' + PB8 + '%22&gsc.sort=', '_blank');
 }
 </script>
-<form onsubmit="doPB8(this.PB8.value); return false;">
-<input type="text" name="PB8" size="15" placeholder="Word or Phrase" />
+<form name="PB8" form onsubmit="doPB8(this.PB8.value); return false;">
+<input type="text" name="PB8" size="15" oninput="
+document.PB1.PB1.value = this.value;
+document.ASE19.ASE19.value = this.value;
+document.ASE20.ASE20.value = this.value;
+document.HF1.HF1.value = this.value;
+document.HF4.HF4.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>General Document Storage search</td><td>
@@ -179,8 +193,15 @@ function doASE19(ASE19) {
 window.open('https://cse.google.com/cse?cx=001580308195336108602:hx9tv6r_od4&q=a&oq=a&gs_l=partner.12...0.0.3.1616.0.0.0.0.0.0.0.0..0.0.gsnos%2Cn%3D13...0.0jj1..1ac..25.partner..4.2.214.EosWW8s2U88#gsc.tab=0&gsc.q=' + ASE19 + '&gsc.sort=', '_blank');
 }
 </script>
-<form onsubmit="doASE19(this.ASE19.value); return false;">
-<input name="ASE19" size="15" placeholder="Word or Phrase" type="text">
+<form name="ASE19" form onsubmit="doASE19(this.ASE19.value); return false;">
+<input name="ASE19" size="15" oninput="
+document.PB1.PB1.value = this.value;
+document.PB8.PB8.value = this.value;
+document.ASE20.ASE20.value = this.value;
+document.HF1.HF1.value = this.value;
+document.HF4.HF4.value = this.value;
+" 
+placeholder="Word or Phrase" type="text">
 <input value="Search" type="submit"></form></td></tr>
 
 <tr><td>Exact Document Storage search</td><td>	
@@ -190,8 +211,15 @@ function doASE20(ASE20) {
 window.open('https://cse.google.com/cse?cx=001580308195336108602:hx9tv6r_od4&q=a&oq=a&gs_l=partner.12...0.0.3.1616.0.0.0.0.0.0.0.0..0.0.gsnos%2Cn%3D13...0.0jj1..1ac..25.partner..4.2.214.EosWW8s2U88#gsc.tab=0&gsc.q=%22' + ASE20 + '%22&gsc.sort=', '_blank');
 }
 </script>
-<form onsubmit="doASE20(this.ASE20.value); return false;">
-<input name="ASE20" size="15" placeholder="Word or Phrase" type="text">
+<form name="ASE20" form onsubmit="doASE20(this.ASE20.value); return false;">
+<input name="ASE20" size="15" oninput="
+document.PB1.PB1.value = this.value;
+document.PB8.PB8.value = this.value;
+document.ASE19.ASE19.value = this.value;
+document.HF1.HF1.value = this.value;
+document.HF4.HF4.value = this.value;
+" 
+placeholder="Word or Phrase" type="text">
 <input value="Search" type="submit"></form></td></tr>	
 
 <tr><td>Partial Electoral Roll search</td><td>
@@ -222,8 +250,15 @@ function doHF1(HF1) {
 window.open('https://cse.google.com/cse?cx=010881655957307385441:8cawofpromk&q=a&oq=a&gs_l=partner.3...3923.6352.0.6951.2.1.1.0.0.0.119.119.0j1.1.0.gsnos%2Cn%3D13...0.2437j4060249j3j1..1ac.1.25.partner..2.0.0.vJT5GYRZ8KU#gsc.tab=0&gsc.q=' + HF1 + '&gsc.sort=', '_blank');
 }
 </script>
-<form onsubmit="doHF1(this.HF1.value); return false;">
-<input type="text" name="HF1" size="15" placeholder="Word or Phrase" />
+<form name="HF1" form onsubmit="doHF1(this.HF1.value); return false;">
+<input type="text" name="HF1" size="15" oninput="
+document.PB1.PB1.value = this.value;
+document.PB8.PB8.value = this.value;
+document.ASE19.ASE19.value = this.value;
+document.ASE20.ASE20.value = this.value;
+document.HF4.HF4.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr> 
 
 <tr><td>Google Hacking Database search</td><td>  
@@ -233,8 +268,15 @@ function doHF4(HF4) {
 window.open('https://www.exploit-db.com/google-hacking-database/?action=search&ghdb_search_cat_id=0&ghdb_search_text=' + HF4, '_blank');
 }
 </script>
-<form onsubmit="doHF4(this.HF4.value); return false;">
-<input type="text" name="HF4" size="15" placeholder="Website or Phrase" />
+<form name="HF4" form onsubmit="doHF4(this.HF4.value); return false;">
+<input type="text" name="HF4" size="15" oninput="
+document.PB1.PB1.value = this.value;
+document.PB8.PB8.value = this.value;
+document.ASE19.ASE19.value = this.value;
+document.ASE20.ASE20.value = this.value;
+document.HF1.HF1.value = this.value;
+" 
+placeholder="Website or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
   
 </table>
