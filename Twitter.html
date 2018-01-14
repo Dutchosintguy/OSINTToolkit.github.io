@@ -135,8 +135,18 @@ function dotw2(tw2) {
 window.open('https://twitter.com/' + tw2, '_blank');
 }
 </script>
-<form onsubmit="dotw2(this.tw2.value); return false;">
-<input type="text" name="tw2" id="fb2" size="15" placeholder="Account Name" />
+<form name="tw2" form onsubmit="dotw2(this.tw2.value); return false;">
+<input type="text" name="tw2" size="15" oninput="
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Account bio changes</td>
@@ -146,8 +156,18 @@ function dota8(ta8) {
 window.open('http://bioischanged.com/' + ta8, '_blank');
 }
 </script>
-<form onsubmit="dota8(this.ta8.value); return false;">
-<input type="text" id="ta8" name="ta8" size="15" placeholder="Account Name" />
+<form name="ta8" form onsubmit="dota8(this.ta8.value); return false;">
+<input type="text" name="ta8" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Account information via Google</td>
@@ -157,8 +177,18 @@ function dotw022(tw022) {
 window.open('https://www.google.co.uk/search?q=site:twitter.com+-inurl:status+%22' + tw022 + '%22&gws_rd=cr&ei=d24fWIacDcGFgAbC_KGQBA', '_blank');
 }
 </script>
-<form onsubmit="dotw022(this.tw022.value); return false;">
-<input type="text" name="tw022" size="15" placeholder="Account Name" />
+<form name="tw022" form onsubmit="dotw022(this.tw022.value); return false;">
+<input type="text" name="tw022" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Tweets by user</td>
@@ -168,8 +198,18 @@ function dotw3(tw3) {
 window.open('https://twitter.com/search?q=from%3A' + tw3 + '&src=typd', '_blank');
 }
 </script>
-<form onsubmit="dotw3(this.tw3.value); return false;">
-<input type="text" id="fb3" name="tw3" size="15" placeholder="Account Name" />
+<form name="tw3" form onsubmit="dotw3(this.tw3.value); return false;">
+<input type="text" id="fb3" name="tw3" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Posts between specific dates</td>
@@ -179,10 +219,20 @@ function dota5(ta5, ta6, ta7) {
 window.open('https://twitter.com/search?q=from%3A' + ta5 + '%20since%3A' + ta6 + '%20until%3A' + ta7 + '&src=typd', '_blank');
 }
 </script>
-<form onsubmit="dota5(this.ta5.value, this.ta6.value, this.ta7.value); return false;">
-<input type="text" id="ta5" name="ta5" size="6" placeholder="Name" />
-<input type="text" id="ta6" name="ta6" size="11" placeholder="Start YYYY-MM-DD" />
-<input type="text" id="ta7" name="ta7" size="10" placeholder="End YYYY-MM-DD" />
+<form name="ta5" form onsubmit="dota5(this.ta5.value, this.ta6.value, this.ta7.value); return false;">
+<input type="text" name="ta5" size="6" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Name" />
+<input type="text" name="ta6" size="11" placeholder="Start YYYY-MM-DD" />
+<input type="text" name="ta7" size="10" placeholder="End YYYY-MM-DD" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Tweets to user</td>
@@ -192,8 +242,18 @@ function dotw4(tw4) {
 window.open('https://twitter.com/search?q=to%3A' + tw4 + '&src=typd', '_blank');
 }
 </script>
-<form onsubmit="dotw4(this.tw4.value); return false;">
-<input type="text" id="fb4" name="tw4" size="15" placeholder="Account Name" />
+<form name="tw4" form onsubmit="dotw4(this.tw4.value); return false;">
+<input type="text" name="tw4" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Media posted</td>
@@ -203,8 +263,18 @@ function dota3(ta3) {
 window.open('https://twitter.com/' + ta3 + '/media/', '_blank');
 }
 </script>
-<form onsubmit="dota3(this.ta3.value); return false;">
-<input type="text" id="ta3" name="ta3" size="15" placeholder="Account Name" />
+<form name="ta3" form onsubmit="dota3(this.ta3.value); return false;">
+<input type="text" name="ta3" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Photo(s) posted by user</td>
@@ -214,8 +284,18 @@ function dota4(ta4) {
 window.open('http://twicsy.com/u/' + ta4, '_blank');
 }
 </script>
-<form onsubmit="dota4(this.ta4.value); return false;">
-<input type="text" id="ta4" name="ta4" size="15" placeholder="Account Name" />
+<form name="ta4" form onsubmit="dota4(this.ta4.value); return false;">
+<input type="text" name="ta4" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 	
 <tr><td>General picture search</td>
@@ -255,8 +335,18 @@ function dota2(ta2) {
 window.open('https://socialbearing.com/search/user/' + ta2, '_blank');
 }
 </script>
-<form onsubmit="dota2(this.ta2.value); return false;">
-<input type="text" name="ta2" size="15" placeholder="Account Name" />
+<form name="ta2" form onsubmit="dota2(this.ta2.value); return false;">
+<input type="text" name="ta2" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+"
+placeholder="Account Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Mutual follows - 2 accounts</td>
