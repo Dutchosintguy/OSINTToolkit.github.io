@@ -112,8 +112,8 @@ function dotw14(tw14) {
 window.open('https://plus.google.com/s/' + tw14 + '/collections', '_blank');
 }
 </script>
-<form onsubmit="dotw14(this.tw14.value); return false;">
-<input type="text" name="tw14" size="15" placeholder="Topic" />
+<form name="tw14" form onsubmit="dotw14(this.tw14.value); return false;">
+<input type="text" name="tw14" size="15" oninput="document.tw15.tw15.value = this.value;" placeholder="Topic" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Search communities by topic</td><td>
@@ -123,8 +123,8 @@ function dotw15(tw15) {
 window.open('https://plus.google.com/s/' + tw15 + '/communities', '_blank');
 }
 </script>
-<form onsubmit="dotw15(this.tw15.value); return false;">
-<input type="text" name="tw15" size="15" placeholder="Topic" />
+<form name="tw15" form onsubmit="dotw15(this.tw15.value); return false;">
+<input type="text" name="tw15" size="15" oninput="document.tw14.tw14.value = this.value;" placeholder="Topic" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Profile by account number</td><td>
@@ -200,8 +200,8 @@ function doMSMS4(MSMS4) {
 window.open('https://www.linkedin.com/title/' + MSMS4, '_blank');
 }
 </script>
-<form onsubmit="doMSMS4(this.MSMS4.value); return false;">
-<input type="text" name="MSMS4" size="15" placeholder="Company Name" />
+<form name = "MSMS4" form onsubmit="doMSMS4(this.MSMS4.value); return false;">
+<input type="text" name="MSMS4" size="15" oninput = "document.LI1.LI1.value = this.value;" placeholder="Company Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Searching by location</td><td>
@@ -211,8 +211,8 @@ function doLI1(LI1,LI2) {
 window.open('https://www.linkedin.com/jobs/search?keywords=' + LI1 + '&location=' + LI2 + '&locationId=&trk=jobs_jserp_search_button_execute&searchOrigin=JSERP', '_blank');
 }
 </script>
-<form onsubmit="doLI1(this.LI1.value, this.LI2.value); return false;">
-<input type="text" name="LI1" size="15" placeholder="Company or Keyword" />
+<form name = "LI1" form onsubmit="doLI1(this.LI1.value, this.LI2.value); return false;">
+<input type="text" name="LI1" size="15" oninput="document.MSMS4.MSMS4.value = this.value;" placeholder="Company or Keyword" />
 <input type="text" name="LI2" size="15" placeholder="Location" />	
 <input type="submit" value="Search" /></form></td></tr>
 
