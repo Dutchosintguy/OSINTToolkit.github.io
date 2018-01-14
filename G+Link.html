@@ -101,8 +101,8 @@ function dotw7(tw7) {
 window.open('https://plus.google.com/s/' + tw7 + '/people', '_blank');
 }
 </script>
-<form onsubmit="dotw7(this.tw7.value); return false;">
-<input type="text" name="tw7" size="15" placeholder="Name" />
+<form name = "tw7" form onsubmit="dotw7(this.tw7.value); return false;">
+<input type="text" name="tw7" size="15" oninput="document.tw16.tw16.value = this.value;" placeholder="Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Search collections by topic</td><td>
@@ -145,8 +145,8 @@ function dotw16(tw16) {
 window.open('https://plus.google.com/s/' + tw16 + '/top', '_blank');
 }
 </script>
-<form onsubmit="dotw16(this.tw16.value); return false;">
-<input type="text" name="tw16" size="15" placeholder="Name / Topic" />
+<form name = "tw16" form onsubmit="dotw16(this.tw16.value); return false;">
+<input type="text" name="tw16" size="15" oninput="document.tw7.tw7.value = this.value;" placeholder="Name/Keyword" />
 <input type="submit" value="Search" /></form></td></tr>
 
 </table>
