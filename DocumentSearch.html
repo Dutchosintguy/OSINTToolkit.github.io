@@ -92,7 +92,7 @@ function doCH1(CH1, CH2) {
 window.open('https://beta.companieshouse.gov.uk/search/officers?q=' + CH1 + ' ' + CH2, '_blank');
 }
 </script>
-<form name = "CH1" form onsubmit="doCH1(this.CH1.value, this.CH2.value); return false;">
+<form name="CH1" form onsubmit="doCH1(this.CH1.value, this.CH2.value); return false;">
 <input type="text" name="CH1" size="15" oninput="
 document.FCA1.FCA1.value = this.value;
 document.ER1.ER1.value = this.value;
@@ -101,7 +101,8 @@ placeholder="First Name" />
 <input type="text" name="CH2" size="15" oninput="
 document.FCA1.FCA2.value = this.value;
 document.ER1.ER2.value = this.value;
-"placeholder="Last Name" />
+"
+placeholder="Last Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Companies House company search</td><td>
@@ -121,15 +122,17 @@ function doFCA1(FCA1, FCA2) {
 window.open('https://register.fca.org.uk/shpo_searchresultspage?search=' + FCA1 + '+' + FCA2, '_blank');
 }
 </script>
-<form name = "FCA1" form onsubmit="doFCA1(this.FCA1.value, this.FCA2.value); return false;">
+<form name="FCA1" form onsubmit="doFCA1(this.FCA1.value, this.FCA2.value); return false;">
 <input type="text" name="FCA1" size="15" oninput="
 document.CH1.CH1.value = this.value;
 document.ER1.ER1.value = this.value;
-"placeholder="First Name" />
+"
+placeholder="First Name" />
 <input type="text" name="FCA2" size="15" oninput="
 document.CH1.CH2.value = this.value;
 document.ER1.ER2.value = this.value;
-"placeholder="Last Name" />
+"
+placeholder="Last Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>SEC's EDGAR search</td><td>
@@ -193,15 +196,17 @@ function doER1(ER1, ER2, ER3) {
 window.open('https://www.searchelectoralroll.co.uk/Electoral_Roll_Index.asp?fn=' + ER1 + '%2C%2C' + ER2 + '&fa=' + ER3, '_blank');
 }
 </script>
-<form name = "ER1" form onsubmit="doER1(this.ER1.value, this.ER2.value, this.ER3.value); return false;">
+<form name="ER1" form onsubmit="doER1(this.ER1.value, this.ER2.value, this.ER3.value); return false;">
 <input type="text" name="ER1" size="9" oninput="
 document.FCA1.FCA1.value = this.value;
 document.CH1.CH1.value = this.value;
-" placeholder="First Name" />
+" 
+placeholder="First Name" />
 <input type="text" name="ER2" size="9" oninput="
 document.FCA1.FCA2.value = this.value;
 document.CH1.CH2.value = this.value;
-" placeholder="Last Name" />
+" 
+placeholder="Last Name" />
 <input type="text" name="ER3" size="10" placeholder="Postcode" />	
 <input type="submit" value="Search" /></form></td></tr>	
   
