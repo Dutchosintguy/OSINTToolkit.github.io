@@ -76,7 +76,7 @@
 <th>Tool:</th>
 </tr>
 
-<tr><td>Investigative Dashboard Search</td><td>
+<tr><td>Investigative Dashboard name search</td><td>
 <script type="text/javascript">
 function dods1(ds1) {
 window.open('https://data.occrp.org/entities?q=' + ds1, '_blank');
@@ -86,6 +86,16 @@ window.open('https://data.occrp.org/entities?q=' + ds1, '_blank');
 <input type="text" id="ds1" name="ds1" size="15" placeholder="Name or Company" />
 <input type="submit" value="Search" /></form></td></tr>
 
+<tr><td>Investigative Dashboard company search</td><td>
+<script type="text/javascript">
+function dods2(ds2) {
+window.open('https://data.occrp.org/entities?q=' + ds2, '_blank');
+}
+</script>   
+<form onsubmit="dods2(this.ds2.value); return false;">
+<input type="text" id="ds1" name="ds2" size="15" placeholder="Company" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
 <tr><td>Companies House person search</td><td>
 <script type="text/javascript">
 function doCH1(CH1, CH2) {
@@ -151,7 +161,7 @@ window.open('https://cse.google.com/cse?cx=010881655957307385441:lfqfg6iddk0&q=a
 <input type="text" name="PB8" size="15" placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
-<tr><td>Document Storage search</td><td>
+<tr><td>General Document Storage search</td><td>
 
 <script type="text/javascript">
 function doASE19(ASE19) {
@@ -159,7 +169,7 @@ window.open('https://cse.google.com/cse?cx=001580308195336108602:hx9tv6r_od4&q=a
 }
 </script>
 <form onsubmit="doASE19(this.ASE19.value); return false;">
-<input name="ASE19" size="24" placeholder="Word or Phrase" type="text">
+<input name="ASE19" size="15" placeholder="Word or Phrase" type="text">
 <input value="Search" type="submit"></form></td></tr>
 
 <tr><td>Exact Document Storage search</td><td>	
@@ -170,7 +180,7 @@ window.open('https://cse.google.com/cse?cx=001580308195336108602:hx9tv6r_od4&q=a
 }
 </script>
 <form onsubmit="doASE20(this.ASE20.value); return false;">
-<input name="ASE20" size="24" placeholder="Word or Phrase" type="text">
+<input name="ASE20" size="15" placeholder="Word or Phrase" type="text">
 <input value="Search" type="submit"></form></td></tr>	
 
 <tr><td>Partial Electoral Roll search</td><td>
