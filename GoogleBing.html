@@ -79,7 +79,6 @@
 #myTable1 th, #myTable td {
     text-align: left; 
 }
-	
 
 </style>
 	
@@ -99,8 +98,18 @@ function doBES1(BES1) {
 window.open('https://www.google.co.uk/#q=' + BES1, '_blank');
 }
 </script>
-<form onsubmit="doBES1(this.BES1.value); return false;">
-<input name="BES1" size="15" placeholder="Word or Phrase" type="text">
+<form name="BES1" form onsubmit="doBES1(this.BES1.value); return false;">
+<input name="BES1" size="15" oninput="
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES0.BES0.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input value="Search" type="submit"></form></td></tr>
 
 <tr><td>Exact phrase search</td><td>
@@ -110,8 +119,18 @@ function doSE1(SE1) {
 window.open('https://www.google.co.uk/#q=%22' + SE1 + '%22', '_blank');
 }
 </script>
-<form onsubmit="doSE1(this.SE1.value); return false;">
-<input type="text" name="SE1" size="15" placeholder="Word or Phrase" />
+<form name="SE1" form onsubmit="doSE1(this.SE1.value); return false;">
+<input type="text" name="SE1" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES0.BES0.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>This or that</td><td>
@@ -121,9 +140,17 @@ function doSE2(SE2, SE3) {
 window.open('https://www.google.com/?gfe_rd=cr&ei=BXoBV-HAHoOFaObuipAG#q=' + SE2 + '+OR+' + SE3, '_blank');
 }
 </script>
-<form onsubmit="doSE2(this.SE2.value, this.SE3.value); return false;">
-<input type="text" name="SE2" size="15" placeholder="1st Phrase" />
-<input type="text" name="SE3" size="15" placeholder="2nd Phrase" />
+<form name="SE2" form onsubmit="doSE2(this.SE2.value, this.SE3.value); return false;">
+<input type="text" name="SE2" size="15" oninput="
+document.GT5.GT5.value = this.value;
+document.GT7.GT7.value = this.value;
+" 
+placeholder="1st Phrase" />
+<input type="text" name="SE3" size="15" oninput="
+document.GT5.GT6.value = this.value;
+document.GT7.GT8.value = this.value;
+" 
+placeholder="2nd Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Words in text</td><td>
@@ -133,8 +160,18 @@ function doSE4(SE4) {
 window.open('https://www.google.com/?gfe_rd=cr&ei=Ee8BV5v1MNiFaPPmjJAF#q=allintext:+' + SE4, '_blank');
 }
 </script>
-<form onsubmit="doSE4(this.SE4.value); return false;">
-<input type="text" name="SE4" size="15" placeholder="Phrase" />
+<form name="SE4" form onsubmit="doSE4(this.SE4.value); return false;">
+<input type="text" name="SE4" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES0.BES0.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Search within a website</td><td>
@@ -144,9 +181,24 @@ function doSE10(SE10, SE11) {
 window.open('https://www.google.com/#q=site:' + SE10 + '+' + '"' + SE11 + '"', '_blank');
 }
 </script>
-<form onsubmit="doSE10(this.SE10.value, this.SE11.value); return false;">
-<input type="text" name="SE10" size="15" placeholder="Website" />
-<input type="text" name="SE11" size="15" placeholder="Phrase" />
+<form name="SE10" form onsubmit="doSE10(this.SE10.value, this.SE11.value); return false;">
+<input type="text" name="SE10" size="15" oninput="
+document.SE15.SE15.value = this.value;
+document.SE17.SE17.value = this.value;
+document.BES2.BES2.value = this.value;
+" 
+placeholder="Website" />
+<input type="text" name="SE11" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES0.BES0.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Links to a site</td><td>
@@ -156,8 +208,13 @@ function doSE15(SE15) {
 window.open('https://www.google.com/#q=link:' + SE15, '_blank');
 }
 </script>
-<form onsubmit="doSE15(this.SE15.value); return false;">
-<input type="text" name="SE15" size="15" placeholder="Website" />
+<form name="SE15" form onsubmit="doSE15(this.SE15.value); return false;">
+<input type="text" name="SE15" size="15" oninput="
+document.SE10.SE10.value = this.value;
+document.SE17.SE17.value = this.value;
+document.BES2.BES2.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Related sites</td><td>
@@ -167,19 +224,29 @@ function doSE17(SE17) {
 window.open('https://www.google.com/#q=related:' + SE17, '_blank');
 }
 </script>
-<form onsubmit="doSE17(this.SE17.value); return false;">
-<input type="text" name="SE17" size="15" placeholder="Website" />
+<form name="SE17" form onsubmit="doSE17(this.SE17.value); return false;">
+<input type="text" name="SE17" size="15" oninput="
+document.SE10.SE10.value = this.value;
+document.SE15.SE15.value = this.value;
+document.BES2.BES2.value = this.value;
+" 
+placeholder="Website" />
 <input type="submit" value="Search" /></form></td></tr>
 
-<tr><td>Cached website view/td><td>
+<tr><td>Cached website view</td><td>
 
 <script type="text/javascript">
 function doBES2(BES2) {
 window.open('https://www.google.co.uk/search?q=cache%3A' + BES2, '_blank');
 }
 </script>
-<form onsubmit="doBES2(this.BES2.value); return false;">
-<input name="BES2" size="15" placeholder="Website" type="text">
+<form name="BES2" form onsubmit="doBES2(this.BES2.value); return false;">
+<input name="BES2" size="15" oninput="
+document.SE10.SE10.value = this.value;
+document.SE15.SE15.value = this.value;
+document.SE17.SE17.value = this.value;
+" 
+placeholder="Website" type="text">
 <input value="Search" type="submit"></form></td></tr>
 
 <tr><td>General search of Google Trends</td><td>
@@ -189,8 +256,18 @@ function doGT1(GT1) {
 window.open('https://www.google.co.uk/trends/explore?q=' + GT1, '_blank');
 }
 </script>
-<form onsubmit="doGT1(this.GT1.value); return false;">
-<input name="GT1" size="15" placeholder="Word or Phrase" type="text">
+<form name="GT1" form onsubmit="doGT1(this.GT1.value); return false;">
+<input name="GT1" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES0.BES0.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input value="Search" type="submit"></form></td></tr>	
 
 <tr><td>Specific search of Google Trends</td><td>
@@ -200,8 +277,18 @@ function doGT2(GT2, GT3, GT4) {
 window.open('https://www.google.co.uk/trends/explore?date=' + GT3 + '%20' + GT4 + '&q=' + GT2, '_blank');
 }
 </script>
-<form onsubmit="doGT2(this.GT2.value, this.GT3.value, this.GT4.value); return false;">
-<input name="GT2" size="8" placeholder="Phrase" type="text">
+<form name="GT2" form onsubmit="doGT2(this.GT2.value, this.GT3.value, this.GT4.value); return false;">
+<input name="GT2" size="8" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.BES0.BES0.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Phrase" />
 <input name="GT3" size="10" placeholder="Start YYYY-MM-DD" type="text">
 <input name="GT4" size="10" placeholder="End YYYY-MM-DD" type="text">	
 <input value="Search" type="submit"></form></td></tr>		
@@ -213,9 +300,17 @@ function doGT5(GT5, GT6) {
 window.open('https://www.google.co.uk/trends/explore?q=' + GT5 + ',' + GT6, '_blank');
 }
 </script>
-<form onsubmit="doGT5(this.GT5.value, this.GT6.value); return false;">
-<input name="GT5" size="15" placeholder="1st Term" type="text">
-<input name="GT6" size="15" placeholder="2nd Term" type="text">
+<form name="GT5" form onsubmit="doGT5(this.GT5.value, this.GT6.value); return false;">
+<input name="GT5" size="15" oninput="
+document.SE2.SE2.value = this.value;
+document.GT7.GT7.value = this.value;
+" 
+placeholder="1st Term" type="text">
+<input name="GT6" size="15" oninput="
+document.SE2.SE3.value = this.value;
+document.GT7.GT8.value = this.value;
+" 
+placeholder="2nd Term" type="text">
 <input value="Search" type="submit"></form></td></tr>
 
 <tr><td>Compare 3 search terms</td><td>
@@ -226,9 +321,17 @@ window.open('https://www.google.co.uk/trends/explore?q=' + GT7 + ',' + GT8 + ','
 }
 </script>
 
-<form onsubmit="doGT7(this.GT7.value, this.GT8.value, this.GT9.value); return false;">
-<input name="GT7" size="9" placeholder="1st Term" type="text">
-<input name="GT8" size="9" placeholder="2nd Term" type="text">
+<form name="GT7" form onsubmit="doGT7(this.GT7.value, this.GT8.value, this.GT9.value); return false;">
+<input name="GT7" size="9" oninput="
+document.SE2.SE2.value = this.value;
+document.GT5.GT5.value = this.value;
+" 
+placeholder="1st Term" type="text">
+<input name="GT8" size="9" oninput="
+document.SE2.SE3.value = this.value;
+document.GT5.GT6.value = this.value;
+" 
+placeholder="2nd Term" type="text">
 <input name="GT9" size="9" placeholder="3rd Term" type="text">	
 <input value="Search" type="submit"></form></td></tr>	
 	
@@ -262,8 +365,18 @@ function doBES0(BES0) {
 window.open('https://www.bing.com/search?q=' + BES0 + '&go=Submit+Query&qs=bs&form=QBLH', '_blank');
 }
 </script>
-<form onsubmit="doBES0(this.BES0.value); return false;">
-<input name="BES0" size="15" placeholder="Word or Phrase" type="text">
+<form name="BES0" form onsubmit="doBES0(this.BES0.value); return false;">
+<input name="BES0" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input value="Search" type="submit"></form></td></tr>
 
 <tr><td>Exact phrase search</td><td>
@@ -273,8 +386,18 @@ function doSEB1(SEB1) {
 window.open('https://www.bing.com/search?q=%E2%80%9C' + SEB1 + '%E2%80%9D&go=Submit+Query&qs=ds&form=QBRE', '_blank');
 }
 </script>
-<form onsubmit="doSEB1(this.SEB1.value); return false;">
-<input type="text" name="SEB1" size="15" placeholder="Word or Phrase" />
+<form name="SEB1" form onsubmit="doSEB1(this.SEB1.value); return false;">
+<input type="text" name="SEB1" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES0.BES0.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Sites matching IP address</td><td>
@@ -295,8 +418,18 @@ function doSEB8(SEB8) {
 window.open('https://www.bing.com/search?q=feed%3A' + SEB8 + '&go=Submit+Query&qs=bs&form=QBLH', '_blank');
 }
 </script>
-<form onsubmit="doSEB8(this.SEB8.value); return false;">
-<input type="text" name="SEB8" size="15" placeholder="Word or Phrase" />
+<form name="SEB8" form onsubmit="doSEB8(this.SEB8.value); return false;">
+<input type="text" name="SEB8" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES0.BES0.value = this.value;
+document.SEB1.SEB1.value = this.value;
+" 
+placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 
 </table>
