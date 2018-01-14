@@ -112,8 +112,10 @@ function doCH3(CH3) {
 window.open('https://beta.companieshouse.gov.uk/search/companies?q=' + CH3, '_blank');
 }
 </script>
-<form onsubmit="doCH3(this.CH3.value); return false;">
-<input type="text" name="CH3" size="15" placeholder="Company Name" />
+<form name="CH3" form onsubmit="doCH3(this.CH3.value); return false;">
+<input type="text" name="CH3" size="15" oninput="
+document.SEC2.SEC2.value = this.value;
+"placeholder="Company Name" />
 <input type="submit" value="Search" /></form></td></tr>
 
 <tr><td>Financial Conduct Authority search</td><td>
@@ -142,8 +144,11 @@ function doSEC2(SEC2) {
 window.open('https://www.sec.gov/cgi-bin/browse-edgar?company=' + SEC2 + '&owner=exclude&action=getcompany', '_blank');
 }
 </script>
-<form onsubmit="doSEC2(this.SEC2.value); return false;">
-<input type="text" name="SEC2" size="15" placeholder="Company Name" />
+<form name="SEC2" form onsubmit="doSEC2(this.SEC2.value); return false;">
+<input type="text" name="SEC2" size="15" oninput="
+document.CH3.CH3.value = this.value;
+"
+placeholder="Company Name" />
 <input type="submit" value="Search" /></form></td></tr>	
 
 <tr><td>General Pastebin search</td><td>
