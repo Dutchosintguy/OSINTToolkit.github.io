@@ -305,29 +305,49 @@ window.open('http://socialblade.com/youtube/compare/' + YT12 + '/' + YT13 + '/' 
 <th>Overview:</th>
 <th>Tool:</th>
 </tr>
-	
-<tr><td>Basic video search</td><td>
+
+<tr><td>General search</td><td>
 
 <script type="text/javascript">
-function doTI8(TI8) {
-window.open('https://player.twitch.tv/?video=v' + TI8, '_blank');
+function doperi3(peri3) {
+window.open('https://www.periscope.tv/search?q=' + peri3, '_blank');
 }
 </script>
-<form name="TI8" form onsubmit="doTI8(this.TI8.value); return false;">
-<input type="text" name="TI8" size="15" oninput=
-"
-document.TI9.TI9.value = this.value;
-"
-placeholder="Video ID" />
-<input type="submit" value="Search" /></form></td></tr>
 
+<form onsubmit="doperi3(this.peri3.value); return false;">
+<input type="text" name="peri3" size="15" placeholder="Word or phrase" />
+<input type="submit" value="Search" /></form><br />
+
+<tr><td>Account search</td><td>
+
+<script type="text/javascript">
+function doperi2(peri2) {
+window.open('https://www.periscope.tv/' + peri2, '_blank');
+}
+</script>
+
+<form onsubmit="doperi2(this.peri2.value); return false;">
+<input type="text" name="peri2" size="15" placeholder="Account name" />
+<input type="submit" value="Search" /></form><br />
+
+<tr><td>Video metadata search</td><td>
+
+<script type="text/javascript">
+function doperi1(peri1) {
+window.open('https://api.periscope.tv/api/v2/getBroadcastPublic?token=' + peri1, '_blank');
+}
+</script>
+
+<form onsubmit="doperi1(this.peri1.value); return false;">
+<input type="text" name="peri1" size="15" placeholder="Video ID" />
+<input type="submit" value="Search" /></form><br />
+	
 </table>
 
 <br /><h4>Misc Periscope Search Tools:</h4>
 
-<ul><li><a href="https://youtube.github.io/geo-search-tool/search.html" target="_blank">Youtube videos by location</a></li>
-<li><a href="https://osinttoolkit.github.io/Bookmarks" target="_blank">Youtube video downloader</a></li>
-<li><a href="https://www.youtube.com/feed/trending" target="_blank">Information currently trending on Youtube</a></li></ul>
+<ul><li><a href="http://periviewer.com/" target="_blank">Periscope videos</a></li>
+<li><a href="http://www.periscopemap.live/" target="_blank">Live user map</a></li></ul>
 
 <h4>Twitch</h4>
 	
