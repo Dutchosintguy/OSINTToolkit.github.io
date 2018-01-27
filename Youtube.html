@@ -44,7 +44,7 @@
 <div class="inner">
 <header class="major">
 
-<h1>Youtube, Twitch & Daily Motion:</h1>
+<h1>Youtube, Periscope, Twitch & Daily Motion:</h1>
 </header>
 	
 <h4>Youtube</h4>
@@ -63,6 +63,20 @@
     width: 100%; 
 }
 #myTable th, #myTable td {
+    text-align: left; 
+}
+	
+#myInput1 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable1 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable1 th, #myTable1 td {
     text-align: left; 
 }
 	
@@ -279,6 +293,42 @@ window.open('http://socialblade.com/youtube/compare/' + YT12 + '/' + YT13 + '/' 
 <li><a href="https://osinttoolkit.github.io/Bookmarks" target="_blank">Youtube video downloader</a></li>
 <li><a href="https://www.youtube.com/feed/trending" target="_blank">Information currently trending on Youtube</a></li></ul>
 	
+<h4>Periscope</h4>
+	
+<p>In order to use some of the tools, you must know the channel name of the subject(s) or the ID of the video(s) you wish to research.</p>
+
+<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search...">	
+<table id="myTable1">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+	
+<tr><td>Basic video search</td><td>
+
+<script type="text/javascript">
+function doTI8(TI8) {
+window.open('https://player.twitch.tv/?video=v' + TI8, '_blank');
+}
+</script>
+<form name="TI8" form onsubmit="doTI8(this.TI8.value); return false;">
+<input type="text" name="TI8" size="15" oninput=
+"
+document.TI9.TI9.value = this.value;
+"
+placeholder="Video ID" />
+<input type="submit" value="Search" /></form></td></tr>
+
+</table>
+
+<br /><h4>Misc Periscope Search Tools:</h4>
+
+<ul><li><a href="https://youtube.github.io/geo-search-tool/search.html" target="_blank">Youtube videos by location</a></li>
+<li><a href="https://osinttoolkit.github.io/Bookmarks" target="_blank">Youtube video downloader</a></li>
+<li><a href="https://www.youtube.com/feed/trending" target="_blank">Information currently trending on Youtube</a></li></ul>
+
 <h4>Twitch</h4>
 	
 <p>In order to use some of the tools, you must know the channel name of the subject(s) or the ID of the video(s) you wish to research.</p>
@@ -480,7 +530,28 @@ function myFunction() {
   }
 }
 </script>
-
+	
+<script>
+function myFunction1() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable1");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 
 <script>
 function myFunction2() {
