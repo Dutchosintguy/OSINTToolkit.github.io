@@ -281,7 +281,7 @@ window.open('http://socialblade.com/youtube/compare/' + YT12 + '/' + YT13 + '/' 
 	
 <h4>Twitch</h4>
 	
-<p>In order to use some of the tools, you must know the channel name of the subject(s) or the ID of the video you wish to research.</p>
+<p>In order to use some of the tools, you must know the channel name of the subject(s) or the ID of the video(s) you wish to research.</p>
 
 <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search...">	
 <table id="myTable2">
@@ -292,19 +292,162 @@ window.open('http://socialblade.com/youtube/compare/' + YT12 + '/' + YT13 + '/' 
 <th>Tool:</th>
 </tr>
 	
-<tr><td>General channel search</td><td>
+<tr><td>General community search</td><td>
 
 <script type="text/javascript">
-function doYT3(YT3) {
-window.open('https://www.youtube.com/results?search_query=' + YT3, '_blank');
+function doTI1(TI1) {
+window.open('https://www.twitch.tv/communities/' + TI1, '_blank');
 }
 </script>
-<form name="YT3" form onsubmit="doYT3(this.YT3.value); return false;">
-<input type="text" name="YT3" size="15" oninput="
-"
+<form name="TI1" form onsubmit="doYT3(this.TI1.value); return false;">
+<input type="text" name="TI1" size="15"
 placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 	
+<tr><td>Channel search</td><td>
+
+<script type="text/javascript">
+function doTI2(TI2) {
+window.open('https://www.twitch.tv/' + TI2, '_blank');
+}
+</script>
+<form name="TI2" form onsubmit="doTI2(this.TI2.value); return false;">
+<input type="text" name="TI2" size="15" oninput=
+"
+document.TI3.TI3.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI6.TI6.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Channel search - all videos</td><td>
+
+<script type="text/javascript">
+function doTI3(TI3) {
+window.open('https://www.twitch.tv/' + TI3 + '/videos/all', '_blank');
+}
+</script>
+<form name="TI3" form onsubmit="doTI3(this.TI3.value); return false;">
+<input type="text" name="TI3" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI6.TI6.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Detailed channel analytics</td><td>
+
+<script type="text/javascript">
+function doTI4(TI4) {
+window.open('https://socialblade.com/twitch/user/' + TI4 + '/monthly', '_blank');
+}
+</script>
+<form name="TI4" form onsubmit="doTI4(this.TI4.value); return false;">
+<input type="text" name="TI4" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI3.TI3.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI6.TI6.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>Channel events</td><td>
+
+<script type="text/javascript">
+function doTI5(TI5) {
+window.open('https://www.twitch.tv/' + TI5 + '/events', '_blank');
+}
+</script>
+<form name="TI5" form onsubmit="doTI5(this.TI5.value); return false;">
+<input type="text" name="TI5" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI3.TI3.value = this.value;
+document.TI6.TI6.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>Channel followers</td><td>
+
+<script type="text/javascript">
+function doTI6(TI6) {
+window.open('https://www.twitch.tv/' + TI6 + '/followers', '_blank');
+}
+</script>
+<form name="TI6" form onsubmit="doTI6(this.TI6.value); return false;">
+<input type="text" name="TI6" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI3.TI3.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>		
+
+<tr><td>Channel(s) account follows</td><td>
+
+<script type="text/javascript">
+function doTI7(TI7) {
+window.open('https://www.twitch.tv/' + TI7 + '/following', '_blank');
+}
+</script>
+<form name="TI7" form onsubmit="doTI7(this.TI7.value); return false;">
+<input type="text" name="TI7" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI3.TI3.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI6.TI6.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Basic video search</td><td>
+
+<script type="text/javascript">
+function doTI8(TI8) {
+window.open('https://player.twitch.tv/?video=v' + TI8, '_blank');
+}
+</script>
+<form name="TI8" form onsubmit="doTI8(this.TI8.value); return false;">
+<input type="text" name="TI8" size="15" oninput=
+"
+document.TI9.TI9.value = this.value;
+"
+placeholder="Video ID" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Detailed video search</td><td>
+
+<script type="text/javascript">
+function doTI9(TI9) {
+window.open('https://www.twitch.tv/videos/' + TI9, '_blank');
+}
+</script>
+<form name="TI9" form onsubmit="doTI9(this.TI9.value); return false;">
+<input type="text" name="TI9" size="15" oninput=
+"
+document.TI8.TI8.value = this.value;
+"
+placeholder="Video ID" />
+<input type="submit" value="Search" /></form></td></tr>	
+
 </table>
 
 <br /><h4>Misc Twitch Search Tools:</h4>
