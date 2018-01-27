@@ -44,7 +44,7 @@
 <div class="inner">
 <header class="major">
 
-<h1>Youtube, Periscope, Twitch & Daily Motion:</h1>
+<h1>Youtube, Periscope, Twitch & Dailymotion:</h1>
 </header>
 	
 <h4>Youtube</h4>
@@ -374,7 +374,7 @@ window.open('https://www.twitch.tv/communities/' + TI1, '_blank');
 placeholder="Word or Phrase" />
 <input type="submit" value="Search" /></form></td></tr>
 	
-<tr><td>Channel search</td><td>
+<tr><td>Channel (user) search</td><td>
 
 <script type="text/javascript">
 function doTI2(TI2) {
@@ -525,8 +525,79 @@ placeholder="Video ID" />
 <ul><li><a href="https://www.twitch.tv/directory/all" target="_blank">All Twitch videos</a></li>
 <li><a href="http://concat.org/twitch-clips-discovery/" target="_blank">Concat Twitch advanced search</a></li></ul>
 	
-<h4>Daily Motion</h4>
+<h4>Dailymotion</h4>
 
+<p>In order to use some of the tools, you must know the channel name of the subject(s) or the ID of the video(s) you wish to research.</p>
+
+<tr><td>Channel (user) search</td><td>
+
+<script type="text/javascript">
+function doDM1(DM1) {
+window.open('https://www.dailymotion.com/' + DM1 + '/videos', '_blank');
+}
+</script>
+<form name="DM1" form onsubmit="doDM1(this.DM1.value); return false;">
+<input type="text" name="DM1" size="15" oninput=
+"
+document.DM2.DM2.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>Detailed channel analytics</td><td>
+
+<script type="text/javascript">
+function doDM2(DM2) {
+window.open('https://socialblade.com/dailymotion/user/' + DM2 + '/monthly', '_blank');
+}
+</script>
+<form name="DM2" form onsubmit="doDM2(this.DM2.value); return false;">
+<input type="text" name="DM2" size="15" oninput=
+"
+document.DM1.DM1.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>General search</td><td>
+
+<script type="text/javascript">
+function doDM3(DM3) {
+window.open('https://www.dailymotion.com/search/' + DM3, '_blank');
+}
+</script>
+<form name="DM3" form onsubmit="doDM3(this.DM3.value); return false;">
+<input type="text" name="DM3" size="15" 
+placeholder="Word or phrase" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>Video search</td><td>
+
+<script type="text/javascript">
+function doDM4(DM4) {
+window.open('https://www.dailymotion.com/video/' + DM4, '_blank');
+}
+</script>
+<form name="DM4" form onsubmit="doDM4(this.DM4.value); return false;">
+<input type="text" name="DM4" size="15" 
+placeholder="Video ID" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+</table>
+
+<br /><h4>Misc Dailymotion Search Tools:</h4>
+
+<ul><li><a href="https://www.dailymotion.com/archived/index.html">Dailymotion video archive</a></li></ul>
+
+<input type="text" id="myInput3" onkeyup="myFunction3()" placeholder="Search...">	
+<table id="myTable3">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>	
+	
 <p><a href="#top">Back To Top</a></p>
 
 <script>
@@ -593,7 +664,29 @@ function myFunction2() {
     }
   }
 }
-</script>	
+</script>
+	
+<script>
+function myFunction3() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput3");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable3");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 	
 </div>
 </section>
