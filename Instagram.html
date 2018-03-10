@@ -44,8 +44,10 @@
 <div class="inner">
 <header class="major">
 
-<h1>Instagram:</h1>
+<h1>Instagram & Snapchat:</h1>
 </header>
+	
+<h4>Instagram</h4>
 				
 <p>In order to use some of the tools, you must know the Instagram Account Name of the subject(s) you wish to research. </p>
 
@@ -238,6 +240,82 @@ document.I7.I8.value = this.value;
 <li><a href="http://worldc.am/" target="_blank">Searching Instagram by location</a></li>
 </ul>
 
+<h4>Snapchat</h4>
+				
+<p>N.B. any results for usernames or videos are an approximation based on publicly available information, as such, any negative results, does not necessarily mean the username is not in use or a video has not been posted.</p>
+
+<style>
+#myInput1 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable1 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable1 th, #myTable1 td {
+    text-align: left; 
+}
+	
+</style>
+	
+<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search...">	
+<table id="myTable1">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+<tr><td>Video search by location</td><td>
+	
+<script type="text/javascript">
+function doSC1(SC2, SC3) {
+window.open('https://map.snapchat.com/@' + SC2 + "," + SC3, '_blank');
+}
+</script>
+<form name="SC1" form onsubmit="doSC1(this.SC2.value, this.SC3.value); return false;">
+<input type="text" name="SC2" size="15" placeholder="Latitude" />
+<input type="text" name="SC3" size="15" placeholder="longitude" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Username search via Google CSE</td>
+<td>
+<script type="text/javascript">
+function douser10(user10) {
+window.open('https://cse.google.com/cse?cx=010881655957307385441:hglwyhffcfu&q=a&oq=a&gs_l=partner.3...1729.1729.0.1807.1.1.0.0.0.0.0.0..0.0.gsnos%2Cn%3D13...0.0jj1..1ac.1.25.partner..1.0.0.#gsc.tab=0&gsc.q=' + user10 + '&gsc.sort=', '_blank');
+}
+</script>                   
+<form name="user10" form onSubmit="douser10(this.user10.value); return false;">
+<input type="text" name="user10" size="15" oninput="
+document.user12.user12.value = this.value;
+" placeholder="Username"/>
+<input type="submit" value="Search"/></form></td></tr>
+
+<tr><td>Snapdex username search</td>
+<td>
+<script type="text/javascript">
+function douser12(user12) {
+window.open('https://www.snapdex.com/imedbassmaster' + user12, '_blank');
+}
+</script>                   
+<form name="user12" form onSubmit="douser12(this.user12.value); return false;">
+<input type="text" name="user12" size="15" oninput="
+document.user10.user10.value = this.value;
+" placeholder="Username"/>
+<input type="submit" value="Search"/></form></td></tr>	
+	
+</table>
+
+<br /><h4>Misc Username Tools:</h4>
+	
+<ul>
+<li><a href="https://accounts.snapchat.com/accounts/password_reset_request" target="_blank">Snapchat Password Recovery</a></li></ul>
+	
+	
 <p><a href="#top">Back To Top</a></p>
 
 <script>
@@ -260,7 +338,29 @@ function myFunction() {
     }
   }
 }
-</script>		
+</script>
+	
+<script>
+function myFunction1() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable1");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 
 </div>
 </section>
