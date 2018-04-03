@@ -25,7 +25,7 @@
 <li><a href="https://osinttoolkit.github.io/Facebook">Facebook</a></li>
 <li><a href="https://osinttoolkit.github.io/Twitter">Twitter</a></li>
 <li><a href="https://osinttoolkit.github.io/TwitterMonitor">Twitter Monitoring</a></li>
-<li><a href="https://osinttoolkit.github.io/Instagram">Instagram & Snapchat</a></li>
+<li><a href="https://osinttoolkit.github.io/Instagram">Instagram et al</a></li>
 <li><a href="https://osinttoolkit.github.io/GoogleBing">Google & Bing</a></li>
 <li><a href="https://osinttoolkit.github.io/Youtube">Youtube et al</a></li>
 <li><a href="https://osinttoolkit.github.io/G+Link">Google+ & LinkedIn</a></li>
@@ -44,7 +44,7 @@
 <div class="inner">
 <header class="major">
 
-<h1>Instagram & Snapchat:</h1>
+<h1>Instagram, Reddit & Snapchat:</h1>
 </header>
 	
 <h4>Instagram</h4>
@@ -239,7 +239,109 @@ document.I7.I8.value = this.value;
 <li><a href="https://www.instagram.com/explore/tags/trending/" target="_blank">Information currently trending</a></li>
 <li><a href="http://worldc.am/" target="_blank">Searching Instagram by location</a></li>
 </ul>
+	
+<h4>Reddit</h4>
+	
+<p>In order to use some of the tools, you must know the Reddit Account Name of the subject you wish to research. </p>
 
+<style>
+#myInput2 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable2 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable2 th, #myTable2 td {
+    text-align: left; 
+}
+	
+</style>
+	
+<input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search...">	
+<table id="myTable2">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+	
+<tr><td>Posts by user</td><td>
+
+<script type="text/javascript">
+function doRS1(RS1) {
+window.open('https://www.reddit.com/user/' + RS1 + '&sort=asc&size=100', '_blank');
+}
+</script>
+<form name="RS1" form onsubmit="doRS1(this.RS1.value); return false;">
+<input type="text" name="RS1" size="15" oninput="
+document.R1.R1.value = this.value;
+document.R2.R2.value = this.value;
+document.R3.R3.value = this.value;
+"  placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Posts by user via Pushshift</td><td>
+
+<script type="text/javascript">
+function doR1(R1) {
+window.open('https://api.pushshift.io/reddit/search/comment/?author=' + R1 + '&sort=asc&size=100', '_blank');
+}
+</script>
+<form name="R1" form onsubmit="doR1(this.R1.value); return false;">
+<input type="text" name="R1" size="15" oninput="
+document.RS1.RS1.value = this.value;
+document.R2.R2.value = this.value;
+document.R3.R3.value = this.value;
+"  placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>User analytics via Atomiks</td><td>
+
+<script type="text/javascript">
+function doR2(R2) {
+window.open('https://atomiks.github.io/reddit-user-analyser/#' + R2, '_blank');
+}
+</script>
+<form name="R2" form onsubmit="doR2(this.R2.value); return false;">
+<input type="text" name="R2" size="15" oninput="
+document.RS1.RS1.value = this.value;
+document.R1.R1.value = this.value;
+document.R3.R3.value = this.value;
+"  placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>User analytics via SnoopSnoo</td><td>
+
+<script type="text/javascript">
+function doR3(R3) {
+window.open('https://snoopsnoo.com/u/' + R3, '_blank');
+}
+</script>
+<form name="R3" form onsubmit="doR3(this.R3.value); return false;">
+<input type="text" name="R3" size="15" oninput="
+document.RS1.RS1.value = this.value;
+document.R1.R1.value = this.value;
+document.R2.R2.value = this.value;
+"  placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>Posts based on keywords via Pushshift</td><td>
+
+<script type="text/javascript">
+function doR4(R4) {
+window.open('https://api.pushshift.io/reddit/search/comment/?q=' + R4, '_blank');
+}
+</script>
+<form name="R4" form onsubmit="doR4(this.R4.value); return false;">
+<input type="text" name="R4" size="15"
+placeholder="Keyword/Phrase" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
 <h4>Snapchat</h4>
 				
 <p>N.B. any results for usernames or videos are an approximation based on publicly available information, as such, any negative results, does not necessarily mean the username is not in use or a video has not been posted.</p>
@@ -362,6 +464,28 @@ function myFunction1() {
 }
 </script>
 
+<script>
+function myFunction2() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable2");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>	
+	
 </div>
 </section>
 </div>
